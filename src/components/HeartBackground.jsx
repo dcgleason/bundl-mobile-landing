@@ -2,8 +2,8 @@ import { useId } from 'react'
 
 export function HeartBackground({
   color,
-  width = 800,
-  height = 900,
+  width,
+  height,
   ...props
 }) {
   let id = useId()
