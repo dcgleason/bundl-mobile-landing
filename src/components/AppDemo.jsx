@@ -171,7 +171,7 @@ export function AppDemo() {
           <h1 className="text-2xl font-semibold mb-4">Collect submissions</h1>
           <form>
             <div className="mb-4">
-              <label htmlFor="fianceeName" className="block text-sm font-medium text-gray-600">What is your partner&apos;s name?</label>
+              <label htmlFor="fianceeName" className="block text-sm font-medium text-gray-600">What is your significant other&apos;s name?</label>
               <input type="text" id="fianceeName" name="fianceeName" className="mt-1 p-2 w-full border rounded-md" />
             </div>
             <div className="mb-4">
