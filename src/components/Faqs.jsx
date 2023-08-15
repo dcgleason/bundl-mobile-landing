@@ -7,7 +7,7 @@ const faqs = [
     {
       question: 'How does Bundl Book work?',
       answer:
-        "Bundl Book allows you to collect notes and pictures from your girlfriend's family and friends. Simply import contacts, choose your prompts, and we'll create a special book for your proposal.",
+        "Bundl Book allows you to collect notes and pictures from your partner's family and friends. Simply import contacts, choose your prompts, and we'll create a special book for your proposal.",
     },
     {
       question: 'Can I customize the prompts for the messages?',
@@ -17,7 +17,7 @@ const faqs = [
     {
       question: 'How do you ensure privacy?',
       answer:
-        "Your girlfriend's and her family's information is kept confidential. We use it solely for creating your Bundl Book and never share it with third parties.",
+        "Your partner's and her family's information is kept confidential. We use it solely for creating your Bundl Book and never share it with third parties.",
     },
   ],
   [
@@ -39,7 +39,7 @@ const faqs = [
     {
       question: 'How do you keep the book a secret?',
       answer:
-        "Beyond requesting your family and friends don't tell your girlfriend about the surprise, we also send the book to you in descreet package.",
+        "Beyond requesting your family and friends don't tell your partner about the surprise, we also send the book to you in descreet package.",
     },
   ],
   [

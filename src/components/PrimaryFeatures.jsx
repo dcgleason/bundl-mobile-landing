@@ -46,7 +46,7 @@ const features = [
   {
     name: 'Bulk Message Send',
     description:
-      "We help you get in touch with everyone EXCEPT your girlfriend, instruct people to keep this a secret until your reveal, by making it easy to send the first message from you to family and friends.",
+      "We help you get in touch with everyone EXCEPT your partner, instruct people to keep this a secret until your reveal, by making it easy to send the first message from you to family and friends.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
