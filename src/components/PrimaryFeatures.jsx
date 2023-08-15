@@ -176,25 +176,6 @@ const bodyAnimation = {
 
 
 
-
-function useIsDesktop() {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth > 1024);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return isDesktop;
-}
-
-
 function InviteScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
@@ -324,7 +305,6 @@ function FeaturesDesktop() {
     { leading: true }
   )
 
-  const isDesktop = useIsDesktop();
 
 
   return (
@@ -368,8 +348,6 @@ function FeaturesDesktop() {
           <CircleBackground 
           color="#fff" 
           className="animate-spin-slow" 
-          width={isDesktop ? 800 : 400} 
-          height={isDesktop ? 900 : 450}
           />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">

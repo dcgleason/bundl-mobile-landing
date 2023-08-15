@@ -2,20 +2,18 @@ import { useId } from 'react'
 
 export function HeartBackground({
   color,
-  width,
-  height,
+  className,
   ...props
 }) {
   let id = useId()
 
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 800 800"
-      width={width}
-      height={height}
-      fill="none"
-      aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 800 800"
+    className={`w-800 h-900 sm:w-400 sm:h-450 ${className}`} // Tailwind CSS classes
+    fill="none"
+    aria-hidden="true"
       {...props}
     >
       <defs>

@@ -2,9 +2,8 @@ import { useId } from 'react'
 
 export function CircleBackground({
   color,
-  width = 700,
-  height = 700, // Adjusted height to match width for a perfect circle
-  ...props
+  className,
+ ...props
 }) {
   let id = useId()
 
@@ -12,10 +11,8 @@ export function CircleBackground({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 800 800"
-      width={width}
-      height={height}
       fill="none"
-      className="absolute inset-0 h-full w-full animate-spin-slow"
+      className={`w-800 h-900 sm:w-400 sm:h-450 ${className}`}
       aria-hidden="true"
       {...props}
     >
