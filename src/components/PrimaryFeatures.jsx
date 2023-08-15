@@ -23,6 +23,7 @@ import {
 import Image from 'next/image'
 import AppleLogo from "../images/logos/apple-logo.png"
 import GoogleLogo from "../images/logos/google-g.png"
+import { useState, useEffect } from 'react';
 
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
@@ -174,6 +175,26 @@ const bodyAnimation = {
 }
 
 
+
+
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return isDesktop;
+}
+
+
 function InviteScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
@@ -303,6 +324,9 @@ function FeaturesDesktop() {
     { leading: true }
   )
 
+  const isDesktop = useIsDesktop();
+
+
   return (
     <Tab.Group
       as="div"
@@ -341,7 +365,13 @@ function FeaturesDesktop() {
       </Tab.List>
       <div className="relative col-span-6">
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <CircleBackground color="#fff" className="animate-spin-slow" />
+        <CircletBackground
+          color="#fff"
+          className="animate-pulse"
+          width={isDesktop ? 800 : 400} // Adjusted width
+          height={isDesktop ? 900 : 450} // Adjusted height
+        />
+      </div>
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <Tab.Panels as={Fragment}>
