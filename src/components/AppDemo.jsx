@@ -175,7 +175,7 @@ export function AppDemo() {
               <input type="text" id="fianceeName" name="fianceeName" className="mt-1 p-2 w-full border rounded-md" />
             </div>
             <div className="mb-4">
-              <label htmlFor="prompt" className="block text-sm font-medium text-gray-600">What do you want to ask her family and friends to write about?</label>
+              <label htmlFor="prompt" className="block text-sm font-medium text-gray-600">What do you want to ask her/his family and friends to write about?</label>
               <textarea id="prompt" name="prompt" className="mt-1 p-2 w-full border rounded-md" rows="3"></textarea>
             </div>
             

@@ -40,7 +40,7 @@ const features = [
   {
     name: 'Guided Prompts',
     description:
-      "Not sure what to ask her family and friends to write about? We provide suggestions to help them craft heartfelt messages.",
+      "Not sure what to ask her/his family and friends to write about? We provide suggestions to help them craft heartfelt messages.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
