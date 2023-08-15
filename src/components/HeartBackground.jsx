@@ -11,7 +11,7 @@ export function HeartBackground({
     <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 800 800"
-    className={`w-800 h-900 sm:w-400 sm:h-450 ${className}`} // Tailwind CSS classes
+    className={`w-full h-full sm:w-1/2 sm:h-1/2 ${className}`} // Tailwind CSS classes
     fill="none"
     aria-hidden="true"
       {...props}

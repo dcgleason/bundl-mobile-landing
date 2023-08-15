@@ -12,7 +12,7 @@ export function CircleBackground({
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 800 800"
       fill="none"
-      className={`w-800 h-900 sm:w-400 sm:h-450 ${className}`}
+      className={`w-full h-full sm:w-1/2 sm:h-1/2 ${className}`}
       aria-hidden="true"
       {...props}
     >
