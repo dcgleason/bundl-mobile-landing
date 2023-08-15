@@ -7,6 +7,7 @@ import { TextField } from '@/components/Fields'
 import { Logomark } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import qrCode from '@/images/qr-code.svg'
+import  Logo from '../images/logos/bundl-logo-transparent.png'
 
 function QrCodeBorder(props) {
   return (
@@ -27,10 +28,10 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-y-12 pb-6 pt-16 lg:flex-row lg:items-center lg:py-16">
           <div>
             <div className="flex items-center text-gray-900">
-              <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
+              <Image src={Logo} className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
-                <p className="text-base font-semibold">Pocket</p>
-                <p className="mt-1 text-sm">Invest at the perfect time.</p>
+                <p className="text-base font-semibold">Bundl</p>
+                <p className="mt-1 text-sm">Your best gift...ever</p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">

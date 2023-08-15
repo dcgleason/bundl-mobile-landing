@@ -438,7 +438,7 @@ function FeaturesMobile() {
             <div className="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <CircleBackground
-                  color="#13B5C8"
+                  color="#8b0000"
                   className={featureIndex % 2 === 1 ? 'rotate-180' : undefined}
                 />
               </div>

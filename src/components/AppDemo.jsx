@@ -88,8 +88,8 @@ function Chart({
           <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
         <linearGradient id={`${id}-gradient`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#13B5C8" />
-          <stop offset="100%" stopColor="#13B5C8" stopOpacity="0" />
+          <stop offset="0%" stopColor="#8b0000" />
+          <stop offset="100%" stopColor="#8b0000" stopOpacity="0" />
         </linearGradient>
       </defs>
       {[...Array(gridLines - 1).keys()].map((index) => (

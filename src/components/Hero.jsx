@@ -46,8 +46,8 @@ function BackgroundIllustration(props) {
             y2="1025"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+            <stop stopColor="#DF9496" />
+            <stop offset="1" stopColor="#DF9496" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -76,8 +76,8 @@ function BackgroundIllustration(props) {
             y2="913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+            <stop stopColor="#DF9496" />
+            <stop offset="1" stopColor="#DF9496" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>

@@ -192,8 +192,8 @@ export function Pricing() {
             Choose the Perfect Plan for Your Perfect Proposal.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            From simple elegance to grand gestures, we have a plan to make your proposal unforgettable.
-          </p>
+30-day money back guarentee, no questions asked.
+     </p>
         </div>
 
         {/* <div className="mt-8 flex justify-center">
