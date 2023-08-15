@@ -1,7 +1,7 @@
 import { useId } from 'react'
 
 import { Container } from '@/components/Container'
-
+import Image from 'next/image'
 const features = [
   {
     name: 'Invest any amount',
@@ -196,14 +196,19 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Your final gift is a book filled with love.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+          Planning the perfect proposal is a journey filled with love, anticipation, and joy. With Bundl, you can make it even <em>more </em>special by including heartfelt messages and cherished memories from her family. 
+
           </p>
         </div>
-        <ul
+        <div className="flex justify-center my-5">
+              <div>
+                <Image src="https://upload.wikimedia.org/wikipedia/commons/6/66/Bundlbook.jpg" className="" alt="Your image description" height="600" width="800" objectFit="cover" />
+              </div>
+          </div>
+        {/* <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
         >
@@ -219,7 +224,7 @@ export function SecondaryFeatures() {
               <p className="mt-2 text-gray-700">{feature.description}</p>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </Container>
     </section>
   )
