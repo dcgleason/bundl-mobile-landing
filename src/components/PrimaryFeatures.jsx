@@ -476,7 +476,7 @@ export function PrimaryFeatures() {
           Our aim is to make you look <span className='underline'>great</span>, with little-to-no effort on your part. 
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-         Our mobile app collects all notes and pictures from your spouse&apos;s loved ones automatically over the course of week one, prints and ships the book to you during week two, and updates you on the process along the way.
+         Our mobile app collects all notes and pictures from your partner&apos;s loved ones automatically over the course of week one, prints and ships the book to you during week two, and updates you on the process along the way.
           </p>
         </div>
       </Container>
