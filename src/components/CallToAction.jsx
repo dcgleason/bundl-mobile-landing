@@ -4,7 +4,6 @@ import { HeartBackground } from '@/components/HeartBackground'
 import { Container } from '@/components/Container'
 
 
-
 export function CallToAction() {
   return (
     <section
