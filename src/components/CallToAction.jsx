@@ -1,7 +1,7 @@
-
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { HeartBackground } from '@/components/HeartBackground'
 import { Container } from '@/components/Container'
+
 
 
 export function CallToAction() {
@@ -11,10 +11,7 @@ export function CallToAction() {
       className="relative overflow-hidden bg-gray-900 py-20 sm:py-28"
     >
       <div className="absolute left-19 top-[42%] -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
-      <HeartBackground
-          color="#fff"
-          className="animate-pulse"
-        />
+        <HeartBackground color="#fff" className="animate-pulse " />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
