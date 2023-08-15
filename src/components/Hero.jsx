@@ -105,7 +105,7 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-             Easily include your partner&apos;s family and friends in your marriage prososal.
+             Easily include your significant other&apos;s family and friends in your marriage prososal.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
              Bundl Book: A special book filled with notes and pictures from your partner&apos;s loved ones. It&apos;s a loving gift that lets her family and friends be part of your big moment.
