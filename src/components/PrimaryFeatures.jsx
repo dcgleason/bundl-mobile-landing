@@ -365,13 +365,12 @@ function FeaturesDesktop() {
       </Tab.List>
       <div className="relative col-span-6">
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <CircletBackground
-          color="#fff"
-          className="animate-pulse"
-          width={isDesktop ? 800 : 400} // Adjusted width
-          height={isDesktop ? 900 : 450} // Adjusted height
-        />
-      </div>
+          <CircleBackground 
+          color="#fff" 
+          className="animate-spin-slow" 
+          width={isDesktop ? 800 : 400} 
+          height={isDesktop ? 900 : 450}
+          />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <Tab.Panels as={Fragment}>
