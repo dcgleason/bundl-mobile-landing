@@ -44,9 +44,9 @@ const features = [
     screen: StocksScreen,
   },
   {
-    name: 'Secrecy Assured',
+    name: 'Bulk send',
     description:
-      "We help you get in touch with everyone EXCEPT your fiancée, instruct peopel to keep this a secret until your reveal, and ship the Bundl book to you in a descrete box. ",
+      "We help you get in touch with everyone EXCEPT your fiancée, instruct people to keep this a secret until your reveal, by making it easy to send the first message from you to family and friends.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
@@ -186,6 +186,7 @@ function InviteScreen({ custom, animated = false }) {
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
           <div className="space-y-6">
+            
             <button className="w-full bg-[#727B84] text-white py-2 rounded-lg flex items-center">
             <Image src={AppleLogo} alt="Apple" className="h-4 w-7 mr-1" />
               Select from your iPhone contacts
@@ -244,52 +245,31 @@ function StocksScreen({ custom, animated = false }) {
     </AppScreen>
   );
 }
-
 function InvestScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Buy $LA</AppScreen.Title>
+        <AppScreen.Title>Welcome to Bundl</AppScreen.Title>
         <AppScreen.Subtitle>
-          <span className="text-white">$34.28</span> per share
+          Automate the collection <span className="text-white">of notes and pictures</span>
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="px-4 py-6">
           <div className="space-y-4">
-            {[
-              { label: 'Number of shares', value: '100' },
-              {
-                label: 'Current market price',
-                value: (
-                  <div className="flex">
-                    $34.28
-                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                      <path
-                        d="M17 15V7H9M17 7 7 17"
-                        stroke="#06B6D4"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                ),
-              },
-              { label: 'Estimated cost', value: '$3,428.00' },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex justify-between border-b border-gray-100 pb-4"
-              >
-                <div className="text-sm text-gray-500">{item.label}</div>
-                <div className="text-sm font-semibold text-gray-900">
-                  {item.value}
-                </div>
-              </div>
-            ))}
-            <div className="rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white">
-              Buy shares
+            <div className="mt-4">
+              <label htmlFor="welcomeMessage" className="text-sm text-gray-500">
+                Welcome message
+              </label>
+              <textarea
+                id="welcomeMessage"
+                className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
+                rows="5"
+                defaultValue="Hello! I plan to propose to Eliza next month. I am excited to say that I'd like to include you, a person who means so much to her, in this process, by asking you to contribute to a book filled with loving notes and pictures for Eliza on this day."
+              ></textarea>
+            </div>
+            <div className="rounded-lg bg-[#727B84] px-3 py-2 text-center text-sm font-semibold text-white">
+              Send welcome message
             </div>
           </div>
         </div>
