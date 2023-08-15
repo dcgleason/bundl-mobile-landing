@@ -108,7 +108,7 @@ export function Hero() {
              Easily include your S/O&apos;s family and friends in your marriage prososal, remotely. 
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Bundl Book: A special book filled with notes and pictures from your partner&apos;s loved ones. It&apos;s a loving gift that lets her family and friends be part of your big moment.
+             Bundl Book: A special book filled with notes and pictures from your partner&apos;s loved ones. It&apos;s a loving gift that lets her or his family and friends be part of your big moment.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
