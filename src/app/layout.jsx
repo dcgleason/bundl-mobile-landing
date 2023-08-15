@@ -11,12 +11,13 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    template: 'Bundl',
+    default: "Bundl - Your Best Gift Ever",
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'Bundl helps you create personalized keepsakes for your loved ones. With customizable prompts, design options, and quality materials, you can craft a unique gift that captures memories and emotions. Perfect for proposals, anniversaries, and special occasions, Bundl is the way to make your gift truly special.',
 }
+
 
 export default function RootLayout({ children }) {
   return (

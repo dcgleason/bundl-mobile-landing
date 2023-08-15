@@ -36,6 +36,11 @@ const faqs = [
       answer:
         'Typically, it takes 2 weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
     },
+    {
+      question: 'How do you keep the book a secret?',
+      answer:
+        "Beyond requesting your family and friends don't tell your fiancee about the surprise, we also send the book to you in descreet package.",
+    },
   ],
   [
     {

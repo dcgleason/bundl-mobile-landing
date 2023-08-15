@@ -17,7 +17,7 @@ export function CallToAction() {
               Create a Loving Keepsake for Your Proposal
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-          It's easy to get started with Bundl. Download the app, sign up in 30 seconds, and we'll assist you in making a special book filled with messages from her family and friends.
+          It&apos;s easy to get started with Bundl. Download the app, sign up in 30 seconds, and we&apos;ll assist you in making a special book filled with messages from her family and friends.
 
           </p>
           <div className="mt-8 flex justify-center">

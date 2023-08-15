@@ -13,11 +13,11 @@ const plans = [
   {
     name: 'The starter',
     featured: false,
-    price: '$99',
+    price: '$79',
     description:
       'Perfect for those who want to make their proposal special with a touch of personalization. Start your journey with us.',
     button: {
-      label: 'Get started',
+      label: 'Download the app',
       href: '/register',
     },
     features: [
@@ -33,11 +33,11 @@ const plans = [
   {
     name: 'The Romantic',
     featured: false,
-    price: '$199',
+    price: '$149',
     description:
       'For those who want to take their proposal to the next level. More customization, more memories, more love.',
     button: {
-      label: 'Subscribe',
+      label: 'Download the app',
       href: '/register',
     },
     features: [
@@ -54,11 +54,11 @@ const plans = [
   {
     name: 'The Rainmaker',
     featured: true,
-    price: '$399',
+    price: '$299',
     description:
-      'The ultimate proposal experience. Every detail tailored to perfection, every moment crafted with love.',
+      'The ultimate proposal gift. Every detail tailored to perfection, every moment crafted with love.',
     button: {
-      label: 'Subscribe',
+      label: 'Download the app',
       href: '/register',
     },
     features: [
@@ -71,7 +71,7 @@ const plans = [
       'Up to 60 pages',
       'Audio recording included',
     ],
-    logomarkClassName: 'fill-cyan-500',
+    logomarkClassName: 'fill-[#DF9496]',
   },
 ]
 
@@ -152,7 +152,7 @@ function Plan({
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500'
+                  featured ? 'text-white' : 'text-[#DF9496]'
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -162,7 +162,7 @@ function Plan({
       </div>
       <Button
         href={button.href}
-        color={featured ? 'cyan' : 'gray'}
+        style={{ backgroundColor: featured ? '#DF9496' : 'gray' }}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
