@@ -52,7 +52,7 @@ const plans = [
     logomarkClassName: 'fill-gray-500',
   },
   {
-    name: 'The Rainmaker',
+    name: 'The Heartwarmer',
     featured: true,
     price: '$299',
     description:
