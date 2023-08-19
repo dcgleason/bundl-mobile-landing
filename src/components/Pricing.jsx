@@ -15,7 +15,7 @@ const plans = [
     featured: false,
     price: '$79',
     description:
-      'Ideal for making your proposal unique with personal touches. Begin with us.',
+      'Ideal for making your proposal unique with personal touches.',
     button: {
       label: 'Get the app',
       href: '/register',
