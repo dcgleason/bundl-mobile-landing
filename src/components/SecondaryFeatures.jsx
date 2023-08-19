@@ -196,11 +196,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            A book filled with love.
+          Create a Book of Love.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          Planning the perfect proposal is a journey filled with love, anticipation, and joy. With Bundl, you can make it even <em>more </em>special by including heartfelt messages and cherished memories from her family. 
-
+          Planning the perfect proposal is a journey of love, excitement, and happiness. With Bundl, make it unique by adding loving notes and treasured memories from her family.
           </p>
         </div>
         <div className="flex justify-center my-5">
