@@ -12,11 +12,12 @@ const inter = Inter({
 export const metadata = {
   title: {
     template: 'Bundl',
-    default: "Bundl - Your Best Gift Ever",
+    default: "Bundl - Your Perfect Proposal Gift",
   },
   description:
-    'Bundl helps you create personalized keepsakes for your loved ones. With customizable prompts, design options, and quality materials, you can craft a unique gift that captures memories and emotions. Perfect for proposals, anniversaries, and special occasions, Bundl is the way to make your gift truly special.',
+    'Bundl helps you craft a personalized keepsake for your proposal. With custom prompts, design choices, and quality materials, create a unique gift that captures the love and excitement of the moment. Bundl makes your proposal gift truly special.',
 }
+
 
 
 export default function RootLayout({ children }) {
