@@ -56,7 +56,7 @@ const plans = [
     featured: true,
     price: '$299',
     description:
-      'The ultimate proposal gift. Every detail perfect, every moment filled with love.',
+      'The ultimate proposal gift.',
     button: {
       label: 'Get the app',
       href: '/register',
