@@ -31,7 +31,7 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Simple Submissions Collection',
+    name: 'Subtle Submissions Collection',
     description:
       "Import contacts from Apple, Google, or input contact details manually. We'll guide you through the process.",
     icon: DeviceUserIcon,
