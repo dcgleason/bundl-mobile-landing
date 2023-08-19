@@ -31,23 +31,23 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Subtle Submissions Collection',
+    name: 'Easy Contact Collection',
     description:
-      "Import contacts from Apple, Google, or input contact details manually. We'll guide you through the process.",
+      "Add contacts from Apple, Google, or enter them yourself. We guide you.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
-    name: 'Guided Prompts',
+    name: 'Helpful Prompts',
     description:
-      "Not sure what to ask her/his family and friends to write about? We provide suggestions to help them craft heartfelt messages.",
+      "Unsure what to ask their family and friends? We offer suggestions for heartfelt messages.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
-    name: 'Bulk Message Send',
+    name: 'Simple Bulk Messaging',
     description:
-      "We help you get in touch with everyone EXCEPT your S/O, instruct people to keep this a secret until your reveal, by making it easy to send the first message from you to family and friends.",
+      "We connect you with everyone but your partner, keep it secret until the reveal, and make the first message to family and friends easy.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
