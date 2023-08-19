@@ -189,10 +189,10 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Choose the Perfect Plan for Your Perfect Proposal.
+            Pick the Right Plan for Your Ideal Proposal.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-30-day money back guarentee, no questions asked.
+          30-day money-back guarantee, no questions asked.
      </p>
         </div>
 
