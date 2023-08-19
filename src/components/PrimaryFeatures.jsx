@@ -480,10 +480,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-          Our aim is to make you look <span className='underline'>great</span>, with little-to-no effort on your part. 
+          We Make You <span className='underline'>Shine</span> with Ease
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-         Our mobile app collects all notes and pictures from your significant other&apos;s loved ones automatically over the course of week one, prints and ships the book to you during week two, and updates you on the process along the way.
+          Our app gathers notes and pictures from your partner&apos;s loved ones in the first week, prints and sends the book to you in the second week, and keeps you informed all the way.
           </p>
         </div>
       </Container>
