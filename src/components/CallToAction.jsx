@@ -16,11 +16,10 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-              Create a Loving Keepsake for Your Proposal
+          Start a Loving Keepsake for Your Proposal
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-          It&apos;s easy to get started with Bundl. Download the app, sign up in 30 seconds, and we&apos;ll assist you in making a special book filled with messages from her family and friends.
-
+          Get started with Bundl easily. Download the app, sign up quickly, and we&apos;ll help you create a unique book with messages from her family and friends.
           </p>
           <div className="mt-8 flex justify-center">
             <AppStoreLink color="white" />
