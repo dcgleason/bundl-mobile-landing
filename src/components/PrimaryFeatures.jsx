@@ -205,7 +205,7 @@ function InviteScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hello! I plan to propose to Eliza next month. I am excited say that I'd like to include you, a person who means so much to her, in this process, by asking you to contribute to a book filled with lovingn notes and pictures for Eliza on this day."
+                defaultValue="Hi! I'm proposing to Eliza next month, and I'm thrilled to include you, someone special to her, in this moment. I invite you to add to a book filled with loving notes and pictures for Eliza on this day."
               ></textarea>
             </div>
           </div>
@@ -267,7 +267,7 @@ function InvestScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hello! I plan to propose to Eliza next month. I am excited to say that I'd like to include you, a person who means so much to her, in this process, by asking you to contribute to a book filled with loving notes and pictures for Eliza on this day."
+                defaultValue="Hi! I'm proposing to Eliza next month, and I'm thrilled to include you, someone special to her, in this moment. I invite you to add to a book filled with loving notes and pictures for Eliza on this day."
               ></textarea>
             </div>
             <div className="rounded-lg bg-[#727B84] px-3 py-2 text-center text-sm font-semibold text-white">
