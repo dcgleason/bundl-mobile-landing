@@ -288,7 +288,7 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-         Word&apos;s Getting Out:: 
+         Word&apos;s Getting Out: 
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
         These are some of the people who&apos;ve used Bundl to surprise and please their partner.
