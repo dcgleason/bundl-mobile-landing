@@ -16,7 +16,7 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-          Make a Special Keepsake for Your Proposal
+          Download the App and Craft a Special Keepsake for Your Proposal.
           </h2>
           <p className="mt-4 text-lg text-gray-300">
           Get started with Bundl easily. Download the app, sign up quickly, and we&apos;ll help you create a unique book with messages from her family and friends.
