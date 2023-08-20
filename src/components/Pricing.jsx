@@ -69,7 +69,7 @@ const plans = [
       'Unlimited investment',
       'Linen hardback quality',
       'Unlimited pages',
-      'Audio included',
+      'Audio clips included',
     ],
     logomarkClassName: 'fill-[#DF9496]',
   },
