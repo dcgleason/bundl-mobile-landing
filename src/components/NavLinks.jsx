@@ -9,9 +9,9 @@ export function NavLinks() {
 
   return [
     ['Features', '/#features'],
-    ['Reviews', '/#reviews'],
     ['Pricing', '/#pricing'],
     ['FAQs', '/#faqs'],
+    ['Proposal Idea Generator', '/idea-generator'],
   ].map(([label, href], index) => (
     <Link
       key={label}
