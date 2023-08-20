@@ -235,7 +235,7 @@ async function handleSubmit(e) {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-            What are your partner's hobbies and interests?
+            What are your partner&apos;s hobbies and interests?
             </label>
             <div className="mt-2.5">
             <textarea
