@@ -143,7 +143,7 @@ export function Hero() {
             Tears of joy when you pop the question, or your money back.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Bundl Book: A surprise gift book packed with loving notes and pictures from your partner&apos;s family and friends.
+             Bundl Book: A surprise proposal gift book packed with loving notes and pictures from your partner&apos;s family and friends.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
