@@ -189,10 +189,10 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Choose the Perfect Plan to Elevate Your Proposal.
+            Choose your book in-app.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          30-day money-back guarantee, no questions asked.
+         Your partner cries tears of joy or your money back (seriously).
      </p>
         </div>
 
