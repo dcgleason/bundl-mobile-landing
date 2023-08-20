@@ -1,6 +1,9 @@
+'use client'
+
 import { useId } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
+import { useEffect, useRef } from 'react'
 
 import { AppDemo } from '@/components/AppDemo'
 import { AppStoreLink } from '@/components/AppStoreLink'
@@ -15,6 +18,7 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
+import BundlBook from "@/images/bundl-red-book.png"
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -85,6 +89,37 @@ function BackgroundIllustration(props) {
   )
 }
 
+const Testimonials = () => {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://testimonial.to/js/iframeResizer.min.js';
+    script.onload = () => {
+      if (iframeRef.current) {
+        window.iFrameResize({ log: false, checkOrigin: false }, '#testimonialto-bundl-tag-all-light-animated');
+      }
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <iframe
+      ref={iframeRef}
+      height="200px"
+      id="testimonialto-bundl-tag-all-light-animated"
+      src="https://embed-v2.testimonial.to/w/bundl?animated=on&theme=light&shadowColor=f7f7f7&speed=0.5&hideDate=on&hideSource&tag=all"
+      frameborder="0"
+      width="100%"
+    ></iframe>
+  );
+};
+
+
 function PlayIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
@@ -105,10 +140,10 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Include family and friends in your proposal, remotely. 
+            Elevate Your Proposal Moment.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Bundl Book: A surprise gift book filled with loving notes and pictures from your partner&apos;s family and friends. Let them join your big moment.
+             Bundl Book: A surprise gift book packed with loving notes and pictures from your partner&apos;s family and friends. Make her / him cry tears of joy when you pop the question, or your money back.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
@@ -124,9 +159,11 @@ export function Hero() {
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
             <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-bottom-20 lg:-top-10 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
-              <PhoneFrame className="mx-auto max-w-[366px]" priority>
+           <Testimonials/>
+              
+              {/* <PhoneFrame className="mx-auto max-w-[366px]" priority>
                 <AppDemo />
-              </PhoneFrame>
+              </PhoneFrame> */}
             </div>
           </div>
           {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">

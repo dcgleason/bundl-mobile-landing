@@ -480,10 +480,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-          We Make You <span className='underline'>Shine</span> with Ease
+         Create your Bundl book in 5 minutes with our app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Our app gathers notes and pictures from your partner&apos;s loved ones in the first week, prints and sends the book to you in the second week, and keeps you informed all the way.
+          Select from your contacts, and our mobile app gathers notes and pictures from your partner&apos;s loved ones in the first week. We print and send the book to you in the second week and keep you informed all the way.
           </p>
         </div>
       </Container>
