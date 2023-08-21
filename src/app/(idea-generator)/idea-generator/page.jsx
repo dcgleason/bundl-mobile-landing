@@ -267,7 +267,7 @@ async function handleSubmit(e) {
           </div>
           <div className="sm:col-span-2">
             <label className="block text-sm font-semibold leading-6 text-gray-900">
-            Where do you want to propose?
+            Any ideas about where you want to propose?
             </label>
             <div className="relative mt-2.5">
             <textarea
