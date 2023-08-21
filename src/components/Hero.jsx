@@ -152,7 +152,7 @@ export function Hero() {
                 variant="outline"
               >
                 <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Video to inspire</span>
+                <span className="ml-2.5">Video to inspire love</span>
               </Button>
             </div>
           </div>
