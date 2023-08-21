@@ -13,7 +13,7 @@ const plans = [
   {
     name: 'The Starter',
     featured: false,
-    price: '$79',
+    price: '$99',
     description:
       'Ideal for making your proposal unique with personal touches.',
     button: {
@@ -44,7 +44,7 @@ const plans = [
       'All Starter features',
       'Pick your cover color',
       'Priority help',
-      'Gift wrap option',
+      // 'Gift wrap option',
       'Fast delivery',
       'Hardback quality',
       '40 pages max',
@@ -54,7 +54,7 @@ const plans = [
   {
     name: 'The Romantic',
     featured: true,
-    price: '$299',
+    price: '$249',
     description:
       'The ultimate proposal gift.',
     button: {
@@ -63,10 +63,9 @@ const plans = [
     },
     features: [
       'All Heartwarmer features',
-      'Personal proposal planning',
-      'Premium gift wrap',
+      // 'Personal proposal planning',
+      // 'Premium gift wrap',
       'Exclusive proposal resources',
-      'Unlimited investment',
       'Linen hardback quality',
       'Unlimited pages',
       'Audio clips included',
