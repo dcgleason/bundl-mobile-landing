@@ -164,12 +164,12 @@ async function handleSubmit(e) {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">AI proposal idea generator</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Let AI generate a great proposal ideas for you
+         Fill out this form to generate a custom proposal idea. 
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-y-6 gap-x-8">
-          <div>
+          <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
             How did you and your partner meet?
             </label>
@@ -185,7 +185,7 @@ async function handleSubmit(e) {
               />
             </div>
           </div>
-          <div>
+          <div className="sm:col-span-2">
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
             What are some significant milestones in your milestoneship?
             </label>
@@ -201,7 +201,7 @@ async function handleSubmit(e) {
               />
             </div>
           </div>
-          <div>
+          <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
             What are some of your favorite shared memories?
             </label>
@@ -217,7 +217,7 @@ async function handleSubmit(e) {
               />
             </div>
           </div>
-          <div>
+          <div className="sm:col-span-2">
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
             What is your budget for the proposal?
             </label>
