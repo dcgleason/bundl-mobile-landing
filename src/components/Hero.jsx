@@ -148,11 +148,11 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
               <Button
-                href="https://www.youtube.com/watch?v=wBl2QGAIx1s"
+                href="https://youtu.be/4TYv2PhG89A?t=73"
                 variant="outline"
               >
                 <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">You got this!</span>
+                <span className="ml-2.5">To calm your nerves</span>
               </Button>
             </div>
           </div>
