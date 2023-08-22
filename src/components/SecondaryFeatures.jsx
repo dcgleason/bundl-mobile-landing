@@ -199,7 +199,7 @@ export function SecondaryFeatures() {
           ...and make a moment you&apos;ll remember forever.  
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          Planning the perfect proposal is a journey of love, excitement, and happiness. With Bundl, ensure your moment is extra special by adding loving notes and meaningful pictures from her family and friends.
+          Planning the perfect proposal is a journey filled with love, excitement, and happiness. With Bundl, we ensure your moment really hits the mark by adding loving notes and meaningful pictures from her family and friends into the mix.
           </p>
         </div>
         <div className="flex justify-center my-5">
