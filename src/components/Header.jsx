@@ -110,7 +110,7 @@ export function Header() {
                             <MobileNavLink href="/#faqs">
                               FAQs
                             </MobileNavLink>
-                            <MobileNavLink href="/idea-generator">Proposal Idea Generator</MobileNavLink>
+                            <MobileNavLink href="/idea-generator">Free Custom Proposal Ideas</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             {/* <Button href="/login" variant="outline">
