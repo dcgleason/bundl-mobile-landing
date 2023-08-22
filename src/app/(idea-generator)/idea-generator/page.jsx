@@ -6,6 +6,7 @@ import Head from "next/head"
 import axios from 'axios';
 
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -25,7 +26,20 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
+const [isLoading, setIsLoading] = useState(false);
+const [countdown, setCountdown] = useState(15);
 
+useEffect(() => {
+  let timer;
+  if (isLoading && countdown > 0) {
+    timer = setTimeout(() => {
+      setCountdown(countdown - 1);
+    }, 1000);
+  } else {
+    setCountdown(15); // Reset the countdown when loading is done
+  }
+  return () => clearTimeout(timer);
+}, [isLoading, countdown]);
 
 async function handleSubmit(e) {
   e.preventDefault();
@@ -300,14 +314,14 @@ async function handleSubmit(e) {
         
         </div>
         <div className="mt-10">
-            <button
-              type="submit"
-              onClick={handleSubmit}
-              className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]"
-              disabled={isLoading}  // Disable the button while loading
-            >
-              {isLoading ? 'Generating proposal idea...' : 'Generate an awesome proposal idea'}  
-            </button>
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]"
+          disabled={isLoading} // Disable the button while loading
+        >
+          {isLoading ? `Generating proposal idea... ${countdown}` : 'Generate an awesome proposal idea'}
+        </button>
           </div>
       </form>
     </div>
