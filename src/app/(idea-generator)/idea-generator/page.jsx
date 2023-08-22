@@ -26,7 +26,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
-const [isLoading, setIsLoading] = useState(false);
 const [countdown, setCountdown] = useState(15);
 
 useEffect(() => {
