@@ -26,7 +26,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
-const [countdown, setCountdown] = useState(15);
+const [countdown, setCountdown] = useState(29);
 
 useEffect(() => {
   let timer;
@@ -35,7 +35,7 @@ useEffect(() => {
       setCountdown(countdown - 1);
     }, 1000);
   } else {
-    setCountdown(15); // Reset the countdown when loading is done
+    setCountdown(29); // Reset the countdown when loading is done
   }
   return () => clearTimeout(timer);
 }, [isLoading, countdown]);
