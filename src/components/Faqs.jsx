@@ -14,11 +14,6 @@ const faqs = [
       answer:
         'Yes! While we provide guided prompts, you can also create your own to make the messages even more personal.',
     },
-    {
-      question: 'How do you ensure privacy?',
-      answer:
-        "Your S/O's and her family's information is kept confidential. We use it solely for creating your Bundl Book and never share it with third parties.",
-    },
   ],
   [
     {
@@ -61,7 +56,7 @@ const faqs = [
     {
       question: 'Can I cancel or modify my Bundl Book order?',
       answer:
-        "You can modify your order within X hours of placing it. For cancellations or further modifications, please review our cancellation policy.",
+        "You can modify your order within 24 hours of placing it. For cancellations or further modifications, please review our cancellation policy.",
     },
   ],
 ]
