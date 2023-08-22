@@ -33,14 +33,14 @@ const features = [
   {
     name: 'Easy Contact Collection',
     description:
-      "Add contacts from Apple, Google, or enter them yourself. We guide you.",
+      "Add contacts from Apple, Google, or enter them yourself.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
     name: 'Helpful Prompts',
     description:
-      "Unsure what to ask their family and friends? We offer suggestions for heartfelt messages.",
+      "Unsure what to ask their family and friends? We offer you suggestions on what to say.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
