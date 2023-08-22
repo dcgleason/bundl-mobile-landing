@@ -200,7 +200,7 @@ async function handleSubmit(e) {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-            What are some significant milestones in your milestoneship?
+            What are some significant milestones in your relationship?
             </label>
             <div className="mt-2.5">
             <textarea
