@@ -135,28 +135,20 @@ async function handleSubmit(e) {
           </div>
 
           <div className="mt-4 flex justify-between">
-          <button
-            type="button"
-            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
-            onClick={() => setIsModalOpen(false)}
-          >
-            Close
-          </button>
-          <a
-            href="https://www.givebundl.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
-          >
-          <button
-          className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
-           >
-          
-            Get your Bundl book
-          
-         </button>
-         </a>
-        </div>
+            <button
+              type="button"
+              className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
+              onClick={() => setIsModalOpen(false)}
+            >
+              Close
+            </button>
+            <button
+              onClick={() => window.location.href='https://www.givebundl.com'}
+              className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
+            >
+              Get your Bundl book
+            </button>
+          </div>
         </div>
       </Transition.Child>
     </div>
