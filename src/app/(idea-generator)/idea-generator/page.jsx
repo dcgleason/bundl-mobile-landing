@@ -140,7 +140,7 @@ async function handleSubmit(e) {
               rel="noopener noreferrer"
               className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
             >
-              Explore Bundl books
+              Get your Bundl book
             </a>
           </div>
         </div>
