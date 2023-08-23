@@ -84,10 +84,11 @@ async function handleSubmit(e) {
     <title>Bundl - Proposal Idea Generator</title>
     <meta name="description" content="Bundl - AI Gift Idea Generator" />
   </Head>
-  <Transition show={isModalOpen} as={React.Fragment}>
+    <Transition show={isModalOpen} as={React.Fragment}>
   <Dialog
     as="div"
     className="fixed inset-0 z-10 overflow-y-auto"
+    onClose={() => setIsModalOpen(false)}
   >
     <div className="min-h-screen px-4 text-center">
       <Transition.Child
@@ -133,22 +134,34 @@ async function handleSubmit(e) {
             </p>
           </div>
 
-          <div className="mt-4">
-            <a
-              href="https://www.givebundl.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
-            >
-              Get your Bundl book
-            </a>
-          </div>
+          <div className="mt-4 flex justify-between">
+          <button
+            type="button"
+            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
+            onClick={() => setIsModalOpen(false)}
+          >
+            Close
+          </button>
+          <a
+            href="https://www.givebundl.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
+          >
+          <button
+          className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
+           >
+          
+            Get your Bundl book
+          
+         </button>
+         </a>
+        </div>
         </div>
       </Transition.Child>
     </div>
   </Dialog>
 </Transition>
-
     <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
