@@ -188,7 +188,7 @@ export function AppDemo() {
               Select from your iPhone contacts
             </button>
             <button className="w-full bg-[#DF9496] text-white py-2 rounded-lg flex items-center">
-            <Image src={GoogleLogo} alt="Google" className="h-4 w-4 mr-2" />
+            <Image src={GoogleLogo} alt="Google" className="h-4 w-4 mr-2 ml-1" />
               Select from your Google contacts
             </button>
             </div>
