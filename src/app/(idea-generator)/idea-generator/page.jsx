@@ -190,11 +190,11 @@ async function handleSubmit(e) {
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
       <div className="grid grid-cols-1 gap-y-6 gap-x-8">
       {/* Image on the left side */}
-      <div className="absolute top-350 left-40 z-40">
+      <div className="absolute top-350 left-40 z-0">
           <Image src={engagementImage} alt="Engagement Image" width={500} height={300} />
         </div>
 
-        <div className="grid grid-cols-1 gap-y-6 gap-x-8 z-50">
+        <div className="grid grid-cols-1 gap-y-6 gap-x-8 z-10">
           <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
             How did you and your partner meet?
