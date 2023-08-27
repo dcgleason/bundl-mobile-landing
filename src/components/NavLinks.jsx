@@ -11,7 +11,7 @@ export function NavLinks() {
     ['Features', '/#features'],
     ['Pricing', '/#pricing'],
     ['FAQs', '/#faqs'],
-    ['Free Custom Proposal Ideas', '/idea-generator'],
+    ['Complimentary Custom Proposal Ideas', '/idea-generator'],
   ].map(([label, href], index) => (
     <Link
       key={label}
