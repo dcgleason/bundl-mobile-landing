@@ -8,7 +8,6 @@ import Image from 'next/image';
 import engagementImage from "/src/images/bundl-engagement.png"
 
 
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
