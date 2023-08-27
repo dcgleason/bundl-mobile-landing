@@ -196,7 +196,7 @@ async function handleSubmit(e) {
 
         <div className="grid grid-cols-1 gap-y-6 gap-x-8 z-10">
           <div className="sm:col-span-2">
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-grey-100">
             How did you and your partner meet?
             </label>
             <div className="mt-2.5">
@@ -212,7 +212,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-100">
             What are some significant milestones in your relationship?
             </label>
             <div className="mt-2.5">
@@ -228,7 +228,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-100">
             What are some of your favorite shared memories?
             </label>
             <div className="mt-2.5">
@@ -244,7 +244,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-100">
             What is your budget for the proposal?
             </label>
             <div className="mt-2.5">
@@ -260,7 +260,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-100">
             What are your partner&apos;s hobbies and interests?
             </label>
             <div className="mt-2.5">
@@ -276,7 +276,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label className="block text-sm font-semibold leading-6 text-gray-900">
+            <label className="block text-sm font-semibold leading-6 text-gray-100">
             What is your timeline for planning and executing the proposal?
             </label>
             <div className="mt-2.5">
@@ -292,7 +292,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label className="block text-sm font-semibold leading-6 text-gray-900">
+            <label className="block text-sm font-semibold leading-6 text-gray-100">
             Any ideas about where you want to propose?
             </label>
             <div className="relative mt-2.5">
@@ -308,7 +308,7 @@ async function handleSubmit(e) {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-100">
               Please include on any additional information you would like to share.
             </label>
             <div className="mt-2.5">
