@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import Head from "next/head"
 import axios from 'axios';
+import Image from 'next/image';
+import engagementImage from "/src/images/bundl-engagement.png"
 
 
 
@@ -154,7 +156,10 @@ async function handleSubmit(e) {
     </div>
   </Dialog>
 </Transition>
-    <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
+          <div 
+            className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8"
+           
+          >
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]"
@@ -183,10 +188,16 @@ async function handleSubmit(e) {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bundl AI Proposal Idea Generator</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-         (competitors charge $499 for custom proposal idea... we do it for free)
+         (competitors charge $499 for custom proposal ideas... we do it for free)
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div className="grid grid-cols-1 gap-y-6 gap-x-8">
+      {/* Image on the left side */}
+      <div className="hidden sm:block sm:col-span-2">
+        <Image src={engagementImage} alt="Engagement Image" className="w-32 h-32 object-cover" />
+      </div>
+
         <div className="grid grid-cols-1 gap-y-6 gap-x-8">
           <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -318,7 +329,9 @@ async function handleSubmit(e) {
           </div>
         
         </div>
-        <div className="mt-10">
+        <div className="hidden sm:block sm:col-span-2">
+        <Image src={engagementImage} alt="Engagement Image" className="w-32 h-32 object-cover" />
+      </div>
         <button
           type="submit"
           onClick={handleSubmit}

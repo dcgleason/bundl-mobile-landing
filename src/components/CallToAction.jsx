@@ -19,7 +19,7 @@ export function CallToAction() {
          Start today.
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-          Download the app here: 
+          Download the app here. 
           </p>
           <div className="mt-8 flex justify-center">
             <AppStoreLink color="white" />
