@@ -196,7 +196,7 @@ async function handleSubmit(e) {
 
         <div className="grid grid-cols-1 gap-y-6 gap-x-8 z-10">
           <div className="sm:col-span-2">
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-grey-100">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-100">
             How did you and your partner meet?
             </label>
             <div className="mt-2.5">
