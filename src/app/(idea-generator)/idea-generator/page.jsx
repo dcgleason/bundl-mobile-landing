@@ -88,10 +88,10 @@ async function handleSubmit(e) {
     <Transition show={isModalOpen} as={React.Fragment}>
   <Dialog
     as="div"
-    className="fixed inset-0 z-60 overflow-y-auto"
+    className="fixed inset-0 z-50 overflow-y-auto"
     onClose={() => setIsModalOpen(false)}
   >
-    <div className="min-h-screen px-4 text-center">
+    <div className="min-h-screen px-4 z-50 text-center">
       <Transition.Child
         as={React.Fragment}
         enter="ease-out duration-300"
