@@ -183,7 +183,7 @@ async function handleSubmit(e) {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">AI proposal idea generator</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-         (completitors charge $499 for custom proposal idea... fyi)
+         (competitors charge $499 for custom proposal idea... fyi)
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
