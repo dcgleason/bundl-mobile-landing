@@ -156,10 +156,7 @@ async function handleSubmit(e) {
     </div>
   </Dialog>
 </Transition>
-          <div 
-            className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8"
-           
-          >
+<div className="relative bg-[#ffcdcb] py-24 px-6 sm:py-32 lg:px-8">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]"
@@ -194,11 +191,11 @@ async function handleSubmit(e) {
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
       <div className="grid grid-cols-1 gap-y-6 gap-x-8">
       {/* Image on the left side */}
-      <div className="hidden sm:block sm:col-span-2">
-        <Image src={engagementImage} alt="Engagement Image" className="w-32 h-32 object-cover" />
-      </div>
+      <div className="absolute top-350 left-40 z-40">
+          <Image src={engagementImage} alt="Engagement Image" width={500} height={300} />
+        </div>
 
-        <div className="grid grid-cols-1 gap-y-6 gap-x-8">
+        <div className="grid grid-cols-1 gap-y-6 gap-x-8 z-50">
           <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
             How did you and your partner meet?
@@ -329,9 +326,9 @@ async function handleSubmit(e) {
           </div>
         
         </div>
-        <div className="hidden sm:block sm:col-span-2">
+        {/* <div className="hidden sm:block sm:col-span-2">
         <Image src={engagementImage} alt="Engagement Image" className="w-32 h-32 object-cover" />
-      </div>
+      </div> */}
         <button
           type="submit"
           onClick={handleSubmit}
