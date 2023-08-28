@@ -182,9 +182,9 @@ async function handleSubmit(e) {
         </svg>
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bundl AI Proposal Idea Generator</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bundl AI Proposal Playlist Generator</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-         (competitors charge $499 for custom proposal ideas... we do it for free)
+         (we'll give you the perfect playlist in just a few seconds)
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -197,7 +197,7 @@ async function handleSubmit(e) {
         <div className="grid grid-cols-1 gap-y-6 gap-x-8 z-10">
           <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            How did you and your partner meet?
+           What song(s) do you want this playlist to be based off of?
             </label>
             <div className="mt-2.5">
             <textarea
@@ -213,7 +213,7 @@ async function handleSubmit(e) {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            Are there any songs you want to incorperate into the proposal moment?
+            What genres do you want this playlist to be based off of?
             </label>
             <div className="mt-2.5">
             <textarea
@@ -222,86 +222,6 @@ async function handleSubmit(e) {
                 rows={4}
                 value={milestone}
                 onChange={(e) => setMilestone(e.target.value)}
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            What are some of your favorite shared memories?
-            </label>
-            <div className="mt-2.5">
-            <textarea
-                name="message"
-                id="message"
-                rows={4}
-                value={memories}
-                onChange={(e) => setMemories(e.target.value)}
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            What is your budget for the proposal?
-            </label>
-            <div className="mt-2.5">
-            <textarea
-                name="message"
-                id="message"
-                rows={4}
-                value={budget}
-                onChange={(e) => setBudget(e.target.value)}
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            What are your partner&apos;s hobbies and interests?
-            </label>
-            <div className="mt-2.5">
-            <textarea
-                name="message"
-                id="message"
-                rows={4}
-                value={interests}
-                onChange={(e) => setInterests(e.target.value)}
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            What is your timeline for planning and executing the proposal?
-            </label>
-            <div className="mt-2.5">
-            <textarea
-                name="message"
-                id="message"
-                rows={4}
-                value={timeline}
-                onChange={(e) => setTimeline(e.target.value)}
-                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            Any ideas about where you want to propose?
-            </label>
-            <div className="relative mt-2.5">
-            <textarea
-                name="message"
-                id="message"
-                rows={4}
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
                 className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={''}
               />

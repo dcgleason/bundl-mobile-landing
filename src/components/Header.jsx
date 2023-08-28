@@ -111,6 +111,8 @@ export function Header() {
                               FAQs
                             </MobileNavLink>
                             <MobileNavLink href="/idea-generator">Complimentary Custom Proposal Ideas</MobileNavLink>
+                            <MobileNavLink href="/idea-generator">Complimentary Proposal Playlist Generator</MobileNavLink>
+
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             {/* <Button href="/login" variant="outline">
