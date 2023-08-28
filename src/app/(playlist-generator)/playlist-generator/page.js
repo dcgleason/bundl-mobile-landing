@@ -15,13 +15,8 @@ function classNames(...classes) {
 export default function AIForm() {
   const [agreed, setAgreed] = useState(false)
 
-const [meetStory, setMeetStory] = useState('');
-const [milestone, setMilestone] = useState('');
-const [memories, setMemories] = useState('');
-const [budget, setBudget] = useState('');
-const [interests, setInterests] = useState('');
-const [timeline, setTimeline] = useState('');
-const [location, setLocation] = useState('');
+const [seedTracks, setSeedTracks] = useState('');
+const [seedGenre, setSeedGenre] = useState('');
 const [additionalInfo, setAdditionalInfo] = useState('');
 const [isModalOpen, setIsModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
@@ -45,23 +40,18 @@ async function handleSubmit(e) {
   e.preventDefault();
 
   const formData = {
-    meetStory: meetStory,
-    milestone: milestone,
-    memories: memories,
-    budget: budget,
-    interests: interests,
-    timeline: timeline,
-    location: location,
+    seedTracks: meetStory,
+    seedGenre: milestone,
     additionalInfo: additionalInfo,
   };
 
   setIsLoading(true);  // Set loading to true when the request starts
 
   try {
-    const response = await fetch('https://yay-api.herokuapp.com/openai/gift', {
+    const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json',  
       },
       body: JSON.stringify(formData),
     });
@@ -204,8 +194,8 @@ async function handleSubmit(e) {
                 name="message"
                 id="message"
                 rows={4}
-                value={meetStory}
-                onChange={(e) => setMeetStory(e.target.value)}
+                value={seedTracks}
+                onChange={(e) => setSeedTracks(e.target.value)}
                 className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={''}
               />
@@ -220,8 +210,8 @@ async function handleSubmit(e) {
                 name="message"
                 id="message"
                 rows={4}
-                value={milestone}
-                onChange={(e) => setMilestone(e.target.value)}
+                value={seedGenre}
+                onChange={(e) => setSeedGenre(e.target.value)}
                 className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={''}
               />
