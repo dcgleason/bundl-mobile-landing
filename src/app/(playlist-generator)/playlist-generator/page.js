@@ -122,20 +122,24 @@ async function handleSubmit(e) {
                         <h1>{apiResponse.message}</h1>
                         <h2>Selected Genre: {apiResponse.selectedGenre}</h2>
                         <ul>
-                        {apiResponse.trackIds.map((trackId, index) => (
-                            <li key={index}>{trackId}</li>
-                        ))}
-                        </ul>
+                            {apiResponse && apiResponse.trackIds ? (
+                                apiResponse.trackIds.map((trackId, index) => (
+                                <li key={index}>{trackId}</li>
+                                ))
+                            ) : (
+                                <li>Loading...</li>
+                            )}
+                            </ul>
                     </p>
                     {/* Embed Spotify Player */}
                     <iframe 
-                        src={`https://open.spotify.com/embed/track/${apiResponse.trackIds[0].split(":")[2]}`} 
+                        src={apiResponse && apiResponse.trackIds ? `https://open.spotify.com/embed/track/${apiResponse.trackIds[0].split(":")[2]}` : ''} 
                         width="300" 
                         height="380" 
                         frameborder="0" 
                         allowtransparency="true" 
                         allow="encrypted-media">
-                    </iframe>
+                        </iframe>
                     </div>
 
           <div className="mt-4 flex justify-between">
