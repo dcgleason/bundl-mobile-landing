@@ -40,37 +40,49 @@ function WebPlayback(props) {
     const script = document.createElement("script");
     script.src = "https://sdk.scdn.co/spotify-player.js";
     script.async = true;
-
+  
     document.body.appendChild(script);
-
+  
     window.onSpotifyWebPlaybackSDKReady = () => {
       const newPlayer = new window.Spotify.Player({
         name: 'Web Playback SDK',
         getOAuthToken: cb => { cb(props.token); },
         volume: 0.5
       });
-
+  
       newPlayer.addListener('ready', ({ device_id }) => {
         console.log('Ready with Device ID', device_id);
+  
+        // Play the playlist if a playlist ID is provided
+        if (props.playlistId) {
+          fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
+            method: 'PUT',
+            body: JSON.stringify({ context_uri: `spotify:playlist:${props.playlistId}` }),
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${props.token}`
+            },
+          });
+        }
       });
-
+  
       newPlayer.addListener('not_ready', ({ device_id }) => {
         console.log('Device ID has gone offline', device_id);
       });
-
+  
       newPlayer.addListener('player_state_changed', (state) => {
         if (!state) {
           return;
         }
-
+  
         setTrack(state.track_window.current_track);
         setPaused(state.paused);
-
+  
         newPlayer.getCurrentState().then(state => {
           (!state) ? setActive(false) : setActive(true);
         });
       });
-
+  
       newPlayer.connect();
       setPlayer(newPlayer);
     };
@@ -224,7 +236,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login /> :   <WebPlayback token={token} />
+          { (token === '') ? <Login /> :   <WebPlayback token={token} playlistId={apiResponse.playlistId} />
  }
 
             
