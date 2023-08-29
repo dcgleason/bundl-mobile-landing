@@ -252,7 +252,7 @@ async function handleSubmit(e) {
           <div className="mt-2">
 
           { (token === '') ? <Login setToken={setToken} /> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
- }
+
 
             
                     </div> 
