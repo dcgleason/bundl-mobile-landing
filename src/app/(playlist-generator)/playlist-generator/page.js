@@ -193,22 +193,33 @@ useEffect(() => {
 }, []);
 
 const exchangeCodeForToken = async (code) => {
-  // Make API call to your server to exchange code for token
-  const response = await fetch('https://yay-api.herokuapp.com/login/auth/token', {
-    method: 'POST',
-    body: JSON.stringify({ code }),
-  });
-  const json = await response.json();
-  setToken(json.access_token);
-  setIsAuthenticated(true);
+  try {
+    const response = await fetch('https://yay-api.herokuapp.com/auth/token', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ code }),
+    });
+    const json = await response.json();
+    const access_token = json.access_token;
+
+    if (access_token) {
+      setToken(access_token);
+      setIsAuthenticated(true);
   
-  // Kick off the API call to generate the playlist
-  generatePlaylist();
+      // Kick off the API call to generate the playlist
+      generatePlaylist();
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
 };
+
 const generatePlaylist = async () => {
   setIsLoading(true);  // Set loading to true when the request starts
 
-  
+
   try {
     const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
