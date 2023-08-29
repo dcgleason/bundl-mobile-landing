@@ -12,7 +12,7 @@ function Login() {
   return (
     <div className="App">
       <header className="App-header">
-        <a className="btn-spotify" href=" https://yay-api.herokuapp.com/login/auth/login">
+        <a className="btn-spotify" href="https://yay-api.herokuapp.com/login/auth/login">
           Login with Spotify
         </a>
       </header>
