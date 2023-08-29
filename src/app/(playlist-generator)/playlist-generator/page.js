@@ -27,6 +27,9 @@ function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsA
     
     // Redirect to Spotify login
     window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${scopes}`;
+    setIsAuthenticated(true); 
+    setIsLoginModalOpen(false);
+    setApiCall(true);
   };
 
   return (
