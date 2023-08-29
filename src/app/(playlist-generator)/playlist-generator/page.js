@@ -9,15 +9,6 @@ import engagementImage from "/src/images/bundl-engagement.png"
 
 
 function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsAuthenticated }) {
-  const handleLogin = async () => {
-    // Your logic to get the token goes here
-    const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
-    const json = await response.json();
-    setToken(json.access_token);
-    setIsAuthenticated(true); 
-    setIsLoginModalOpen(false);
-    setApiCall(true);  // Set loading to true when the request starts
-  };
 
 
   const handleSpotifyLogin = () => {
@@ -190,6 +181,7 @@ useEffect(() => {
   const code = urlParams.get('code');
   
   if (code) {
+    console.log("code is " + code)
     // Exchange the code for an access token and kick off the API call
     exchangeCodeForToken(code);
   }
@@ -206,6 +198,8 @@ const exchangeCodeForToken = async (code) => {
       },
       body: JSON.stringify({ code }),
     });
+
+
     const json = await response.json();
     const access_token = json.access_token;
 
@@ -259,7 +253,9 @@ useEffect(() => {
     const json = await response.json();
     setToken(json.access_token);
   }
+  if(!token){
   getToken();
+  }
 }, [isAuthenticated]);
 
 useEffect(() => {
@@ -276,14 +272,6 @@ useEffect(() => {
 
 
 
-useEffect(() => {
-  async function getToken() {
-    const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
-    const json = await response.json();
-    setToken(json.access_token);
-  }
-  getToken();
-}, []);
 
 async function handleSubmit(e) {
   e.preventDefault();
