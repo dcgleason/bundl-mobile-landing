@@ -16,11 +16,6 @@ function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsA
     setToken(json.access_token);
     setIsAuthenticated(true); 
     setIsLoginModalOpen(false);
-    setFormData({
-      seed_tracks: seedTracks,
-      seed_genre: seedGenre,
-      additionalInfo: additionalInfo,
-    })
   
     setApiCall(true);  // Set loading to true when the request starts
   
