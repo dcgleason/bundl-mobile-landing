@@ -182,6 +182,55 @@ useEffect(() => {
   fetchData();
 }, [apiCall, isAuthenticated]); // Make sure apiCall is defined
 
+useEffect(() => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const code = urlParams.get('code');
+  
+  if (code) {
+    // Exchange the code for an access token and kick off the API call
+    exchangeCodeForToken(code);
+  }
+}, []);
+
+const exchangeCodeForToken = async (code) => {
+  // Make API call to your server to exchange code for token
+  const response = await fetch('https://yay-api.herokuapp.com/login/auth/token', {
+    method: 'POST',
+    body: JSON.stringify({ code }),
+  });
+  const json = await response.json();
+  setToken(json.access_token);
+  setIsAuthenticated(true);
+  
+  // Kick off the API call to generate the playlist
+  generatePlaylist();
+};
+const generatePlaylist = async () => {
+  setIsLoading(true);  // Set loading to true when the request starts
+
+  try {
+    const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const responseData = await response.json();
+    console.log('api response:', responseData.playlist.message);
+    setApiResponse(responseData.playlist);
+
+    // Open the modal after the playlist is generated
+    setIsModalOpen(true);
+  } catch (error) {
+    console.error('Error:', error);
+  } finally {
+    setIsLoading(false);  // Set loading to false when the request ends
+  }
+};
+
+
 
 const [countdown, setCountdown] = useState(29);
 
