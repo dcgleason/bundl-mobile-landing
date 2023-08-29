@@ -16,18 +16,25 @@ function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsA
     setToken(json.access_token);
     setIsAuthenticated(true); 
     setIsLoginModalOpen(false);
-  
     setApiCall(true);  // Set loading to true when the request starts
-  
-  
+  };
+
+
+  const handleSpotifyLogin = () => {
+    const clientId = process.env.SPOTIFY_CLIENT_ID;
+    const redirectUri = encodeURIComponent(process.env.SPOTIFY_REDIRECT_URI);
+    const scopes = encodeURIComponent('user-read-private user-read-email');
+    
+    // Redirect to Spotify login
+    window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${scopes}`;
   };
 
   return (
     <div className="App">
 
-        <button className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 z-10 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]" onClick={handleLogin}>
-          Login with Spotify
-        </button>
+    <button className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 z-10 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]" onClick={handleSpotifyLogin}>
+      Login with Spotify
+    </button>
 
     </div>
   );
@@ -200,6 +207,15 @@ useEffect(() => {
   }
   return () => clearTimeout(timer);
 }, [isLoading, countdown]);
+
+useEffect(() => {
+  async function getToken() {
+    const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
+    const json = await response.json();
+    setToken(json.access_token);
+  }
+  getToken();
+}, []);
 
 async function handleSubmit(e) {
   e.preventDefault();
