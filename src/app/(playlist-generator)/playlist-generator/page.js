@@ -174,7 +174,7 @@ async function handleSubmit(e) {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bundl AI Proposal Playlist Generator</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-         (we'll give you the perfect playlist in just a few seconds)
+         (we&apos;ll give you the perfect playlist in just a few seconds)
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
