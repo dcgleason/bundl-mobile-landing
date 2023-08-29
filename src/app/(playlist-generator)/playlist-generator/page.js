@@ -8,7 +8,7 @@ import Image from 'next/image';
 import engagementImage from "/src/images/bundl-engagement.png"
 
 
-function Login({ setToken }) {
+function Login({ setToken, setIsLoginModalOpen,  setIsLoading, setApiResponse, setIsModalOpen }) {
   const handleLogin = async () => {
     // Your logic to get the token goes here
     const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
