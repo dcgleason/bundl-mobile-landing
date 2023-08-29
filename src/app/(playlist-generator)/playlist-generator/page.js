@@ -22,7 +22,7 @@ function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsA
 
   const handleSpotifyLogin = () => {
     const clientId = '059ae809216348fe92b12f856c2a392a';
-    const redirectUri = encodeURIComponent('https://www.givebundl.com');
+    const redirectUri = encodeURIComponent('https://www.givebundl.com/playlist-generator');
     const scopes = encodeURIComponent('user-read-private user-read-email');
     
     // Redirect to Spotify login
