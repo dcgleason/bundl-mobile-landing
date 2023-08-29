@@ -120,7 +120,6 @@ async function handleSubmit(e) {
           <div className="mt-2">
                     <p className="text-sm text-gray-500">
                         <h1>{apiResponse.message}</h1>
-                        <h2>Selected Genre: {apiResponse.selectedGenre}</h2>
                         <ul>
                             {apiResponse && apiResponse.trackIds ? (
                                 apiResponse.trackIds.map((trackId, index) => (
