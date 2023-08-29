@@ -8,7 +8,7 @@ import Image from 'next/image';
 import engagementImage from "/src/images/bundl-engagement.png"
 
 
-function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setFormData }) {
+function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsAuthenticated }) {
   const handleLogin = async () => {
     // Your logic to get the token goes here
     const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
@@ -294,7 +294,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login setToken={setToken} setFormData={setFormData} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen} setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading}/> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
+          { (token === '') ? <Login setToken={setToken} setIsAuthenticated={setIsAuthenticated} setFormData={setFormData} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen} setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading}/> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
 
 
             
@@ -366,7 +366,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setApiCall={setApiCall} setFormData={setFormData}  setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading} />
+          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setFormData={setFormData}  setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading} />
 
             
          </div> 
