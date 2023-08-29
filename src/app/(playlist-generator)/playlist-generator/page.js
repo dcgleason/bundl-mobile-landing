@@ -208,6 +208,7 @@ const exchangeCodeForToken = async (code) => {
 const generatePlaylist = async () => {
   setIsLoading(true);  // Set loading to true when the request starts
 
+  
   try {
     const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
