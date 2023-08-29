@@ -208,6 +208,8 @@ useEffect(() => {
   return () => clearTimeout(timer);
 }, [isLoading, countdown]);
 
+
+
 useEffect(() => {
   async function getToken() {
     const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
