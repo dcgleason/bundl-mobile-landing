@@ -199,7 +199,7 @@ useEffect(() => {
 
 const exchangeCodeForToken = async (code) => {
   try {
-    const response = await fetch('https://yay-api.herokuapp.com/auth/token', {
+    const response = await fetch('https://yay-api.herokuapp.com/login/auth/token', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
