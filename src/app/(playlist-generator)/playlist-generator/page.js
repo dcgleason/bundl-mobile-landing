@@ -254,7 +254,7 @@ async function handleSubmit(e) {
         <button
           type="submit"
           onClick={handleSubmit}
-          className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]"
+          className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 z-10 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]"
           disabled={isLoading} // Disable the button while loading
         >
           {isLoading ? `Generating your proposal idea... T-minus ${countdown}` : 'Generate an awesome proposal idea'}
