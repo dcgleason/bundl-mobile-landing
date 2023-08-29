@@ -125,6 +125,7 @@ const [seedTracks, setSeedTracks] = useState('');
 const [seedGenre, setSeedGenre] = useState('');
 const [additionalInfo, setAdditionalInfo] = useState('');
 const [isModalOpen, setIsModalOpen] = useState(false);
+const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
@@ -156,6 +157,12 @@ useEffect(() => {
 async function handleSubmit(e) {
   e.preventDefault();
 
+  if (token === '') {
+    setIsLoginModalOpen(true);
+    setIsLoading(false);  // Set loading to false
+    return;  // Exit the function early
+  }
+
   const formData = {
     seed_tracks: seedTracks,
     seed_genre: seedGenre,
@@ -168,7 +175,7 @@ async function handleSubmit(e) {
     const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',  
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
     });
@@ -191,7 +198,7 @@ async function handleSubmit(e) {
     <title>Bundl - Proposal Idea Generator</title>
     <meta name="description" content="Bundl - AI Gift Idea Generator" />
   </Head>
-    <Transition show={isModalOpen} as={React.Fragment}>
+  <Transition show={isModalOpen} as={React.Fragment}>
   <Dialog
     as="div"
     className="fixed inset-0 z-50 overflow-y-auto"
@@ -257,6 +264,63 @@ async function handleSubmit(e) {
               Get your Bundl book
             </button>
           </div>
+        </div>
+      </Transition.Child>
+    </div>
+  </Dialog>
+</Transition>
+
+
+<Transition show={isLoginModalOpen} as={React.Fragment}>
+  <Dialog
+    as="div"
+    className="fixed inset-0 z-50 overflow-y-auto"
+    onClose={() => setIsLoginModalOpen(false)}
+  >
+    <div className="min-h-screen px-4 z-50 text-center">
+      <Transition.Child
+        as={React.Fragment}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75" />
+      </Transition.Child>
+
+      {/* This element is to trick the browser into centering the modal contents. */}
+      <span
+        className="inline-block h-screen align-middle"
+        aria-hidden="true"
+      >
+        &#8203;
+      </span>
+
+      <Transition.Child
+        as={React.Fragment}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle bg-white rounded-lg shadow-xl">
+          <Dialog.Title
+            as="h3"
+            className="text-lg font-medium leading-6 text-gray-900"
+          >Login first...
+          </Dialog.Title>
+          <div className="mt-2">
+
+         <Login /> 
+
+            
+         </div> 
+
+  
         </div>
       </Transition.Child>
     </div>
@@ -361,7 +425,7 @@ async function handleSubmit(e) {
           className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 z-10 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]"
           disabled={isLoading} // Disable the button while loading
         >
-          {isLoading ? `Generating your proposal idea... T-minus ${countdown}` : 'Generate an awesome proposal idea'}
+          {isLoading ? `Generating your proposal playlist... T-minus ${countdown}` : 'Generate an awesome proposal idea'}
         </button>
           </div>
       </form>
