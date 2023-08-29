@@ -14,15 +14,16 @@ function Login({ setToken }) {
     const response = await fetch('https://yay-api.herokuapp.com/login/auth/token');
     const json = await response.json();
     setToken(json.access_token);
+    setIsLoginModalOpen(false);
   };
 
   return (
     <div className="App">
-      <header className="App-header">
-        <a className="btn-spotify" onClick={handleLogin}>
+
+        <button className="block w-full rounded-md bg-[#8B0000] px-3.5 py-2.5 z-10 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#f55249] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#f55249]" onClick={handleLogin}>
           Login with Spotify
-        </a>
-      </header>
+        </button>
+
     </div>
   );
 }
@@ -251,7 +252,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login setToken={setToken} /> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
+          { (token === '') ? <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} /> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
 
 
             
@@ -323,7 +324,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-         <Login /> 
+          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} />
 
             
          </div> 
