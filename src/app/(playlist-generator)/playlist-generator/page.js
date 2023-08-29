@@ -8,6 +8,100 @@ import Image from 'next/image';
 import engagementImage from "/src/images/bundl-engagement.png"
 
 
+function Login() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <a className="btn-spotify" href=" https://yay-api.herokuapp.com/login/auth/login">
+          Login with Spotify
+        </a>
+      </header>
+    </div>
+  );
+}
+
+function WebPlayback(props) {
+  const [player, setPlayer] = useState(undefined);
+  const [is_paused, setPaused] = useState(false);
+  const [is_active, setActive] = useState(false);
+  const [current_track, setTrack] = useState({
+    name: "",
+    album: {
+      images: [
+        { url: "" }
+      ]
+    },
+    artists: [
+      { name: "" }
+    ]
+  });
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://sdk.scdn.co/spotify-player.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    window.onSpotifyWebPlaybackSDKReady = () => {
+      const newPlayer = new window.Spotify.Player({
+        name: 'Web Playback SDK',
+        getOAuthToken: cb => { cb(props.token); },
+        volume: 0.5
+      });
+
+      newPlayer.addListener('ready', ({ device_id }) => {
+        console.log('Ready with Device ID', device_id);
+      });
+
+      newPlayer.addListener('not_ready', ({ device_id }) => {
+        console.log('Device ID has gone offline', device_id);
+      });
+
+      newPlayer.addListener('player_state_changed', (state) => {
+        if (!state) {
+          return;
+        }
+
+        setTrack(state.track_window.current_track);
+        setPaused(state.paused);
+
+        newPlayer.getCurrentState().then(state => {
+          (!state) ? setActive(false) : setActive(true);
+        });
+      });
+
+      newPlayer.connect();
+      setPlayer(newPlayer);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="container">
+        <div className="main-wrapper">
+          <img src={current_track.album.images[0]?.url} className="now-playing__cover" alt="" />
+          <div className="now-playing__side">
+            <div className="now-playing__name">{current_track.name}</div>
+            <div className="now-playing__artist">{current_track.artists[0]?.name}</div>
+          </div>
+          <button className="btn-spotify" onClick={() => { player.previousTrack() }} >
+            &lt;&lt;
+          </button>
+          <button className="btn-spotify" onClick={() => { player.togglePlay() }} >
+            {is_paused ? "PLAY" : "PAUSE"}
+          </button>
+          <button className="btn-spotify" onClick={() => { player.nextTrack() }} >
+            &gt;&gt;
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -23,6 +117,17 @@ const [apiResponse, setApiResponse] = useState('');
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
 const [countdown, setCountdown] = useState(29);
+
+const [token, setToken] = useState('');
+
+useEffect(() => {
+  async function getToken() {
+    const response = await fetch(' https://yay-api.herokuapp.com/login/auth/token');
+    const json = await response.json();
+    setToken(json.access_token);
+  }
+  getToken();
+}, []);
 
 useEffect(() => {
   let timer;
@@ -118,7 +223,11 @@ async function handleSubmit(e) {
             Proposal playlist: 
           </Dialog.Title>
           <div className="mt-2">
-                    <p className="text-sm text-gray-500">
+
+          { (token === '') ? <Login /> :   <WebPlayback token={token} />
+ }
+
+                    {/* <p className="text-sm text-gray-500">
                         <h1>{apiResponse.message}</h1>
                         <ul>
                             {apiResponse && apiResponse.trackIds ? (
@@ -138,7 +247,7 @@ async function handleSubmit(e) {
                         frameborder="0" 
                         allowtransparency="true" 
                         allow="encrypted-media">
-                        </iframe>
+                        </iframe> */}
                     </div>
 
           <div className="mt-4 flex justify-between">
