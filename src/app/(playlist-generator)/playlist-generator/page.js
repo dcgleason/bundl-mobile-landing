@@ -227,28 +227,8 @@ async function handleSubmit(e) {
           { (token === '') ? <Login /> :   <WebPlayback token={token} />
  }
 
-                    {/* <p className="text-sm text-gray-500">
-                        <h1>{apiResponse.message}</h1>
-                        <ul>
-                            {apiResponse && apiResponse.trackIds ? (
-                                apiResponse.trackIds.map((trackId, index) => (
-                                <li key={index}>{trackId}</li>
-                                ))
-                            ) : (
-                                <li>Loading...</li>
-                            )}
-                            </ul>
-                    </p>
-                    {/* Embed Spotify Player */}
-                    <iframe 
-                        src={apiResponse && apiResponse.trackIds ? `https://open.spotify.com/embed/track/${apiResponse.trackIds[0].split(":")[2]}` : ''} 
-                        width="300" 
-                        height="380" 
-                        frameborder="0" 
-                        allowtransparency="true" 
-                        allow="encrypted-media">
-                        </iframe> */}
-                    </div>
+            
+                    </div> 
 
           <div className="mt-4 flex justify-between">
             <button
