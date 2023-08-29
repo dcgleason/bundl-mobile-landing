@@ -58,9 +58,8 @@ async function handleSubmit(e) {
 
     const responseData = await response.json();
 
-    console.log('api response:' + responseData.messsage);
-    console.log('response:' + responseData.message);
-    setApiResponse(responseData.message);
+    console.log('api response:', responseData.playlist.message);
+    setApiResponse(responseData.playlist);
     setIsModalOpen(true);
   } catch (error) {
     console.error('Error:', error);
@@ -116,12 +115,17 @@ async function handleSubmit(e) {
             as="h3"
             className="text-lg font-medium leading-6 text-gray-900"
           >
-            Proposal idea: 
+            Proposal playlist: 
           </Dialog.Title>
           <div className="mt-2">
             <p className="text-sm text-gray-500">
-              {/* Replace this with your OpenAI API answer */}
-            {apiResponse}
+            <h1>{apiResponse.message}</h1>
+                <h2>Selected Genre: {apiResponse.selectedGenre}</h2>
+                <ul>
+                {apiResponse.trackIds.map((trackId, index) => (
+                    <li key={index}>{trackId}</li>
+                ))}
+                </ul>
             </p>
           </div>
 
