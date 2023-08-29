@@ -118,16 +118,25 @@ async function handleSubmit(e) {
             Proposal playlist: 
           </Dialog.Title>
           <div className="mt-2">
-            <p className="text-sm text-gray-500">
-            <h1>{apiResponse.message}</h1>
-                <h2>Selected Genre: {apiResponse.selectedGenre}</h2>
-                <ul>
-                {apiResponse.trackIds.map((trackId, index) => (
-                    <li key={index}>{trackId}</li>
-                ))}
-                </ul>
-            </p>
-          </div>
+                    <p className="text-sm text-gray-500">
+                        <h1>{apiResponse.message}</h1>
+                        <h2>Selected Genre: {apiResponse.selectedGenre}</h2>
+                        <ul>
+                        {apiResponse.trackIds.map((trackId, index) => (
+                            <li key={index}>{trackId}</li>
+                        ))}
+                        </ul>
+                    </p>
+                    {/* Embed Spotify Player */}
+                    <iframe 
+                        src={`https://open.spotify.com/embed/track/${apiResponse.trackIds[0].split(":")[2]}`} 
+                        width="300" 
+                        height="380" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                    </div>
 
           <div className="mt-4 flex justify-between">
             <button
