@@ -40,8 +40,8 @@ async function handleSubmit(e) {
   e.preventDefault();
 
   const formData = {
-    seedTracks: meetStory,
-    seedGenre: milestone,
+    seed_tracks: seedTracks,
+    seed_genre: seedGenre,
     additionalInfo: additionalInfo,
   };
 
