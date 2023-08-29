@@ -15,6 +15,36 @@ function Login({ setToken }) {
     const json = await response.json();
     setToken(json.access_token);
     setIsLoginModalOpen(false);
+
+
+    const formData = {
+      seed_tracks: seedTracks,
+      seed_genre: seedGenre,
+      additionalInfo: additionalInfo,
+    };
+  
+    setIsLoading(true);  // Set loading to true when the request starts
+  
+    try {
+      const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      const responseData = await response.json();
+  
+      console.log('api response:', responseData.playlist.message);
+      setApiResponse(responseData.playlist);
+      setIsModalOpen(true);
+    } catch (error) {
+      console.error('Error:', error);
+    } finally {
+      setIsLoading(false);  // Set loading to false when the request ends
+    }
+  
   };
 
   return (
@@ -252,7 +282,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} /> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
+          { (token === '') ? <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading}/> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
 
 
             
@@ -324,7 +354,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} />
+          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen}  setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading} />
 
             
          </div> 
