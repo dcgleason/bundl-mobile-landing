@@ -367,8 +367,6 @@ async function handleSubmit(e) {
           <div className="mt-2">
 
           <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setFormData={setFormData}  setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading} />
-
-            
          </div> 
 
   
