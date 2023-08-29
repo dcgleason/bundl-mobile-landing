@@ -152,6 +152,7 @@ useEffect(() => {
 
   const fetchData = async () => {
     try {
+      setIsLoading(true)
       const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
         method: 'POST',
         headers: {
