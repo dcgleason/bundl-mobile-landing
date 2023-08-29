@@ -213,7 +213,7 @@ async function handleSubmit(e) {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-[#FFFFFF]">
-            Are there any songs you want to incorperate into the proposal moment?
+            What are some recent relationship milestones you have had with your partner?
             </label>
             <div className="mt-2.5">
             <textarea
