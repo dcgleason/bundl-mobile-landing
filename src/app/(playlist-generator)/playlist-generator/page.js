@@ -162,7 +162,7 @@ useEffect(() => {
       });
 
       const responseData = await response.json();
-      console.log('api response:', responseData.playlist.message);
+      console.log('api response:', responseData.playlist);
       setApiResponse(responseData.playlist);
       setIsModalOpen(true);
     } catch (error) {
@@ -238,7 +238,7 @@ const generatePlaylist = async () => {
     });
 
     const responseData = await response.json();
-    console.log('api response:', responseData.playlist.message);
+    console.log('api response:', responseData.playlist);
     setApiResponse(responseData.playlist);
 
     // Open the modal after the playlist is generated
@@ -312,7 +312,7 @@ async function handleSubmit(e) {
 
     const responseData = await response.json();
 
-    console.log('api response:', responseData.playlist.message);
+    console.log('api response:', responseData.playlist);
     setApiResponse(responseData.playlist);
     setIsModalOpen(true);
   } catch (error) {
