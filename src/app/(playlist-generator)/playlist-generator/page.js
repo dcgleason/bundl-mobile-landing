@@ -288,6 +288,7 @@ const generatePlaylist = async () => {
     }
 
     const responseData = await response.json();
+    console.log('responsedata.playlist' + responseData.playlist)
     setApiResponse(responseData.playlist);
     setIsModalOpen(true);
   } catch (error) {
@@ -433,7 +434,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={urlParams.get('access_token')} playlistId={apiResponse.playlistId} /> : null }
+          { (urlParams.get('access_token')) ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={urlParams.get('access_token')} playlistId={apiResponse.playlistId} /> : null }
 
 
             
