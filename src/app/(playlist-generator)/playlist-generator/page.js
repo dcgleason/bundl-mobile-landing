@@ -145,6 +145,9 @@ const [isLoading, setIsLoading] = useState(false);  // New state variable
 const [formData, setFormData] = useState({})
 const [apiCall, setApiCall ] = useState(false)
 const [isAuthenticated, setIsAuthenticated] = useState(false);
+const [accessToken, setAccessToken] = useState(false);
+
+
 
 
 // useEffect(() => {
@@ -191,6 +194,7 @@ useEffect(() => {
      setSeedTracks(savedFormData.seed_tracks);
      setSeedGenre(savedFormData.seed_genre)
      setAdditionalInfo(savedFormData.additionalInfo)
+     setAccessToken(access_token)
     }
 
     // Kick off the API call to generate the playlist
@@ -231,6 +235,10 @@ const generatePlaylist = async () => {
   let currentSeedTracks = seedTracks;
   let currentSeedGenre = seedGenre;
   let currentAdditionalInfo = additionalInfo
+  let currentAccessToken = accessToken
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const access_token = urlParams.get('access_token');
   
   if (savedFormData) {
     setSeedTracks(savedFormData.seed_tracks);
@@ -239,6 +247,9 @@ const generatePlaylist = async () => {
     currentSeedTracks = savedFormData.seed_tracks;
     currentSeedGenre = savedFormData.seed_genre;
     currentAdditionalInfo = savedFormData.additionalInfo
+    currentAccessToken = access_token
+
+
   }
   
   if (!currentSeedTracks || !currentSeedGenre) {
@@ -253,7 +264,7 @@ const generatePlaylist = async () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ seed_genre: currentSeedGenre, seed_tracks: currentSeedTracks, additionalInfo: currentAdditionalInfo }),
+      body: JSON.stringify({ seed_genre: currentSeedGenre, seed_tracks: currentSeedTracks, additionalInfo: currentAdditionalInfo, access_token: currentAccessToken }),
     });
 
     if (!response.ok) {
