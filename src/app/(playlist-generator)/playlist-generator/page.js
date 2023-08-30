@@ -360,7 +360,7 @@ async function handleSubmit(e) {
 
   // Get access_token from URL
   const urlParams = new URLSearchParams(window.location.search);
-  const currentAccessToken = urlParams.get('access_token');
+  const currentAccessToken = urlParams.get('access_token') || accessToken;
 
   // Get saved form data from local storage
   const savedFormData = JSON.parse(localStorage.getItem('formData')) || {};
