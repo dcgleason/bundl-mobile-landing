@@ -456,9 +456,9 @@ async function handleSubmit(e) {
           <div className="mt-2">
             { tokenReady ? (
               accessToken ? 
-                <Login /* your props here */ /> : 
-                (apiResponse && apiResponse.playlistId) ? 
-                  <WebPlayback /* your props here */ /> : 
+                <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} /> :  
+                  <WebPlayback token={accessToken} playlistId={apiResponse.playlistId} />
+                  /> : 
                   null
             ) : (
               <p>Loading...</p>
