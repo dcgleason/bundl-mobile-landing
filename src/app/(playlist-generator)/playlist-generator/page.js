@@ -394,8 +394,8 @@ async function handleSubmit(e) {
     }
 
     const responseData = await response.json();
-    console.log('api response ' + responseData.playlist)
-    setApiResponse(responseData.playlist);
+    console.log('api response ' + responseData.playlistId)
+    setApiResponse(responseData.playlistId);
     setIsModalOpen(true);
   } catch (error) {
     console.error('Error:', error);
@@ -457,7 +457,7 @@ async function handleSubmit(e) {
           {tokenReady ? (
             accessToken ? 
               <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} /> :  
-              <WebPlayback token={accessToken} playlistId={apiResponse.playlistId} />
+              <WebPlayback token={'BQCKWF9Dv4zdp8G6lXznQ-sGdtsoXulqviPCeAdukCnCwYfuX-CqJtreQmdKKi63p7BMTIiV4aYl3RPP5Avnf6iAHK8sgGh3B38LXBxlzTZx68xKXdb7B32FLT8H0Li4Lv5JszIyDsoWLNikUDgDUApPaZPm4f_t-X8vnm0crF6wvpcD2rWZY3tlKnaM06KyO4JTwJFn'} playlistId={apiResponse.playlistId} />
           ) : (
             <p>Loading...</p>
           )}
