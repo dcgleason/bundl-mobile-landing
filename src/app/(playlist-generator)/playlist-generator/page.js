@@ -225,40 +225,36 @@ const exchangeCodeForToken = async (code) => {
     console.error('Error:', error);
   }
 };
-
 const generatePlaylist = async () => {
-  setIsLoading(true);  // Set loading to true when the request starts
-
-
-  const formData = {
-    seed_genre: seedGenre,
-    seed_tracks: seedTracks,
-    additionalInfo: additionalInfo
+  if (!seedTracks || !seedGenre) {
+    console.error('Missing seedTracks or seedGenre');
+    return;
   }
 
+  setIsLoading(true);
   try {
-
-
     const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({ seed_genre: seedGenre, seed_tracks: seedTracks, additionalInfo: additionalInfo }),
     });
 
-    const responseData = await response.json();
-    console.log('api response:', responseData.playlist);
-    setApiResponse(responseData.playlist);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
 
-    // Open the modal after the playlist is generated
+    const responseData = await response.json();
+    setApiResponse(responseData.playlist);
     setIsModalOpen(true);
   } catch (error) {
     console.error('Error:', error);
   } finally {
-    setIsLoading(false);  // Set loading to false when the request ends
+    setIsLoading(false);
   }
 };
+
 
 
 
