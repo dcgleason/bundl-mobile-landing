@@ -187,8 +187,9 @@ useEffect(() => {
     // Retrieve formData from local storage
     const savedFormData = JSON.parse(localStorage.getItem('formData'));
     if (savedFormData) {
-      // Populate your form fields here
-      // For example: setSeedTracks(savedFormData.seed_tracks);
+     setSeedTracks(savedFormData.seed_tracks);
+     setSeedGenre(savedFormData.seed_genre)
+     setAdditionalInfo(savedFormData.additionalInfo)
     }
 
     // Kick off the API call to generate the playlist
