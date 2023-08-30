@@ -166,7 +166,6 @@ useEffect(() => {
   }
 }, [access_token]);
 
-}
 
 
 // useEffect(() => {
