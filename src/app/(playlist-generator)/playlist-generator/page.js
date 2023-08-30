@@ -183,7 +183,14 @@ useEffect(() => {
     console.log("Access token is " + access_token);
     setToken(access_token);
     setIsAuthenticated(true);
-  
+
+    // Retrieve formData from local storage
+    const savedFormData = JSON.parse(localStorage.getItem('formData'));
+    if (savedFormData) {
+      // Populate your form fields here
+      // For example: setSeedTracks(savedFormData.seed_tracks);
+    }
+
     // Kick off the API call to generate the playlist
     generatePlaylist();
   }
@@ -273,22 +280,24 @@ useEffect(() => {
 }, [isLoading, countdown]);
 
 
-
-
 async function handleSubmit(e) {
   e.preventDefault();
-
-  if (token === '') {
-    setIsLoginModalOpen(true);
-    setIsLoading(false);  // Set loading to false
-    return;  // Exit the function early
-  }
 
   const formData = {
     seed_tracks: seedTracks,
     seed_genre: seedGenre,
     additionalInfo: additionalInfo,
   };
+
+  // Save formData to local storage
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+  if (token === '') {
+    setIsLoginModalOpen(true);
+    setIsLoading(false);
+    return;
+  }
+
 
   setIsLoading(true);  // Set loading to true when the request starts
 
