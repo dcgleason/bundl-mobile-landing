@@ -216,6 +216,8 @@ useEffect(() => {
     console.log("Access token is " + access_token);
     setAccessToken(access_token);
     setIsAuthenticated(true);
+        // Kick off the API call to generate the playlist
+     generatePlaylist();
 
     // Retrieve formData from local storage
     const savedFormData = JSON.parse(localStorage.getItem('formData'));
@@ -227,8 +229,7 @@ useEffect(() => {
      setAccessToken(access_token)
     }
 
-    // Kick off the API call to generate the playlist
-    generatePlaylist();
+
   }
 }, []);
 
@@ -261,6 +262,10 @@ const exchangeCodeForToken = async (code) => {
 };
 
 const generatePlaylist = async () => {
+  if (!accessToken || !isAuthenticated) {
+    console.log("Token not ready or not authenticated");
+    return;
+  }
   const savedFormData = JSON.parse(localStorage.getItem('formData'));
   let currentSeedTracks = seedTracks;
   let currentSeedGenre = seedGenre;
