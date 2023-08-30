@@ -152,7 +152,7 @@ const [isAuthenticated, setIsAuthenticated] = useState(false);
 const [accessToken, setAccessToken] = useState('');
 
 const [tokenReady, setTokenReady] = useState(false);
-
+const webaccestoken = 'BQCKWF9Dv4zdp8G6lXznQ-sGdtsoXulqviPCeAdukCnCwYfuX-CqJtreQmdKKi63p7BMTIiV4aYl3RPP5Avnf6iAHK8sgGh3B38LXBxlzTZx68xKXdb7B32FLT8H0Li4Lv5JszIyDsoWLNikUDgDUApPaZPm4f_t-X8vnm0crF6wvpcD2rWZY3tlKnaM06KyO4JTwJFn'
 let access_token;
 if (typeof window !== 'undefined') {
   const urlParams = new URLSearchParams(window.location.search);
@@ -457,7 +457,7 @@ async function handleSubmit(e) {
           {tokenReady ? (
             accessToken ? 
               <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} /> :  
-              <WebPlayback token={'BQCKWF9Dv4zdp8G6lXznQ-sGdtsoXulqviPCeAdukCnCwYfuX-CqJtreQmdKKi63p7BMTIiV4aYl3RPP5Avnf6iAHK8sgGh3B38LXBxlzTZx68xKXdb7B32FLT8H0Li4Lv5JszIyDsoWLNikUDgDUApPaZPm4f_t-X8vnm0crF6wvpcD2rWZY3tlKnaM06KyO4JTwJFn'} playlistId={apiResponse.playlistId} />
+              <WebPlayback token={webaccestoken} playlistId={apiResponse.playlistId} />
           ) : (
             <p>Loading...</p>
           )}
