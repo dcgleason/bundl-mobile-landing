@@ -151,6 +151,9 @@ const [apiCall, setApiCall ] = useState(false)
 const [isAuthenticated, setIsAuthenticated] = useState(false);
 const [accessToken, setAccessToken] = useState(false);
 
+const urlParams = new URLSearchParams(window.location.search);
+const access_token = urlParams.get('access_token');
+
 
 
 
@@ -436,7 +439,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (urlParams.get('access_token')) ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={urlParams.get('access_token')} playlistId={apiResponse.playlistId} /> : null }
+          { access_token ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={access_token} playlistId={apiResponse.playlistId} /> : null }
 
 
             
