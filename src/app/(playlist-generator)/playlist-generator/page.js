@@ -152,12 +152,11 @@ const [isAuthenticated, setIsAuthenticated] = useState(false);
 const [accessToken, setAccessToken] = useState(false);
 
 
-useEffect(() => {
+let access_token;
+if (typeof window !== 'undefined') {
   const urlParams = new URLSearchParams(window.location.search);
-  const access_token = urlParams.get('access_token');
-  // Your logic here
-}, []);
-
+  access_token = urlParams.get('access_token');
+}
 
 
 // useEffect(() => {
