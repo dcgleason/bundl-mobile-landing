@@ -454,16 +454,15 @@ async function handleSubmit(e) {
             Proposal playlist: 
           </Dialog.Title>
           <div className="mt-2">
-            { tokenReady ? (
-              accessToken ? 
-                <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} /> :  
-                  <WebPlayback token={accessToken} playlistId={apiResponse.playlistId} />
-                  /> : 
-                  null
-            ) : (
-              <p>Loading...</p>
-            )}
-          </div>
+          {tokenReady ? (
+            accessToken ? 
+              <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} /> :  
+              <WebPlayback token={accessToken} playlistId={apiResponse.playlistId} />
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
+
 
           <div className="mt-4 flex justify-between">
             <button
