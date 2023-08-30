@@ -433,7 +433,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={token} playlistId={apiResponse.playlistId} /> : null }
+          { (token === '') ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={urlParams.get('access_token')} playlistId={apiResponse.playlistId} /> : null }
 
 
             
