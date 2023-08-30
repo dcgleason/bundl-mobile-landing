@@ -177,12 +177,15 @@ useEffect(() => {
 
 useEffect(() => {
   const urlParams = new URLSearchParams(window.location.search);
-  const code = urlParams.get('code');
+  const access_token = urlParams.get('access_token');
   
-  if (code) {
-    console.log("code is " + code)
-    // Exchange the code for an access token and kick off the API call
-    exchangeCodeForToken(code);
+  if (access_token) {
+    console.log("Access token is " + access_token);
+    setToken(access_token);
+    setIsAuthenticated(true);
+  
+    // Kick off the API call to generate the playlist
+    generatePlaylist();
   }
 }, []);
 
