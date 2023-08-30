@@ -182,6 +182,18 @@ const [accessToken, setAccessToken] = useState(false);
 //   fetchData();
 // }, [apiCall, isAuthenticated]); // Make sure apiCall is defined
 
+  // This useEffect runs when the component mounts
+  useEffect(() => {
+    // Check if there's saved form data in localStorage
+    const savedFormData = localStorage.getItem('formData');
+    if (savedFormData) {
+      const { seedTracks, seedGenre, additionalInfo } = JSON.parse(savedFormData);
+      setSeedTracks(seedTracks);
+      setSeedGenre(seedGenre);
+      setAdditionalInfo(additionalInfo);
+    }
+  }, []);
+
 useEffect(() => {
   const urlParams = new URLSearchParams(window.location.search);
   const access_token = urlParams.get('access_token');
