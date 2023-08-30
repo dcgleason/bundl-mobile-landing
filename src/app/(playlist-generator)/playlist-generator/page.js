@@ -147,33 +147,33 @@ const [apiCall, setApiCall ] = useState(false)
 const [isAuthenticated, setIsAuthenticated] = useState(false);
 
 
-useEffect(() => {
-  if (!isAuthenticated) return; // Exit if not authenticated
+// useEffect(() => {
+//   if (!isAuthenticated) return; // Exit if not authenticated
 
-  const fetchData = async () => {
-    try {
-      setIsLoading(true)
-      const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+//   const fetchData = async () => {
+//     try {
+//       setIsLoading(true)
+//       const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(formData),
+//       });
 
-      const responseData = await response.json();
-      console.log('api response:', responseData.playlist);
-      setApiResponse(responseData.playlist);
-      setIsModalOpen(true);
-    } catch (error) {
-      console.error('Error:', error);
-    } finally {
-      setIsLoading(false);  // Set loading to false when the request ends
-    }
-  };
+//       const responseData = await response.json();
+//       console.log('api response:', responseData.playlist);
+//       setApiResponse(responseData.playlist);
+//       setIsModalOpen(true);
+//     } catch (error) {
+//       console.error('Error:', error);
+//     } finally {
+//       setIsLoading(false);  // Set loading to false when the request ends
+//     }
+//   };
 
-  fetchData();
-}, [apiCall, isAuthenticated]); // Make sure apiCall is defined
+//   fetchData();
+// }, [apiCall, isAuthenticated]); // Make sure apiCall is defined
 
 useEffect(() => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -187,6 +187,7 @@ useEffect(() => {
     // Retrieve formData from local storage
     const savedFormData = JSON.parse(localStorage.getItem('formData'));
     if (savedFormData) {
+      console.log('savedform data' + savedFormData.seed_tracks)
      setSeedTracks(savedFormData.seed_tracks);
      setSeedGenre(savedFormData.seed_genre)
      setAdditionalInfo(savedFormData.additionalInfo)
