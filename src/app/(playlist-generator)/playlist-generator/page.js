@@ -11,6 +11,9 @@ import engagementImage from "/src/images/bundl-engagement.png"
 function Login({ setIsLoginModalOpen, setApiCall, setIsAuthenticated }) {
 
   const handleSpotifyLogin = () => {
+
+    localStorage.setItem('formData', JSON.stringify({ seedTracks, seedGenre, additionalInfo }));
+
     const clientId = '059ae809216348fe92b12f856c2a392a';
     const redirectUri = encodeURIComponent('https://yay-api.herokuapp.com/login/auth/callback'); // Changed to /auth/callback
     const scopes = encodeURIComponent('user-read-private user-read-email playlist-modify-private');
@@ -22,7 +25,7 @@ function Login({ setIsLoginModalOpen, setApiCall, setIsAuthenticated }) {
     setApiCall(true);
   };
 
-  
+
   return (
     <div className="App">
 
