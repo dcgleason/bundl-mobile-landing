@@ -226,6 +226,14 @@ const exchangeCodeForToken = async (code) => {
   }
 };
 const generatePlaylist = async () => {
+
+  const savedFormData = JSON.parse(localStorage.getItem('formData'));
+  if (savedFormData) {
+    setSeedTracks(savedFormData.seed_tracks);
+    setSeedGenre(savedFormData.seed_genre);
+    setAdditionalInfo(savedFormData.additionalInfo);
+  }
+  
   if (!seedTracks || !seedGenre) {
     console.error('Missing seedTracks or seedGenre');
     return;
