@@ -149,13 +149,23 @@ const [isLoading, setIsLoading] = useState(false);  // New state variable
 const [formData, setFormData] = useState({})
 const [apiCall, setApiCall ] = useState(false)
 const [isAuthenticated, setIsAuthenticated] = useState(false);
-const [accessToken, setAccessToken] = useState(false);
+const [accessToken, setAccessToken] = useState(null);
 
+const [tokenReady, setTokenReady] = useState(false);
 
 let access_token;
 if (typeof window !== 'undefined') {
   const urlParams = new URLSearchParams(window.location.search);
   access_token = urlParams.get('access_token');
+}
+
+useEffect(() => {
+  if (access_token) {
+    setAccessToken(access_token);
+    setTokenReady(true);
+  }
+}, [access_token]);
+
 }
 
 
@@ -205,7 +215,7 @@ useEffect(() => {
   
   if (access_token) {
     console.log("Access token is " + access_token);
-    setToken(access_token);
+    setAccessToken(access_token);
     setIsAuthenticated(true);
 
     // Retrieve formData from local storage
@@ -240,7 +250,7 @@ const exchangeCodeForToken = async (code) => {
     const access_token = json.access_token;
 
     if (access_token) {
-      setToken(access_token);
+      setAccessToken(access_token);
       setIsAuthenticated(true);
   
       // Kick off the API call to generate the playlist
@@ -309,7 +319,6 @@ const generatePlaylist = async () => {
 
 const [countdown, setCountdown] = useState(29);
 
-const [token, setToken] = useState('');
 
 // useEffect(() => {
 //   async function getToken() {
@@ -440,12 +449,16 @@ async function handleSubmit(e) {
             Proposal playlist: 
           </Dialog.Title>
           <div className="mt-2">
-
-          { access_token ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={access_token} playlistId={apiResponse.playlistId} /> : null }
-
-
-            
-                    </div> 
+            { tokenReady ? (
+              accessToken ? 
+                <Login /* your props here */ /> : 
+                (apiResponse && apiResponse.playlistId) ? 
+                  <WebPlayback /* your props here */ /> : 
+                  null
+            ) : (
+              <p>Loading...</p>
+            )}
+          </div>
 
           <div className="mt-4 flex justify-between">
             <button
@@ -513,7 +526,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall}  />
+          <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall}  />
          </div> 
 
   
