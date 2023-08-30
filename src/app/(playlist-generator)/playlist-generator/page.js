@@ -229,7 +229,6 @@ const exchangeCodeForToken = async (code) => {
 const generatePlaylist = async () => {
   setIsLoading(true);  // Set loading to true when the request starts
 
-  console.log('form data is ' + formData)
 
   const formData = {
     seed_genre: seedGenre,
