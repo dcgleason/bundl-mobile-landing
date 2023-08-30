@@ -151,9 +151,12 @@ const [apiCall, setApiCall ] = useState(false)
 const [isAuthenticated, setIsAuthenticated] = useState(false);
 const [accessToken, setAccessToken] = useState(false);
 
-const urlParams = new URLSearchParams(window.location.search);
-const access_token = urlParams.get('access_token');
 
+useEffect(() => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const access_token = urlParams.get('access_token');
+  // Your logic here
+}, []);
 
 
 
