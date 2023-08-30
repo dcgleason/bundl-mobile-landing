@@ -8,7 +8,7 @@ import Image from 'next/image';
 import engagementImage from "/src/images/bundl-engagement.png"
 
 
-function Login({ setIsLoginModalOpen, setApiCall, setIsAuthenticated }) {
+function Login({ seedTracks, seedGenre, additionalInfo, setIsLoginModalOpen, setApiCall, setIsAuthenticated }) {
 
   const handleSpotifyLogin = () => {
 
@@ -421,7 +421,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={token} playlistId={apiResponse.playlistId} /> : null }
+          { (token === '') ? <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={token} playlistId={apiResponse.playlistId} /> : null }
 
 
             
