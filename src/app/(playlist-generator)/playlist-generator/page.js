@@ -149,7 +149,7 @@ const [isLoading, setIsLoading] = useState(false);  // New state variable
 const [formData, setFormData] = useState({})
 const [apiCall, setApiCall ] = useState(false)
 const [isAuthenticated, setIsAuthenticated] = useState(false);
-const [accessToken, setAccessToken] = useState(null);
+const [accessToken, setAccessToken] = useState('');
 
 const [tokenReady, setTokenReady] = useState(false);
 
@@ -389,6 +389,7 @@ async function handleSubmit(e) {
     }
 
     const responseData = await response.json();
+    console.log('api response ' + responseData.playlist)
     setApiResponse(responseData.playlist);
     setIsModalOpen(true);
   } catch (error) {
