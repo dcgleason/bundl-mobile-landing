@@ -456,7 +456,7 @@ async function handleSubmit(e) {
           <div className="mt-2">
           {tokenReady ? (
             accessToken ? 
-              <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setAccessToken={setAccessToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} /> :  
+              <div>Check your Spotify!</div> :  
               <WebPlayback token={webaccestoken} playlistId={apiResponse.playlistId} />
           ) : (
             <p>Loading...</p>
