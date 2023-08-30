@@ -13,7 +13,7 @@ function Login({ setIsLoginModalOpen, setApiCall, setIsAuthenticated }) {
   const handleSpotifyLogin = () => {
     const clientId = '059ae809216348fe92b12f856c2a392a';
     const redirectUri = encodeURIComponent('https://yay-api.herokuapp.com/login/auth/callback'); // Changed to /auth/callback
-    const scopes = encodeURIComponent('user-read-private user-read-email');
+    const scopes = encodeURIComponent('user-read-private user-read-email playlist-modify-private');
     
     // Redirect to Spotify login
     window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${scopes}`;
