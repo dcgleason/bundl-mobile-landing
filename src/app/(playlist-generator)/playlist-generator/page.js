@@ -10,10 +10,9 @@ import engagementImage from "/src/images/bundl-engagement.png"
 
 function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsAuthenticated }) {
 
-
   const handleSpotifyLogin = () => {
     const clientId = '059ae809216348fe92b12f856c2a392a';
-    const redirectUri = encodeURIComponent('https://yay-api.herokuapp.com/login/auth/login');
+    const redirectUri = encodeURIComponent('https://yay-api.herokuapp.com/login/auth/callback'); // Changed to /auth/callback
     const scopes = encodeURIComponent('user-read-private user-read-email');
     
     // Redirect to Spotify login
