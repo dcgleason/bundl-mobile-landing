@@ -347,7 +347,7 @@ async function handleSubmit(e) {
   e.preventDefault();
 
   // If token is empty, show login modal and exit
-  if (token === '') {
+  if (accessToken === '') {
     setIsLoginModalOpen(true);
     setIsLoading(false);
     return;
