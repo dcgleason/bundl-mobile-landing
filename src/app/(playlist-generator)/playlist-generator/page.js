@@ -493,7 +493,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall}  />
+          <Login seedGenre={seedGenre} additionalInfo={additionalInfo} seedTracks={seedTracks} setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall}  />
          </div> 
 
   
