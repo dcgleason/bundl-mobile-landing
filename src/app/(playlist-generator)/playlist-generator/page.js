@@ -314,42 +314,55 @@ useEffect(() => {
 async function handleSubmit(e) {
   e.preventDefault();
 
-  const formData = {
-    seed_tracks: seedTracks,
-    seed_genre: seedGenre,
-    additionalInfo: additionalInfo,
-  };
-
-  // Save formData to local storage
-  localStorage.setItem('formData', JSON.stringify(formData));
-
+  // If token is empty, show login modal and exit
   if (token === '') {
     setIsLoginModalOpen(true);
     setIsLoading(false);
     return;
   }
 
+  // Get access_token from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentAccessToken = urlParams.get('access_token');
 
-  setIsLoading(true);  // Set loading to true when the request starts
-console.log('form data form submti'+ formData);
+  // Get saved form data from local storage
+  const savedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+
+  // Use saved data if available, else use current form data
+  const currentSeedTracks = savedFormData.seed_tracks || seedTracks;
+  const currentSeedGenre = savedFormData.seed_genre || seedGenre;
+  const currentAdditionalInfo = savedFormData.additionalInfo || additionalInfo;
+
+  // Save current form data to local storage
+  localStorage.setItem('formData', JSON.stringify({ seed_tracks: currentSeedTracks, seed_genre: currentSeedGenre, additionalInfo: currentAdditionalInfo }));
+
+  // Validate required fields
+  if (!currentSeedTracks || !currentSeedGenre) {
+    console.error('Missing seedTracks or seedGenre');
+    return;
+  }
+
+  setIsLoading(true);
   try {
     const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({ seed_genre: currentSeedGenre, seed_tracks: currentSeedTracks, additionalInfo: currentAdditionalInfo, access_token: currentAccessToken }),
     });
 
-    const responseData = await response.json();
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
 
-    console.log('api response:', responseData.playlist);
+    const responseData = await response.json();
     setApiResponse(responseData.playlist);
     setIsModalOpen(true);
   } catch (error) {
     console.error('Error:', error);
   } finally {
-    setIsLoading(false);  // Set loading to false when the request ends
+    setIsLoading(false);
   }
 }
 
