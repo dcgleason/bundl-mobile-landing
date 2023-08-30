@@ -225,16 +225,21 @@ const exchangeCodeForToken = async (code) => {
     console.error('Error:', error);
   }
 };
-const generatePlaylist = async () => {
 
+const generatePlaylist = async () => {
   const savedFormData = JSON.parse(localStorage.getItem('formData'));
+  let currentSeedTracks = seedTracks;
+  let currentSeedGenre = seedGenre;
+  
   if (savedFormData) {
     setSeedTracks(savedFormData.seed_tracks);
     setSeedGenre(savedFormData.seed_genre);
     setAdditionalInfo(savedFormData.additionalInfo);
+    currentSeedTracks = savedFormData.seed_tracks;
+    currentSeedGenre = savedFormData.seed_genre;
   }
   
-  if (!seedTracks || !seedGenre) {
+  if (!currentSeedTracks || !currentSeedGenre) {
     console.error('Missing seedTracks or seedGenre');
     return;
   }
@@ -246,7 +251,7 @@ const generatePlaylist = async () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ seed_genre: seedGenre, seed_tracks: seedTracks, additionalInfo: additionalInfo }),
+      body: JSON.stringify({ seed_genre: currentSeedGenre, seed_tracks: currentSeedTracks, additionalInfo: additionalInfo }),
     });
 
     if (!response.ok) {
@@ -262,7 +267,6 @@ const generatePlaylist = async () => {
     setIsLoading(false);
   }
 };
-
 
 
 
