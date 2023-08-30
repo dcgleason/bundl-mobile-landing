@@ -8,7 +8,7 @@ import Image from 'next/image';
 import engagementImage from "/src/images/bundl-engagement.png"
 
 
-function Login({ setToken, setIsLoginModalOpen,  setFormData, setApiCall, setIsAuthenticated }) {
+function Login({ setIsLoginModalOpen, setApiCall, setIsAuthenticated }) {
 
   const handleSpotifyLogin = () => {
     const clientId = '059ae809216348fe92b12f856c2a392a';
@@ -310,7 +310,7 @@ async function handleSubmit(e) {
 
 
   setIsLoading(true);  // Set loading to true when the request starts
-
+console.log('form data form submti'+ formData);
   try {
     const response = await fetch('https://yay-api.herokuapp.com/openai/create-playlist', {
       method: 'POST',
@@ -383,7 +383,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          { (token === '') ? <Login setToken={setToken} setIsAuthenticated={setIsAuthenticated} setFormData={setFormData} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen} setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading}/> : <WebPlayback token={token} playlistId={apiResponse.playlistId} /> }
+          { (token === '') ? <Login setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setIsLoginModalOpen={setIsLoginModalOpen}  setApiResponse={setApiResponse} /> : (apiResponse && apiResponse.playlistId) ? <WebPlayback token={token} playlistId={apiResponse.playlistId} /> : null }
 
 
             
@@ -455,7 +455,7 @@ async function handleSubmit(e) {
           </Dialog.Title>
           <div className="mt-2">
 
-          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall} setFormData={setFormData}  setIsModalOpen={setIsModalOpen} setApiResponse={setApiResponse} setIsLoading={setIsLoading} />
+          <Login setToken={setToken} setIsLoginModalOpen={setIsLoginModalOpen} setIsAuthenticated={setIsAuthenticated} setApiCall={setApiCall}  />
          </div> 
 
   
