@@ -230,6 +230,7 @@ const generatePlaylist = async () => {
   const savedFormData = JSON.parse(localStorage.getItem('formData'));
   let currentSeedTracks = seedTracks;
   let currentSeedGenre = seedGenre;
+  let currentAdditionalInfo = additionalInfo
   
   if (savedFormData) {
     setSeedTracks(savedFormData.seed_tracks);
@@ -237,6 +238,7 @@ const generatePlaylist = async () => {
     setAdditionalInfo(savedFormData.additionalInfo);
     currentSeedTracks = savedFormData.seed_tracks;
     currentSeedGenre = savedFormData.seed_genre;
+    currentAdditionalInfo = savedFormData.additionalInfo
   }
   
   if (!currentSeedTracks || !currentSeedGenre) {
@@ -251,7 +253,7 @@ const generatePlaylist = async () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ seed_genre: currentSeedGenre, seed_tracks: currentSeedTracks, additionalInfo: additionalInfo }),
+      body: JSON.stringify({ seed_genre: currentSeedGenre, seed_tracks: currentSeedTracks, additionalInfo: currentAdditionalInfo }),
     });
 
     if (!response.ok) {
