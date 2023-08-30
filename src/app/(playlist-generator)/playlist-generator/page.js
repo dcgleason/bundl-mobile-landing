@@ -247,16 +247,16 @@ const [countdown, setCountdown] = useState(29);
 
 const [token, setToken] = useState('');
 
-useEffect(() => {
-  async function getToken() {
-    const response = await fetch(' https://yay-api.herokuapp.com/login/auth/token');
-    const json = await response.json();
-    setToken(json.access_token);
-  }
-  if(!token){
-  getToken();
-  }
-}, [isAuthenticated]);
+// useEffect(() => {
+//   async function getToken() {
+//     const response = await fetch(' https://yay-api.herokuapp.com/login/auth/token');
+//     const json = await response.json();
+//     setToken(json.access_token);
+//   }
+//   if(!token){
+//   getToken();
+//   }
+// }, [isAuthenticated]);
 
 useEffect(() => {
   let timer;
