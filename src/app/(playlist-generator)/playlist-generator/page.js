@@ -167,10 +167,13 @@ useEffect(() => {
 }, [access_token]);
 
 useEffect(() => {
+
+  if(!access_token){
   // Trigger Spotify login when the component mounts
   if (!isAuthenticated && accessToken === '') {
     setIsLoginModalOpen(true);
   }
+}
 }, []);
 
 
