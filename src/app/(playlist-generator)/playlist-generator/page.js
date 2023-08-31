@@ -166,6 +166,12 @@ useEffect(() => {
   }
 }, [access_token]);
 
+useEffect(() => {
+  // Trigger Spotify login when the component mounts
+  if (!isAuthenticated && accessToken === '') {
+    setIsLoginModalOpen(true);
+  }
+}, []);
 
 
 // useEffect(() => {
@@ -451,7 +457,7 @@ async function handleSubmit(e) {
             as="h3"
             className="text-lg font-medium leading-6 text-gray-900"
           >
-            Proposal playlist: 
+            Your Custom Proposal Playlist: 
           </Dialog.Title>
           <div className="mt-2">
           {tokenReady ? (
