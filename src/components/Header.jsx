@@ -111,7 +111,7 @@ export function Header() {
                               FAQs
                             </MobileNavLink>
                             <MobileNavLink href="/idea-generator">Free Custom Proposal Ideas</MobileNavLink>
-                            <MobileNavLink href="/playlist-generator">Free Proposal Playlist Generator</MobileNavLink>
+                            {/* <MobileNavLink href="/playlist-generator">Free Proposal Playlist Generator</MobileNavLink> */}
 
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
