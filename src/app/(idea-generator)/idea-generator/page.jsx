@@ -136,11 +136,11 @@ async function handleSubmit(e) {
             as="h3"
             className="text-lg font-medium leading-6 text-gray-900"
           >
-            Proposal idea: 
+            Your ideas: 
           </Dialog.Title>
           <div className="mt-2 flex">
             <div className="w-1/2 pr-2">
-              <h2>Proposal Idea without Bundl book</h2>
+              <h2>Proposal Idea 1</h2>
               <p className="text-sm text-gray-500">
                 {/* Replace this with your API answer for without Bundl */}
                 {apiWithout}
@@ -148,7 +148,7 @@ async function handleSubmit(e) {
             </div>
             <div className="border-l-2 border-gray-300 h-full"></div>
             <div className="w-1/2 pl-2">
-              <h2>Proposal Idea with Bundl book</h2>
+              <h2>Proposal Idea 2</h2>
               <p className="text-sm text-gray-500">
                 {/* Replace this with your API answer for with Bundl */}
                 {apiResponse}
