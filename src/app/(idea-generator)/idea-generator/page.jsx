@@ -143,7 +143,7 @@ async function handleSubmit(e) {
               <h2>Proposal Idea without Bundl book</h2>
               <p className="text-sm text-gray-500">
                 {/* Replace this with your API answer for without Bundl */}
-                {apiResponse.ideaWithoutBundl}
+                {apiWithout}
               </p>
             </div>
             <div className="border-l-2 border-gray-300 h-full"></div>
@@ -151,7 +151,7 @@ async function handleSubmit(e) {
               <h2>Proposal Idea with Bundl book</h2>
               <p className="text-sm text-gray-500">
                 {/* Replace this with your API answer for with Bundl */}
-                {apiResponse.ideaWithBundl}
+                {apiResponse}
               </p>
             </div>
           </div>
