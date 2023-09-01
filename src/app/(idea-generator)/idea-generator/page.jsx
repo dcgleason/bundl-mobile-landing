@@ -25,6 +25,8 @@ const [location, setLocation] = useState('');
 const [additionalInfo, setAdditionalInfo] = useState('');
 const [isModalOpen, setIsModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
+const [setApiWithout, setApiWithout] = useState('');
+
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
 const [countdown, setCountdown] = useState(29);
@@ -78,7 +80,8 @@ async function handleSubmit(e) {
       console.log('Idea without Bundl:', ideaWithoutBundl);
 
   // If you want to set them in your component state
-  setApiResponse({ ideaWithBundl, ideaWithoutBundl });
+  setApiResponse(ideaWithBundl);
+  setApiWithout(ideaWithoutBundl)
     setIsModalOpen(true);
   } catch (error) {
     console.error('Error:', error);
