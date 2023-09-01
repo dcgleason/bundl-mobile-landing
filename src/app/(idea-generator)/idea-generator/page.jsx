@@ -85,7 +85,7 @@ async function handleSubmit(e) {
     <title>Bundl - Proposal Idea Generator</title>
     <meta name="description" content="Bundl - AI Gift Idea Generator" />
   </Head>
-    <Transition show={isModalOpen} as={React.Fragment}>
+  <Transition show={isModalOpen} as={React.Fragment}>
   <Dialog
     as="div"
     className="fixed inset-0 z-50 overflow-y-auto"
@@ -104,7 +104,6 @@ async function handleSubmit(e) {
         <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75" />
       </Transition.Child>
 
-      {/* This element is to trick the browser into centering the modal contents. */}
       <span
         className="inline-block h-screen align-middle"
         aria-hidden="true"
@@ -128,17 +127,28 @@ async function handleSubmit(e) {
           >
             Proposal idea: 
           </Dialog.Title>
-          <div className="mt-2">
-            <p className="text-sm text-gray-500">
-              {/* Replace this with your OpenAI API answer */}
-            {apiResponse}
-            </p>
+          <div className="mt-2 flex">
+            <div className="w-1/2 pr-2">
+              <h2>Proposal Idea without Bundl book</h2>
+              <p className="text-sm text-gray-500">
+                {/* Replace this with your API answer for without Bundl */}
+                {apiResponse}
+              </p>
+            </div>
+            <div className="border-l-2 border-gray-300 h-full"></div>
+            <div className="w-1/2 pl-2">
+              <h2>Proposal Idea with Bundl book</h2>
+              <p className="text-sm text-gray-500">
+                {/* Replace this with your API answer for with Bundl */}
+                {apiResponse}
+              </p>
+            </div>
           </div>
 
           <div className="mt-4 flex justify-between">
             <button
               type="button"
-              className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
+              className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-slate-500 border border-transparent rounded-md hover:bg-slate-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-slate-500"
               onClick={() => setIsModalOpen(false)}
             >
               Close
