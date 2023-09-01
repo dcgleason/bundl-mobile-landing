@@ -70,7 +70,15 @@ async function handleSubmit(e) {
 
     console.log('api response:' + responseData.messsage);
     console.log('response:' + responseData.message);
-    setApiResponse(responseData.message);
+   
+      const ideaWithBundl = responseData.ideaWithBundl;
+      const ideaWithoutBundl = responseData.ideaWithoutBundl;
+
+      console.log('Idea with Bundl:', ideaWithBundl);
+      console.log('Idea without Bundl:', ideaWithoutBundl);
+
+  // If you want to set them in your component state
+  setApiResponse({ ideaWithBundl, ideaWithoutBundl });
     setIsModalOpen(true);
   } catch (error) {
     console.error('Error:', error);
@@ -132,7 +140,7 @@ async function handleSubmit(e) {
               <h2>Proposal Idea without Bundl book</h2>
               <p className="text-sm text-gray-500">
                 {/* Replace this with your API answer for without Bundl */}
-                {apiResponse}
+                {apiResponse.ideaWithoutBundl}
               </p>
             </div>
             <div className="border-l-2 border-gray-300 h-full"></div>
@@ -140,7 +148,7 @@ async function handleSubmit(e) {
               <h2>Proposal Idea with Bundl book</h2>
               <p className="text-sm text-gray-500">
                 {/* Replace this with your API answer for with Bundl */}
-                {apiResponse}
+                {apiResponse.ideaWithBundl}
               </p>
             </div>
           </div>
