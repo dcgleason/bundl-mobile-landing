@@ -25,7 +25,7 @@ const [location, setLocation] = useState('');
 const [additionalInfo, setAdditionalInfo] = useState('');
 const [isModalOpen, setIsModalOpen] = useState(false);
 const [apiResponse, setApiResponse] = useState('');
-const [setApiWithout, setApiWithout] = useState('');
+const [apiWithout, setApiWithout] = useState('');
 
 const [isLoading, setIsLoading] = useState(false);  // New state variable
 
