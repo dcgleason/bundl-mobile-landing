@@ -70,7 +70,7 @@ async function handleSubmit(e) {
 
     const responseData = await response.json();
 
-    console.log('api response:' + responseData.messsage);
+    console.log('api response:' + responseData.message);
     console.log('response:' + responseData.message);
    
       const ideaWithBundl = responseData.ideaWithBundl;
