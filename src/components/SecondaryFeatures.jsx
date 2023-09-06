@@ -202,6 +202,7 @@ export function SecondaryFeatures() {
           Planning a great gift can be tricky. With Bundl, you can be sure your special occasion really hits the mark.
           </p>
         </div>
+        
         <div className="flex justify-center my-5">
               <div>
                 <Image src="https://upload.wikimedia.org/wikipedia/commons/6/66/Bundlbook.jpg" className="" alt="Your image description" height="600" width="800" objectFit="cover" />
