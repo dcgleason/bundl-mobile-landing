@@ -11,7 +11,7 @@ export function NavLinks() {
     ['Features', '/#features'],
     ['Pricing', '/#pricing'],
     ['FAQs', '/#faqs'],
-    ['Complimentary Custom Proposal Ideas', '/idea-generator'],
+    // ['Complimentary Custom Proposal Ideas', '/idea-generator'],
     // ['Free Proposal Playlist Maker', '/playlist-generator'],
   ].map(([label, href], index) => (
     <Link
