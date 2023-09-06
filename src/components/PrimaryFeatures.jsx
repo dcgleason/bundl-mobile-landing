@@ -47,7 +47,7 @@ const features = [
   {
     name: 'Simple Bulk Messaging',
     description:
-      "We connect you with everyone but your partner, keep it secret until the reveal, and make the first message to family and friends easy.",
+      "We connect you with everyone but your recipient, keep it secret until the reveal, and make the first message to family and friends easy.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
          Create your Bundl book in 5 minutes with our app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Select from your contacts, and our mobile app gathers notes and pictures from your partner&apos;s loved ones in the first week. We print and send the book to you in the second week and keep you informed all the way.
+          Select from your contacts, and our mobile app gathers notes and pictures from your recipient&apos;s loved ones in the first week. We print and send the book to you in the second week and keep you informed all the way.
           </p>
         </div>
       </Container>
