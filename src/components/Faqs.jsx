@@ -7,7 +7,7 @@ const faqs = [
     {
       question: 'How does Bundl Book work?',
       answer:
-        "Bundl Book allows you to collect notes and pictures from your significant other's family and friends. Simply import contacts, choose your prompts, and we'll create a special book for your proposal.",
+        "Bundl Book allows you to collect notes and pictures from friends and family for special occasions like birthdays or milestones. Simply import contacts, choose your prompts, and we'll create a unique keepsake book for you.",
     },
     {
       question: 'Can I customize the prompts for the messages?',
@@ -17,26 +17,20 @@ const faqs = [
     {
       question: 'How do you keep the book a secret?',
       answer:
-        "Beyond requesting your family and friends don't tell your S/O about the surprise, we also send the book to you in descreet package.",
+        "We send the book to you in a discreet package to maintain the surprise element.",
     },
   ],
   [
     {
-      question: 'What are the pricing options?',
+      question: 'Can I see examples of successful Bundl Books?',
       answer:
-       "We offer various proposal packages to suit your needs. From the basic Bundl Book to complete proposal planning, you can view our pricing here.",
-    },
-    {
-      question: 'Can I see examples of successful proposals with Bundl Book?',
-      answer:
-       "Absolutely! You can watch videos and read reviews from those who've made their proposals extraordinary with Bundl Book here.",
+       "Absolutely! You can watch videos and read reviews from those who've made their special occasions extraordinary with Bundl Book here.",
     },
     {
       question: 'How long does it take to create a Bundl Book?',
       answer:
         'Typically, it takes 2 weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
     },
- 
   ],
   [
     {
@@ -61,6 +55,7 @@ const faqs = [
     },
   ],
 ]
+
 
 export function Faqs() {
   return (

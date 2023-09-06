@@ -93,7 +93,7 @@ async function handleSubmit(e) {
   return (
     <>
     <Head>
-    <title>Bundl - Proposal Idea Generator</title>
+    <title>Bundl - Custom Event Planning Ideas</title>
     <meta name="description" content="Bundl - AI Gift Idea Generator" />
   </Head>
   <Transition show={isModalOpen} as={React.Fragment}>
