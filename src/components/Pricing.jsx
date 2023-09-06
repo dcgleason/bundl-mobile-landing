@@ -192,7 +192,7 @@ export function Pricing() {
     <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
       <div class="p-8 sm:p-10 lg:flex-auto">
         <h3 class="text-2xl font-bold tracking-tight text-gray-900">Bundl Book</h3>
-        <p class="mt-6 text-base leading-7 text-gray-600">The ultimate proposal gift. Linen hardback with unlimited pages and the ability to link additional audio clips to each heartwarming note included.</p>
+        <p class="mt-6 text-base leading-7 text-gray-600">The ultimate gift. Linen hardback with unlimited pages and the ability to link additional audio clips to each heartwarming note included.</p>
         <div class="mt-10 flex items-center gap-x-4">
           <h4 class="flex-none text-sm font-semibold leading-6 text-black">What’s included</h4>
           <div class="h-px flex-auto bg-gray-100"></div>
