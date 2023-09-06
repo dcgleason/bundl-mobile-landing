@@ -186,7 +186,7 @@ export function Pricing() {
       <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get your book in-app.</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get your gift book in-app.</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">Your gift recipient cries tears of joy or your money back... (we&apos;re serious).</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
