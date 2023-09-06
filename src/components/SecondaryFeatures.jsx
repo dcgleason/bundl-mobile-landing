@@ -196,10 +196,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          ...and make a moment you&apos;ll remember forever.  
+          ...and make a moment they&apos;ll remember forever.  
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          Planning the perfect proposal is a journey filled with love, excitement, and happiness. With Bundl, we ensure your moment really hits the mark by adding loving notes and meaningful pictures from her family and friends into the mix.
+          Planning a great gift can be tricky. With Bundl, you can be sure your special occasion really hits the mark.
           </p>
         </div>
         <div className="flex justify-center my-5">
