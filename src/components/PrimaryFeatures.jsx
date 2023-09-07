@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
          Create your Bundl book in 5 minutes with our app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Select from your contacts, and our mobile app gathers notes and pictures from your recipient&apos;s loved ones in one to seven days. We print and send the book to you in following five days keep you informed all the way.
+          Select from your contacts, and our mobile app gathers notes and pictures from your recipient&apos;s loved ones in 1-7 days. The book takes 1 week to print and ship to you after that.
           </p>
         </div>
       </Container>
