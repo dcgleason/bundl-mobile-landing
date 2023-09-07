@@ -29,7 +29,7 @@ const faqs = [
     {
       question: 'How long does it take to create a Bundl Book?',
       answer:
-        'Typically, it takes 2 weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
+        'Typically, it takes 12 weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
     },
   ],
   [
