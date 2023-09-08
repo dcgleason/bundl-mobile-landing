@@ -24,7 +24,7 @@ const plans = [
       'Custom prompts',
       'Digital Bundl Book preview',
       'Easy submissions collection',
-      'Guided prompts for celebratory, meaningful messages',
+      'Guided prompts for supportive, meaningful messages',
       'Paperback quality',
       '20 pages max',
     ],
