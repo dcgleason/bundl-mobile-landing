@@ -199,7 +199,7 @@ export function SecondaryFeatures() {
           ...and make a moment they&apos;ll remember forever.  
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          Planning a great gift can be tricky. With Bundl, you can be sure your special occasion really hits the mark.
+          Giving a gift that&apos;s really great can be tricky business. Give a Bundl book and you can be sure to really hit the mark.
           </p>
         </div>
         
