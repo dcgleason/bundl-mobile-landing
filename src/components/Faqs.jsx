@@ -35,7 +35,7 @@ const faqs = [
     {
       question: 'How does audio recording work?',
       answer:
-        "With each Bundl book comes the ability for your friends and family to record an optional audio clip, in addition to their note and optional picture. This audio clip is often used by a Bundl conributor to read their note or wish them a special birthday, or babyshower, or retirement day.",
+        "With each Bundl book comes the ability for your friends and family to record an optional audio clip, in addition to their note and picture. This audio clip is often used by Bundl conributors to read their note or wish the recipient an (extra) happy birthday, or babyshower, or retirement day.",
     },
     {
       question: 'Is there a limit to how much each Bundl contributor can write or submit?',
