@@ -47,7 +47,7 @@ const features = [
   {
     name: 'Simple Bulk Messaging',
     description:
-      "We connect you with everyone but your recipient, keep it secret until the reveal, and make the entire quick and easy.",
+      "We connect you with everyone but your recipient, keep it secret until the reveal, and make the entire process quick and easy.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
