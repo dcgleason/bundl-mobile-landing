@@ -229,7 +229,7 @@ export function Pricing() {
           <div class="mx-auto max-w-xs px-8">
             {/* <p class="text-base font-semibold text-gray-600">Pay once, own it forever</p> */}
             <p class="mt-6 flex items-baseline justify-center gap-x-2">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">$179</span>
+              <span class="text-5xl font-bold tracking-tight text-gray-900">$199</span>
               <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
             </p>
             <a href="#" class="mt-10 block w-full rounded-md bg-[#DF9496] px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600">Join waitlist</a>
