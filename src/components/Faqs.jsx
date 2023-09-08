@@ -17,7 +17,7 @@ const faqs = [
     {
       question: 'How do you keep the book a secret?',
       answer:
-        "We send the book to you in a discreet package to maintain the surprise element.",
+        "In case you live your with your Bundl book recipient, we send the book to you in a discreet package to maintain the surprise element.",
     },
     {
       question: 'How does the mobile app collect the notes, pictures, and audio from my family, friends, co-workers?',
