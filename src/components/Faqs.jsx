@@ -27,6 +27,11 @@ const faqs = [
       answer:
         'Typically, it takes two full weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
     },
+    {
+      question: 'Can I cancel or modify my Bundl Book order?',
+      answer:
+        "You can modify your order within 24 hours of placing it. For cancellations or further order modifications, please review reach our to us at dan@givebundl.com.",
+    },
   ],
   [
     {
@@ -44,11 +49,7 @@ const faqs = [
       answer:
         "Yes! That is how you order a Bundl book! Download our mobile app from the Apple Apple Store or Google Playstore to order and view your Bundl Book order.",
     },
-    {
-      question: 'Can I cancel or modify my Bundl Book order?',
-      answer:
-        "You can modify your order within 24 hours of placing it. For cancellations or further order modifications, please review reach our to us at dan@givebundl.com.",
-    },
+    
   ],
 ]
 
