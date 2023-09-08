@@ -40,7 +40,7 @@ const features = [
   {
     name: 'Helpful Prompts',
     description:
-      "Unsure what to say your family and friends? We offer you suggestions on introduce your gift and invite them to contribute.",
+      "Unsure what to say your family and friends? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
