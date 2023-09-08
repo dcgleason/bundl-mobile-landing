@@ -19,6 +19,11 @@ const faqs = [
       answer:
         "We send the book to you in a discreet package to maintain the surprise element.",
     },
+    {
+      question: 'How does the mobile app collect the notes, pictures, and audio from my family, friends, and / or co-worker?',
+      answer:
+        "We help you a welcome email and / or group text via our app to your selected Bundl contributors, and then follow up with automated reminder emails which link to a web form that each contributor can fill out.",
+    },
   ],
   [
 
