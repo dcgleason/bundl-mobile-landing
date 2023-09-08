@@ -32,6 +32,16 @@ const faqs = [
       answer:
         "You can modify your order within 24 hours of placing it. For cancellations or further order modifications, please review reach our to us at dan@givebundl.com.",
     },
+    {
+      question: 'How does audio recording work?',
+      answer:
+        "With each Bundl book comes the ability for your friends and family to record an optional audio clip, in addition to their note and optional picture. This audio clip is often used by a Bundl conributor to read their note or wish them a special birthday, or babyshower, or retirement day.",
+    },
+    {
+      question: 'Is there a limit to how much each Bundl contributor can write or submit?',
+      answer:
+        "No, a contributor to write however much they want, however, for asthetic purposes, we do limit (for now) picture submissions to one per person.",
+    },
   ],
   [
     {
