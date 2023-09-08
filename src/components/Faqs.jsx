@@ -7,7 +7,7 @@ const faqs = [
     {
       question: 'How does Bundl Book work?',
       answer:
-        "Bundl Book allows you to collect notes and pictures from friends and family for special occasions like birthdays or milestones. Simply import contacts, choose your prompts, and we'll create a unique keepsake book for you.",
+        "Bundl Book allows you to collect notes and pictures from friends and family for special occasions like birthdays, babyshowers, or retirement parties. Simply select from your Google and/or phone contacts, choose your prompts, and we'll create a unique keepsake book for your friend or loved one.",
     },
     {
       question: 'Can I customize the prompts for the messages?',
@@ -21,37 +21,33 @@ const faqs = [
     },
   ],
   [
-    {
-      question: 'Can I see examples of successful Bundl Books?',
-      answer:
-       "Absolutely! You can watch videos and read reviews from those who've made their special occasions extraordinary with Bundl Book here.",
-    },
+
     {
       question: 'How long does it take to create a Bundl Book?',
       answer:
-        'Typically, it takes 12 weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
+        'Typically, it takes two full weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
     },
   ],
   [
     {
       question: 'Can I include international family and friends in the Bundl Book?',
       answer:
-        'Yes! You can import contacts from various platforms or input emails, allowing you to include loved ones from around the world.',
+        'Yes! You can import contacts from various platforms or input emails, allowing you to include loved ones from around the world. We only ship to places within the USA at this current time.',
     },
     {
       question: 'What if I need help or have specific requests?',
       answer:
-        "We're here to assist you! You can log in to your account and access our support, or reach out to us directly at [contact information].",
+        "We're here to assist you! You can log in to your account and access our support, or reach out to us directly at dan@givebundl.com.",
     },
     {
       question: 'Is there a mobile app for Bundl Book?',
       answer:
-        "Yes! You can download our app to manage your Bundl Book on the go. Download now.",
+        "Yes! That is how you order a Bundl book! Download our mobile app from the Apple Apple Store or Google Playstore to order and view your Bundl Book order.",
     },
     {
       question: 'Can I cancel or modify my Bundl Book order?',
       answer:
-        "You can modify your order within 24 hours of placing it. For cancellations or further modifications, please review our cancellation policy.",
+        "You can modify your order within 24 hours of placing it. For cancellations or further order modifications, please review reach our to us at dan@givebundl.com.",
     },
   ],
 ]
