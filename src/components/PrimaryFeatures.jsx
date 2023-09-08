@@ -33,7 +33,7 @@ const features = [
   {
     name: 'Easy Contact Collection',
     description:
-      "Add contacts from Apple, Google, or enter them yourself.",
+      "Add contacts from your phone's contact list, Google, or enter them manually yourself.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
