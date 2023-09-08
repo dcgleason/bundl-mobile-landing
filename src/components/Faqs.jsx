@@ -45,9 +45,9 @@ const faqs = [
   ],
   [
     {
-      question: 'Can I include international family and friends in the Bundl Book?',
+      question: 'Can I include international family and friends in my Bundl Book?',
       answer:
-        'Yes! You can import contacts from various platforms or input emails, allowing you to include loved ones from around the world. We only ship to places within the USA at this current time.',
+        'Yes! You can import contacts from various platforms or input emails, allowing you to include loved ones from around the world. That said, we only ship to places within the USA at this time.',
     },
     {
       question: 'What if I need help or have specific requests?',
