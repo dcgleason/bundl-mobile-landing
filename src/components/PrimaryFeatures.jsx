@@ -40,14 +40,14 @@ const features = [
   {
     name: 'Helpful Prompts',
     description:
-      "Unsure what to ask their family and friends? We offer you suggestions on what to say.",
+      "Unsure what to ask your family, friends, and / or co-workers? We offer you suggestions on what to say.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
     name: 'Simple Bulk Messaging',
     description:
-      "We connect you with everyone but your recipient, keep it secret until the reveal, and make the first message to family and friends easy.",
+      "We connect you with everyone but your recipient, keep it secret until the reveal, and make the invite to family and friends easy.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
