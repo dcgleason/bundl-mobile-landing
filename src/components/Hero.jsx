@@ -143,7 +143,7 @@ export function Hero() {
             Stop being so selfish! Give a Bundl book to show you <em>actually</em> give a sh*t.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Bundl Book: A way to elicit happy tears with 5 minutes of work .... a.k.a. a surprise, physical gift book a loved one filled with supportive & loving notes + pictures from <em>your loved one&apos;s</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
+             Bundl Book: A way to elicit happy tears with 5 minutes of work .... a.k.a. a surprise, physical gift book to your loved one packed witb supportive & loving notes + pictures from <em>their</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
