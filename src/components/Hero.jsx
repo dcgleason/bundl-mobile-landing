@@ -144,7 +144,7 @@ export function Hero() {
 
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Bundl Book: A gift that will likely make your loved one stop and cry happy tears aka a surprise gift book filled with supportive & loving notes and pictures from <em>their</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
+             Bundl Book: A gift that will likely make your loved one stop and cry happy tears a.k.a. a surprise, physical gift book filled with supportive & loving notes and pictures from <em>their</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
