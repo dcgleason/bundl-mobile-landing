@@ -140,11 +140,10 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-            Show your loved one that you give a sh*t!
-
+            Stop being so selfish! Show your loved one that you give a sh*t, today, with Bundl. 
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Bundl Book: A gift that will likely make your loved one stop and cry happy tears a.k.a. a surprise, physical gift book filled with supportive & loving notes and pictures from <em>their</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
+             Bundl Book: A way to demonstrate you care (with 5 minutes of work) and will likely elicit happy tears .... a.k.a. a surprise, physical gift book filled with supportive & loving notes and pictures from <em>your loved one&apos;s</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
