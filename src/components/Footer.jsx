@@ -31,7 +31,7 @@ export function Footer() {
               <Image src={Logo} className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
                 <p className="text-base font-semibold">Bundl</p>
-                <p className="mt-1 text-sm">Your most thoughtful gift...ever</p>
+                <p className="mt-1 text-sm">Show your loved on you give a sh*t</p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">
