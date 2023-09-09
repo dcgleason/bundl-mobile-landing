@@ -196,10 +196,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          ...and make a moment they&apos;ll remember forever.  
+          ...they&apos;ll cry tears of joy, we guarantee it.  
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          Giving a gift that&apos;s really great can be tricky business. Give a Bundl book and you can be sure to really hit the mark.
+          If the person you give a Bundl book to doensn&apos;t cry happy tears and thank you sincerely, we will give you a full refund. 
           </p>
         </div>
         
