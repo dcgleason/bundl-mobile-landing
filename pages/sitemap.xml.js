@@ -14,11 +14,6 @@ export const getServerSideProps = async ({ res }) => {
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
       </url>
-      <url>
-        <loc>${BASE_URL}/idea-generator</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-      </url>
     </urlset>
   `;
 
