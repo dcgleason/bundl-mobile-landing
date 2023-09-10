@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
          Create your Bundl book in less than 5 minutes by using our app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Select from your contacts and our mobile app automatically gathers notes and pictures from your recipient&apos;s loved ones during week one. During week two, gift book is printed and shipped directly your supplied address.
+          Select from your contacts and our mobile app automatically gathers notes and pictures from your recipient&apos;s loved ones during week one. During week two, your gift book is printed and shipped directly your supplied address.
           </p>
         </div>
       </Container>
