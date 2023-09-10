@@ -199,7 +199,7 @@ export function SecondaryFeatures() {
           ...they&apos;ll cry tears of joy, we guarantee it.  
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          If the person you give a Bundl book to doensn&apos;t cry happy tears and thank you sincerely, we will give you a full refund. 
+          If the person you give a Bundl book to doesn&apos;t cry happy tears and thank you sincerely, we will give you a full refund. 
           </p>
         </div>
         
