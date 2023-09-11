@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
          Create your Bundl in less than 5 minutes by using our app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Select from your contacts and our mobile app automatically gathers notes, pictures, and audio clips from your recipient&apos;s loved ones during week one. In the following weeks, a series of emails are sent, one per day, to your recipient, each with a special note, picture, and / or audio clip from one of your recipient&apos;s loved ones.
+          Select your Bundl contributors from your contacts in-app and our mobile app automatically gathers notes, pictures, and audio clips from your recipient&apos;s loved ones during week one. In the following weeks, a series of emails are sent, one per day, to your Bundl recipient, each with a special note, picture, and / or audio clip from one of your recipient&apos;s loved ones.
           </p>
         </div>
       </Container>
