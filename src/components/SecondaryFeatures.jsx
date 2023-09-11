@@ -186,6 +186,40 @@ function DeviceChartIcon(props) {
   )
 }
 
+
+const TestimonialEmbed = () => {
+  useEffect(() => {
+    // Load the iFrameResizer script
+    const script = document.createElement('script');
+    script.src = 'https://testimonial.to/js/iframeResizer.min.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Initialize iFrameResizer once the script is loaded
+    script.onload = () => {
+      if (window.iFrameResize) {
+        window.iFrameResize({ log: false, checkOrigin: false }, '#testimonialto-embed-text--NSg7yksxMqZUr0mZsK5');
+      }
+    };
+
+    // Cleanup: Remove script when component is unmounted
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <iframe
+      id="testimonialto-embed-text--NSg7yksxMqZUr0mZsK5"
+      src="https://embed-v2.testimonial.to/t/-NSg7yksxMqZUr0mZsK5?design=left-aligned&darkFont=yes&bgColor=ffffff&borderColor=ABB8C3&starColor=FDCC0D&shadowSize=shadow-none&showBorder=no&showPadding=yes&borderRadius=rounded-lg&borderWidth=border"
+      frameBorder="0"
+      scrolling="no"
+      width="100%"
+    />
+  );
+};
+
+
 export function SecondaryFeatures() {
   return (
     <section
@@ -204,7 +238,8 @@ export function SecondaryFeatures() {
         </div>
         
         <div className="flex justify-center my-5">
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+          <TestimonialEmbed/>
+          {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <Image 
               src="https://upload.wikimedia.org/wikipedia/commons/7/70/Elizaemailtwo.jpg" 
               alt="Your image description" 
@@ -213,7 +248,7 @@ export function SecondaryFeatures() {
               width={768} 
               objectFit="cover" 
             />
-          </div>
+          </div> */}
         </div>
         {/* <ul
           role="list"
