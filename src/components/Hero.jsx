@@ -143,9 +143,9 @@ export function Hero() {
             Make them cry tears of joy... for FREE!
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Give your friend or family member a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures from <em>their</em> family and friends. Great for birthdays, babyshowers, retirements, etc.
+             Give your friend or family member a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures from <em>their</em> family and friends emailed daily. Great for birthdays, babyshowers, retirements, etc.
             </p>
-            
+
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
               {/* <Button
