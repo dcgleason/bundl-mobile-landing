@@ -1,3 +1,5 @@
+"use client"
+
 import { useId, useEffect } from 'react'
 
 import { Container } from '@/components/Container'
