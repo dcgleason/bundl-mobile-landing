@@ -5,66 +5,64 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How does Bundl Book work?',
+      question: 'How does the free Bundl email series work?',
       answer:
-        "Bundl Book allows you to collect notes and pictures from friends and family for special occasions like birthdays, babyshowers, or retirement parties. Simply select from your Google and/or phone contacts, choose your prompts, and we'll create a unique keepsake book for your friend or loved one.",
+        "The Bundl email series allows you to send a collection of special notes, audio, and memorable pictures from friends and family to your loved one. These are sent as stylized emails, spaced out for prolonged value.",
     },
     {
-      question: 'Can I customize the prompts for the messages?',
+      question: 'What features are included in the free email series?',
       answer:
-        'Yes! While we provide guided prompts, you can also create your own to make the messages even more personal.',
+        'The free email series includes automated submission collection, stylized emails, spaced-out daily delivery, and the ability to include audio clips.',
     },
     {
-      question: 'How do you keep the book a secret?',
+      question: 'How do I get started?',
       answer:
-        "In case you live your with your Bundl book recipient, we send the book to you in a discreet package to maintain the surprise element.",
+        "Simply sign up on our platform, choose your recipients and contributors, and we'll handle the rest. You can also customize the prompts for the messages.",
     },
     {
-      question: 'How does the mobile app collect the notes, pictures, and audio from my family, friends, co-workers?',
+      question: 'How do contributors submit their content?',
       answer:
-        "We help you a welcome email and / or group text via our app to your selected Bundl contributors, and then follow up with automated reminder emails which link to a web form that each contributor can fill out.",
-    },
-  ],
-  [
-
-    {
-      question: 'How long does it take to create a Bundl Book?',
-      answer:
-        'Typically, it takes two full weeks for the automated collection process to complete and the book to be printed and shipped. For urgent requests, please contact us.',
-    },
-    {
-      question: 'Can I cancel or modify my Bundl Book order?',
-      answer:
-        "You can modify your order within 24 hours of placing it. For cancellations or further order modifications, please review reach our to us at dan@givebundl.com.",
-    },
-    {
-      question: 'How does audio recording work?',
-      answer:
-        "With each Bundl book comes the ability for your friends and family to record an optional audio clip, in addition to their note and picture. This audio clip is often used by Bundl conributors to read their note or wish the recipient an (extra) happy birthday, or babyshower, or retirement day.",
-    },
-    {
-      question: 'Is there a limit to how much each Bundl contributor can write or submit?',
-      answer:
-        "No, a contributor to write however much they want, however, for asthetic purposes, we do limit (for now) picture submissions to one per person.",
+        "We send a welcome email to your selected contributors, followed by automated reminder emails. Each email contains a link to a web form where contributors can submit their notes, pictures, and optional audio clips.",
     },
   ],
   [
     {
-      question: 'Can I include international family and friends in my Bundl Book?',
+      question: 'How long does the email series last?',
       answer:
-        'Yes! You can import contacts from various platforms or input emails, allowing you to include loved ones from around the world. That said, we only ship to places within the USA at this time.',
+        'The duration of the email series depends on the number of contributors. Each contributor’s submission is sent as a separate email.',
+    },
+    {
+      question: 'Can I modify or cancel the email series?',
+      answer:
+        "You can modify the series within 24 hours of starting it. For cancellations or further modifications, please reach out to us.",
+    },
+    {
+      question: 'Is there a limit to the number of contributors?',
+      answer:
+        "No, you can invite as many contributors as you like. However, each contributor can submit only one note, picture, and optional audio clip.",
+    },
+    {
+      question: 'Can I include international contributors?',
+      answer:
+        'Absolutely! Since this is an email-based service, you can include contributors from anywhere in the world.',
+    },
+  ],
+  [
+    {
+      question: 'Is the email series mobile-friendly?',
+      answer:
+        'Yes, the email series is designed to be viewed on both desktop and mobile devices.',
     },
     {
       question: 'What if I need help or have specific requests?',
       answer:
-        "We're here to assist you! You can log in to your account and access our support, or reach out to us directly at dan@givebundl.com.",
+        "We're here to assist you. You can log in to your account and access our support, or reach out to us directly.",
     },
     {
-      question: 'Is there a mobile app for Bundl Book?',
+      question: 'Is there a mobile app for the Bundl email series?',
       answer:
-        "Yes! That is how you order a Bundl book! Download our mobile app from the Apple Apple Store or Google Playstore to order and view your Bundl Book order.",
+        "Currently, the Bundl email series is accessible through our website. We're working on integrating it into our mobile app.",
     },
-    
   ],
 ]
 
