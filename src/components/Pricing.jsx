@@ -187,7 +187,7 @@ export function Pricing() {
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Place gift order in-app.</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Caution: likely your gift recipient cries tears of joy.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Caution: it is likely your gift recipient cries tears of joy.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
       <div class="p-8 sm:p-10 lg:flex-auto">
