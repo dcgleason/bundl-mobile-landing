@@ -196,10 +196,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          A Free Gift They'll Truly Love — Guaranteed. 
+          A Free Gift They&apos;ll Truly Love — Guaranteed. 
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          If th doesn't make them smile, let us know. We're committed to getting it right.
+          If this doesn't make them smile, let us know. We're committed to getting it right.
             </p>
         </div>
         
