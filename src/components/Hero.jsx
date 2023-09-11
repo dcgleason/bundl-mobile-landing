@@ -140,7 +140,7 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-           Your most meaningful gift you&apos;ll ever...FREE. 
+           The world&apos;s most meaningful gift...FREE. 
            </h1>
             <p className="mt-6 text-lg text-gray-600">
              Give your friend or family member a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures from <em>their</em> family and friends emailed daily. Great for birthdays, babyshowers, retirements, etc.

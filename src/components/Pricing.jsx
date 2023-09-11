@@ -232,7 +232,7 @@ export function Pricing() {
                 <span class="text-2xl font-bold text-gray-900">FREE</span>
               </p>
               <a href="#" class="mt-10 block w-full rounded-md bg-[#DF9496] px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600">Download app</a>
-              <p class="mt-6 text-xs leading-5 text-gray-600">Your most meaningful gift ever... now free.</p>
+              <p class="mt-6 text-xs leading-5 text-gray-600">The world&apos;s most meaningful gift...now free. </p>
             </div>
           </div>
         </div>
