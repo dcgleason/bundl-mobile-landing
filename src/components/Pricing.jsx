@@ -233,7 +233,7 @@ export function Pricing() {
               <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
             </p>
             <a href="#" class="mt-10 block w-full rounded-md bg-[#DF9496] px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600">Join waitlist</a>
-            <p class="mt-6 text-xs leading-5 text-gray-600">Make your recipient cry tears of joy, or your money back</p>
+            <p class="mt-6 text-xs leading-5 text-gray-600">Make your recipient cry tears of joy, or your money back.</p>
           </div>
         </div>
       </div>
