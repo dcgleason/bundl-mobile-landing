@@ -199,7 +199,7 @@ export function SecondaryFeatures() {
           A Free Gift They&apos;ll Truly Love — Guaranteed. 
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          If this doesn't make them smile, let us know. We're committed to getting it right.
+          If this doesn&apos;t make them smile, let us know. We&apos;re committed to getting it right.
             </p>
         </div>
         
