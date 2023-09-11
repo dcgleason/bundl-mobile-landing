@@ -17,7 +17,7 @@ const faqs = [
     {
       question: 'How do I get started?',
       answer:
-        "Simply sign up on our platform, choose your recipients and contributors, and we'll handle the rest. You can also customize the prompts for the messages.",
+        "Simply sign up on our mobile app, choose your recipients and contributors, and we'll handle the rest. You can also customize the prompts for the messages.",
     },
     {
       question: 'How do contributors submit their content?',
