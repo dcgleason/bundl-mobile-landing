@@ -204,10 +204,17 @@ export function SecondaryFeatures() {
         </div>
         
         <div className="flex justify-center my-5">
-              <div>
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/7/70/Elizaemailtwo.jpg" className="" alt="Your image description" height="512" width="768" objectFit="cover" />
-              </div>
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <Image 
+              src="https://upload.wikimedia.org/wikipedia/commons/7/70/Elizaemailtwo.jpg" 
+              alt="Your image description" 
+              layout="responsive" 
+              height={512} 
+              width={768} 
+              objectFit="cover" 
+            />
           </div>
+        </div>
         {/* <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
