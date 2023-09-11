@@ -205,7 +205,7 @@ export function SecondaryFeatures() {
         
         <div className="flex justify-center my-5">
               <div>
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/6/66/Bundlbook.jpg" className="" alt="Your image description" height="600" width="800" objectFit="cover" />
+                <Image src="https://upload.wikimedia.org/wikipedia/commons/7/70/Elizaemailtwo.jpg" className="" alt="Your image description" height="512" width="768" objectFit="cover" />
               </div>
           </div>
         {/* <ul
