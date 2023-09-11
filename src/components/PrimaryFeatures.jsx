@@ -253,7 +253,7 @@ function InvestScreen({ custom, animated = false }) {
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
         <AppScreen.Title>Welcome to Bundl</AppScreen.Title>
         <AppScreen.Subtitle>
-          Automate the collection <span className="text-white">of notes and pictures</span>
+          Automate the collection <span className="text-white">of notes, audio, and pictures</span>
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
