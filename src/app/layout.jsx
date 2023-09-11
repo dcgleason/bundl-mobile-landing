@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata = {
   title: {
     template: 'Bundl',
-    default: "Bundl - happy tears or your money back",
+    default: "Bundl - your most meaningful gift ever, now for free.",
   },
   description:
   'Bundl helps you craft a personalized keepsake gift for a family member or friend. It is one of the most meaningful gifts you can give...words of affirmation from loved ones.  Great for milestone birthdays, baby showers, or retirements, our custom prompts, design choices, and quality materials make your gift truly special.',
