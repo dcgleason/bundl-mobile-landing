@@ -205,7 +205,7 @@ function InviteScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hey! So, Eliza is turning 30 and I am making her a special gift called a 'Bundl.' It's compilation of love, filled with notes and pictures from all of her loved ones. Please join in and add your own message or photo for Eliza! Think she is going to love it."
+                defaultValue="Hey! So, Eliza is turning 30 and I am making her a special gift called a 'Bundl.' It's compilation of love, i.e. special notes, pictures, and audio clips from all of her loved ones. Please join in and add your own message or photo for Eliza! Think she is going to love it."
               ></textarea>
             </div>
           </div>
@@ -267,7 +267,7 @@ function InvestScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hey! So, Eliza is turning 30 and I am making her a special gift called a 'Bundl.' It's compilation of love, filled with notes and pictures from all of her loved ones. Please join in and add your own message or photo for Eliza! Think she is going to love it."
+                defaultValue="Hey! So, Eliza is turning 30 and I am making her a special gift called a 'Bundl.' It's compilation of love, i.e. special notes, pictures, and audio clips from all of her loved ones. Please join in and add your own message or photo for Eliza! Think she is going to love it."
               ></textarea>
             </div>
             <div className="rounded-lg bg-[#727B84] px-3 py-2 text-center text-sm font-semibold text-white">
