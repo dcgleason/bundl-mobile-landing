@@ -480,10 +480,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-         Create your Bundl book in less than 5 minutes by using our app.
+         Create your Bundl in less than 5 minutes by using our app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Select from your contacts and our mobile app automatically gathers notes and pictures from your recipient&apos;s loved ones during week one. During week two, your gift book is printed and shipped directly your supplied address.
+          Select from your contacts and our mobile app automatically gathers notes and pictures from your recipient&apos;s loved ones during week one. During week two, your email series of emails, each filled with a special note, picture, and / or audio clip from your recipient's network is sent to your recipient directly.
           </p>
         </div>
       </Container>
