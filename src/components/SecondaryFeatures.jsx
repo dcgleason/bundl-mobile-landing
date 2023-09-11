@@ -196,11 +196,11 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          ...they&apos;ll cry tears of joy, we guarantee it.  
+          A Free Gift They'll Truly Love — Guaranteed. 
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-          If the person you give a Bundl book to doesn&apos;t cry happy tears and thank you sincerely, we will give you a full refund. 
-          </p>
+          If th doesn't make them smile, let us know. We're committed to getting it right.
+            </p>
         </div>
         
         <div className="flex justify-center my-5">
