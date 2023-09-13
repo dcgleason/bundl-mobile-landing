@@ -17,7 +17,7 @@ dotenv.config()
 
 import RecorderControls from '../../../components/recorder-controls'
 import RecordingsList from '../../../components/recordings-list';
-import useRecorder from '../../../hooks/useRecorder';
+import useRecorder from '../../hooks/useRecorder';
 import LoadingSpinnerContr from '@/components/LoadingSpinnerContr'
 
 
