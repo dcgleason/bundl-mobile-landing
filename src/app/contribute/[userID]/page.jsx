@@ -5,8 +5,8 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect } from 'react'
 import Box from '@material-ui/core/Box';
 import Image from 'next/image';
-import Success from '../success';
-import Failure from '../error';
+import Success from '../success/page.jsx';
+import Failure from '../error/page.jsx';
 import Head from "next/head"
 import { useRouter } from 'next/router';
 import dotenv from 'dotenv'
