@@ -9,13 +9,13 @@ import { useRouter } from 'next/router';
 import dotenv from 'dotenv';
 dotenv.config();
 
-import Success from '../../../src/app/success/page';
-import Failure from '../../../src/app/error/page';
-import RecorderControls from '../../../src/app/components/recorder-controls';
-import RecordingsList from '../../../src/app/components/recordings-list';
-import useRecorder from '../../../src/app/hooks/useRecorder';
-import LoadingSpinnerContr from '../../../src/app/components/LoadingSpinnerContr';
-
+// Relative to pages/contribute/[userID].jsx
+import Success from '../../src/app/success/page';
+import Failure from '../../src/app/error/page';
+import RecorderControls from '../../src/components/recorder-controls';
+import RecordingsList from '../../src/components/recordings-list';
+import useRecorder from '../../src/app/hooks/useRecorder';
+import LoadingSpinnerContr from '../../src/components/LoadingSpinnerContr';
 
 
 
