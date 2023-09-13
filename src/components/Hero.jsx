@@ -143,7 +143,7 @@ export function Hero() {
             Tug at their heartstrings...now for free!
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Give your friend or family member a <em>&apos;Bundl&apos;</em> (a.k.a send them daily postcard, each filled with special, prompt-driven written notes, audio-clips, and memorable pictures collected from their friends and family with our mobile app)! Great for birthdays, babyshowers, retirements, etc.
+            Give your friend or family member a <em>&apos;Bundl&apos;</em> (a.k.a send them a daily postcard, each filled with special, prompt-driven written notes, audio-clips, and memorable pictures collected from their friends and family with our mobile app)! Great for birthdays, babyshowers, retirements, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
