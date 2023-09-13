@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone, faTimes, faCheck } from "@fortawesome/free-solid-svg-icons";
-import { formatMinutes, formatSeconds } from "../../utils/format-time";
+import { formatMinutes, formatSeconds } from '../../utils/format-time';
 import { useState } from "react";
 
 export default function RecorderControls({ recorderState, handlers}) {
