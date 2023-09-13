@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from 'react'
-import Box from '@material-ui/core/Box';
+import {Box} from '@mui/material';
 import Image from 'next/image';
 import Success from '../../success/page';
 import Failure from '../../error/page';
