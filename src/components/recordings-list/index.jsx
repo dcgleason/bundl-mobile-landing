@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faExclamationCircle, faCheck, faSave } from "@fortawesome/free-solid-svg-icons";
-import useRecordingsList from "../../hooks/use-recordings-list";
+import useRecordingsList from '../../app/hooks/use-recordings-list';
 import { useState } from "react";
 
 
