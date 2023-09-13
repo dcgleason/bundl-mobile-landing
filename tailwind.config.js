@@ -1,11 +1,20 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
+    minWidth: {
+      '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      'full': '100%',
+    },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
-      base: ['1rem', { lineHeight: '1.5rem' }],
+      base: ['1rem', { lineHeight: '1.75rem' }],
       lg: ['1.125rem', { lineHeight: '2rem' }],
       xl: ['1.25rem', { lineHeight: '1.75rem' }],
       '2xl': ['1.5rem', { lineHeight: '2rem' }],
@@ -35,7 +44,9 @@ module.exports = {
         gray: colors.neutral,
       }),
       fontFamily: {
-        sans: 'var(--font-inter)',
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        display: ['Lexend', ...defaultTheme.fontFamily.sans],
+        apple: ['Nothing You Could Do', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'fade-in': {
@@ -60,8 +71,10 @@ module.exports = {
       maxWidth: {
         '2xl': '40rem',
       },
-      
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@headlessui/tailwindcss')],
-}
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@headlessui/tailwindcss')
+  ],
+};
