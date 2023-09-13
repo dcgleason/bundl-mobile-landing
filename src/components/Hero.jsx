@@ -143,7 +143,7 @@ export function Hero() {
             Be the one that brings your family together...in 5 minutes...for FREE.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Rally your friends and family about a shared loved one by giving a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures from <em>their</em> family and friends emailed daily. Great for birthdays, babyshowers, retirements, etc.
+             Rally your friends and family about a shared loved one by giving a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures emailed daily. Great for birthdays, babyshowers, retirements, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
