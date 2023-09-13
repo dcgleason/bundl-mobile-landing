@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
          Create your Bundl in less than 5 minutes by using our mobile app.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Choose Bundl contributors from your contacts in-app. Our app collects notes, pictures, and audio from loved ones in the first week. Then, daily emails deliver these special messages to your recipient.
+          Choose Bundl contributors from your contacts in-app. Our app collects notes, pictures, and audio from loved ones in the first week. Then, daily handwritten letters deliver these special messages to your recipient.
           </p>
         </div>
       </Container>
