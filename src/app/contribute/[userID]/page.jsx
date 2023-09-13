@@ -5,19 +5,19 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect } from 'react'
 import Box from '@material-ui/core/Box';
 import Image from 'next/image';
-import Success from '../success/page.jsx';
-import Failure from '../error/page.jsx';
+import Success from '../../success/page';
+import Failure from '../../error/page';
 import Head from "next/head"
 import { useRouter } from 'next/router';
 import dotenv from 'dotenv'
-import Dialog from "@mui/material/Dialog";
-import Alert from '@material-ui/lab/Alert';
-import AlertTitle from '@material-ui/lab/Alert';
+import { Dialog } from '@mui/material';
+import {Alert} from '@mui/material';
+import {AlertTitle} from '@mui/material';
 dotenv.config()
 
-import RecorderControls from '@/components/recorder-controls/index.jsx'
-import RecordingsList from "@/components/recordings-list/index.jsx";
-import useRecorder from "@/hooks/useRecorder";
+import RecorderControls from '../../../components/recorder-controls'
+import RecordingsList from '../../../components/recordings-list';
+import useRecorder from '../../../hooks/useRecorder';
 import LoadingSpinnerContr from '@/components/LoadingSpinnerContr'
 
 
