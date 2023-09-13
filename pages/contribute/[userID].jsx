@@ -1,24 +1,20 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from 'react'
-import {Box} from '@mui/material';
+import { Box, Dialog, Alert, AlertTitle } from '@mui/material';
 import Image from 'next/image';
-import Success from '../../success/page';
-import Failure from '../../error/page';
-import Head from "next/head"
+import Head from "next/head";
 import { useRouter } from 'next/router';
-import dotenv from 'dotenv'
-import { Dialog } from '@mui/material';
-import {Alert} from '@mui/material';
-import {AlertTitle} from '@mui/material';
-dotenv.config()
+import dotenv from 'dotenv';
+dotenv.config();
 
-import RecorderControls from '../../../components/recorder-controls'
-import RecordingsList from '../../../components/recordings-list';
-import useRecorder from '../../hooks/useRecorder';
-import LoadingSpinnerContr from '@/components/LoadingSpinnerContr'
+import Success from '../../../src/app/success/page';
+import Failure from '../../../src/app/error/page';
+import RecorderControls from '../../../src/app/components/recorder-controls';
+import RecordingsList from '../../../src/app/components/recordings-list';
+import useRecorder from '../../../src/app/hooks/useRecorder';
+import LoadingSpinnerContr from '../../../src/app/components/LoadingSpinnerContr';
 
 
 
