@@ -140,10 +140,10 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-            Be the one that brings your family together...in 5 minutes...for FREE.
+             With Bundl it takes 5 mintues to make them adore.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-             Rally your friends and family about a shared loved one by giving a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures emailed daily. Great for birthdays, babyshowers, retirements, etc.
+             Rally your friends and family around a shared loved one by giving a &apos;Bundl&apos; a.k.a. a collection of special notes, audio, and memorable pictures emailed daily. Great for birthdays, babyshowers, retirements, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
