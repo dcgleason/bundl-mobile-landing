@@ -110,7 +110,7 @@ export function Header() {
                             <MobileNavLink href="/#faqs">
                               FAQs
                             </MobileNavLink>
-                            {/* <MobileNavLink href="/idea-generator">Complimentary Custom Proposal Ideas</MobileNavLink> */}
+                            <MobileNavLink href="/business">Bundl for Business</MobileNavLink>
                             {/* <MobileNavLink href="/playlist-generator">Free Proposal Playlist Generator</MobileNavLink> */}
 
                           </div>
