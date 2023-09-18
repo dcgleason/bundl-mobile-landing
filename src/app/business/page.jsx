@@ -37,7 +37,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We&apos;ve worked with hundreds of amazing people
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -68,8 +68,8 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
+          We believe technology is the answer to the world&apos;s greatest
+          challenges. It&apos;s also the cause, so we find ourselves in bit of a
           catch 22 situation.
         </p>
       </SectionIntro>
@@ -146,7 +146,7 @@ function Services() {
               85% of employees feel more connected to culture with recognition programs, says Workhuman. Culture is your competitive edge. 
             </ListItem>
             <ListItem title="Slash Costs">
-              Cut turnover by 31% and save up to 9 months of salary per retained employee, according to the Aberdeen Group. That's smart finance.
+              Cut turnover by 31% and save up to 9 months of salary per retained employee, according to the Aberdeen Group. 
             </ListItem>
             <ListItem title="ROI You Can See">
               Enjoy a 12% higher return on equity with recognition programs, as found by Quantum Workplace. Track these gains in real-time. 
