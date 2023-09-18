@@ -37,9 +37,9 @@ export function ContactSection() {
         <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
       </svg>
       <div className="mx-auto max-w-xl lg:max-w-4xl">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900">Let's Elevate Your Employee Experience</h2>
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900">Let&apos;s Elevate Your Employee Experience</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Bundl helps you build a culture of recognition and engagement. Let's discuss how we can tailor our services to your needs.
+          Bundl helps you build a culture of recognition and engagement. Let&apos;s discuss how we can tailor our services to your needs.
         </p>
         <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
           <form action="#" method="POST" className="lg:flex-auto">
