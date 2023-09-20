@@ -19,11 +19,10 @@ function FormFields({ setStats }) {
       const reducedAbsenteeism = employeeCount * absenteeismCost * 0.41;
   
       setStats([
-        { name: "$ Saved from Increased Employee Retention", stat: `$${dollarsSaved.toFixed(2)}` },
-        { name: '$ From Increased Employee Productivity', stat: `$${productivityBoost.toFixed(2)}` },
-        { name: '$ From Decreased Employee Absenteeism', stat: `$${reducedAbsenteeism.toFixed(2)}` },
+        { name: "$ Saved from Increased Employee Retention", stat: `$${Math.round(dollarsSaved).toLocaleString()}` },
+        { name: '$ From Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
+        { name: '$ From Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
       ]);
-    };
   
     return (
       <>
