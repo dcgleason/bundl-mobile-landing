@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react';
+import Data from "../../components/components/Data"
+
 
 import { ContactSection } from '../../components/components/ContactSection'
 import { Container } from '../../components/components/Container'
@@ -158,10 +161,6 @@ function Services() {
   )
 }
 
-export const metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
-}
 
 export default async function Home() {
   // let caseStudies = (await loadCaseStudies()).slice(0, 3)
@@ -179,6 +178,19 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
+
+      <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+      <Container>
+        <FadeIn className="flex items-center gap-x-8">
+          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+            Bundl ROI Calculator
+          </h2>
+          <div className="h-px flex-auto bg-neutral-800" />
+        </FadeIn>
+        <Data/>
+      </Container>
+    </div>
+     
       {/* <Clients /> */}
 
       {/* <CaseStudies caseStudies={caseStudies} /> */}
