@@ -23,6 +23,7 @@ function FormFields({ setStats }) {
         { name: '$ From Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
         { name: '$ From Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
       ]);
+    };
   
     return (
       <>
