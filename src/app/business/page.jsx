@@ -127,7 +127,7 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Partner with Bundl and experience a 14% increase in productivity, a 31% reduction in voluntary turnover, and a 12% higher return on equity. <a href="https://www.selectsoftwarereviews.com/blog/employee-recognition-statistics" target="_blank" rel="noopener noreferrer">[Source]</a>
+          Partner with Bundl and experience an increase in productivity, a reduction in voluntary turnover, and reduction in absenteeism. <a href="https://www.selectsoftwarereviews.com/blog/employee-recognition-statistics" target="_blank" rel="noopener noreferrer">[Source]</a>
         </p>
       </SectionIntro>
       <Container className="mt-16">
