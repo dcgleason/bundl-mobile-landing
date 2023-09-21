@@ -31,7 +31,7 @@ function FormFields({ setStats }) {
           {/* Employee Count */}
           <div className="sm:col-span-2">
             <label htmlFor="employee-count" className="block text-sm font-medium leading-6 text-white">
-              Employee Headcount
+              Your Employee Headcount
             </label>
             <div className="mt-2">
               <input
@@ -51,7 +51,7 @@ function FormFields({ setStats }) {
           {/* Average Salary */}
           <div className="sm:col-span-2">
             <label htmlFor="avg-salary" className="block text-sm font-medium leading-6 text-white">
-              Average Employee Salary
+              Your Average Employee Salary
             </label>
             <div className="mt-2">
               <input
@@ -71,12 +71,12 @@ function FormFields({ setStats }) {
           {/* Turnover Rate */}
           <div className="sm:col-span-2">
             <label htmlFor="turnover-rate" className="block text-sm font-medium leading-6 text-white">
-              Average Employee Turnover Rate
+              Your Average Employee Turnover Rate
             </label>
             <div className="mt-2">
               <input
                 type="number"
-                placeholder='15%'
+                placeholder='15 - 20 % is average'
                 name="turnover-rate"
                 id="turnover-rate"
                 onChange={(e) => {
