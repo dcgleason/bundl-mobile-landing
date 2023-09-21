@@ -142,7 +142,14 @@ function FormFields({ setStats }) {
     </>,
   "$ From Decreased Employee Absenteeism": (
     <>
-      {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x 3.2% Avg Absenteeism) x Reduction in absenteeism ("}
+      {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x "}
+      <a href="https://www.bls.gov/cps/cpsaat47.htm"
+         target="_blank" 
+         rel="noopener noreferrer" 
+         className="text-white underline">
+        3.2% Avg Absenteeism
+      </a>
+      {") x Reduction in absenteeism ("}
       <a href="https://www.gallup.com/workplace/236366/right-culture-not-employee-satisfaction.aspx#:~:text=Showing%20up%20and%20staying%3A%20Engaged%20employees%20make%20it%20a%20point%20to%20show%20up%20to%20work%20and%20do%20more%20work%20%2D%2D%20highly%20engaged%20business%20units%20realize%20a%2041%25%20reduction%20in%20absenteeism%20and%20a%2017%25%20increase%20in%20productivity."
          target="_blank" 
          rel="noopener noreferrer" 
@@ -151,7 +158,7 @@ function FormFields({ setStats }) {
       </a>
       {"%)."}
     </>
-  )  };
+  ) };
   return (
     <>
       <h3>ROI Calculator</h3>
