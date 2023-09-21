@@ -207,8 +207,10 @@ export default function Home() {
           Increase Productivity. Lower Spend. Build Culture.
             </h1>
             <p className="mt-6 text-xl text-neutral-600 ">
-            Bundl is a mobile platform that makes it easy to recognize and reward employees and drives business success as a result <a href="/GallupRecognitionPaper.pdf" target="_blank" rel="noopener noreferrer">[Source]</a>. Bundl allows team members to easily create digital or physical books that contain praise and positive feedback from co-workers. This feedback can be in the form of text, audio, or pictures, offering a personalized way to appreciate individual employees.
-          </p>
+              Bundl is a mobile platform that makes it 
+              <span className="text-[#DF9496]"> easy </span> 
+              to <span className='underline'>recognize</span> and <span className='underline'>reward</span> employees and drives business success as a result <a className="italic" href="/GallupRecognitionPaper.pdf" target="_blank" rel="noopener noreferrer">[source]</a>. <br></br><br></br>Bundl allows team members to easily create digital or physical books that contain praise and positive feedback from co-workers. This feedback can be in the form of text, audio, or pictures, offering a personalized way to appreciate individual employees.
+            </p>
         </FadeIn>
       </Container>
 
