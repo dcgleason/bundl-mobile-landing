@@ -202,8 +202,8 @@ export default function Home() {
           </FadeIn>
           {/* Conditional rendering of the total amount */}
           {stats.length > 0 && (
-            <div className="text-white text-center mt-10">
-              Recognition with Bundl could generate ${totalAmount.toLocaleString()} annually!
+          < div className="text-white text-center mt-10">
+              Recognition with Bundl could generate <span style={{ textDecoration: 'underline' }}>${totalAmount.toLocaleString()}</span> <span style={{ textDecoration: 'underline' }}>annually</span>!
             </div>
           )}
           <Data setStats={setStats} stats={stats}/>
