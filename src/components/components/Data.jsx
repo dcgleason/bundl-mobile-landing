@@ -1,13 +1,21 @@
 "use client"
 
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 function FormFields({ setStats }) {
     const [employeeCount, setEmployeeCount] = useState(0);
     const [avgSalary, setAvgSalary] = useState(0);
     const [turnoverRate, setTurnoverRate] = useState(0);
+
+
+    useEffect(() => {
+        console.log("Updated turnoverRate: ", turnoverRate);
+        updateStats();
+      }, [turnoverRate]);
   
     const updateStats = () => {
+
+        console.log('running')
       const expectedTurnover = employeeCount * (turnoverRate / 100);
       const costToReplace = avgSalary * 0.33;
       const dollarsSaved = expectedTurnover * costToReplace * 0.31;
@@ -17,11 +25,17 @@ function FormFields({ setStats }) {
   
       const absenteeismCost = revenueGenerated * 0.032;
       const reducedAbsenteeism = employeeCount * absenteeismCost * 0.41;
+      const calculatedValue = employeeCount * (turnoverRate / 100) * 0.31;
+      const employeesRetained = Math.floor(calculatedValue) + (calculatedValue % 1 >= 0.5 ? 1 : 0);
+      console.log('turnover rate', turnoverRate)
+      
+
+      console.log('expected turnover' + expectedTurnover)
   
       setStats([
-        { name: "$ Saved from Increased Employee Retention", stat: `$${Math.round(dollarsSaved).toLocaleString()}` },
-        { name: '$ Gained from Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
-        { name: '$ Gained from Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
+        { key: "1", name: `$ Saved By Retaining ${Math.round(employeesRetained)} Employees`, stat: `$${Math.round(dollarsSaved).toLocaleString()}` }, // New stat
+        { key: "2", name: '$ Generated from Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
+        { key: "3",name: '$ Generated from Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
       ]);
       
     };
@@ -82,6 +96,8 @@ function FormFields({ setStats }) {
                 id="turnover-rate"
                 onChange={(e) => {
                   setTurnoverRate(Number(e.target.value));
+                  console.log("Turnover Rate after set: ", turnoverRate);
+
                   updateStats();
                 }}
                 className="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
@@ -97,7 +113,7 @@ function FormFields({ setStats }) {
   export default function Data({ setStats, stats }) { // Receive setStats and stats as props
   
     const explanations = {
-        "$ Saved from Increased Employee Retention": (
+        "1": (
             <>
               {"Effective recognition can reduce turnover by 31%. This dollar figure is calculated as: Expected turnover (Employee Count x "}
               <a href="https://www.bls.gov/news.release/jolts.t18.htm"
@@ -123,7 +139,7 @@ function FormFields({ setStats }) {
               {")."}
             </>
           ),
-    "$ Gained from Increased Employee Productivity": <>
+    "2": <>
       {"Effective recognition can boost productivity up to 17%. This dollar figure is calculated as: Employee Count x "}
       <a href="https://www.cfo.com/news/metric-of-the-month-business-entity-revenue-per-employee/658369/#:~:text=Among%20the%20top,employee%20each%20year."
          target="_blank" 
@@ -140,7 +156,7 @@ function FormFields({ setStats }) {
       </a>
       {" from higher engagement."}
     </>,
-  "$ Gained from Decreased Employee Absenteeism": (
+  "3": (
     <>
       {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x "}
       <a href="https://www.bls.gov/cps/cpsaat47.htm"
@@ -166,13 +182,13 @@ function FormFields({ setStats }) {
       <FormFields setStats={setStats} />
       <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 overflow-visible">
         {stats.map((item) => (
-          <div key={item.name} className="relative rounded-lg bg-white px-4 py-5 shadow sm:p-6 overflow-visible">
+          <div key={item.key} className="relative rounded-lg bg-white px-4 py-5 shadow sm:p-6 overflow-visible">
             <dt className="truncate text-sm font-medium text-gray-500">{item.name}</dt>
             <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{item.stat}</dd>
             <div className="absolute bottom-2 right-2 group">
                 <span className="text-xl cursor-pointer">i</span>
                 <div className="opacity-0 group-hover:opacity-100 absolute bottom-full right-0 bg-gray-700 text-white text-xs rounded p-2 max-w-xl whitespace-normal transition ease-in-out duration-200 z-50 min-w-[200px] min-h-[50px]">
-                    {explanations[item.name]}
+                    {explanations[item.key]}
                 </div>
                 </div>
           </div>
