@@ -168,7 +168,7 @@ export function AppDemo() {
     <AppScreen>
       <AppScreen.Body>
         <div className="p-4">
-          <h1 className="text-2xl font-semibold mb-4">Recognize Sally Sullivan</h1>
+          <h1 className="text-2xl font-semibold mb-4">Recognize Sally Stern</h1>
           <form>
             <div className="mb-4">
               <label htmlFor="fianceeName" className="block text-sm font-medium text-gray-600">How has Sally embodied our core value of integrity?</label>
