@@ -92,25 +92,84 @@ function FormFields({ setStats }) {
       </>
     );
   }
-  
- export default function Data() {
+
+  export default function Data() {
     const [stats, setStats] = useState([]);
   
-    return (
-      <>
+    const explanations = {
+        "$ Saved from Increased Employee Retention": (
+            <>
+              {"Effective recognition can reduce turnover by 31%. This dollar figure is calculated as: Expected turnover (Employee Count x "}
+              <a href="https://www.bls.gov/news.release/jolts.t18.htm"
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 className="text-white underline">
+                Turnover Rate
+              </a>
+              {") x Cost to replace ("}
+              <a href="https://www.hcmi.co/employee-turnover-cost#:~:text=Employee%20turnover%20is%20expensive.,onboard%2C%20and%20train%20a%20replacement."
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 className="text-white underline">
+                Avg Salary x 33%
+              </a> 
+              {") x Reduction in turnover ("}
+              <a href="https://www2.deloitte.com/us/en/insights/deloitte-review/issue-16/employee-engagement-strategies.html"
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 className="text-white underline">
+                31%
+              </a>
+              {")."}
+            </>
+          ),
+    "$ From Increased Employee Productivity": <>
+      {"Effective recognition can boost productivity up to 17%. This dollar figure is calculated as: Employee Count x "}
+      <a href="https://www.cfo.com/news/metric-of-the-month-business-entity-revenue-per-employee/658369/#:~:text=Among%20the%20top,employee%20each%20year."
+         target="_blank" 
+         rel="noopener noreferrer" 
+         className="text-white underline">
+        (Avg Salary x 3)
+      </a> 
+      {" x "}
+      <a href="https://news.gallup.com/businessjournal/200108/damage-inflicted-poor-managers.aspx#:~:text=17%25%20higher%20productivity"
+         target="_blank" 
+         rel="noopener noreferrer" 
+         className="text-white underline">
+        1% minimum boost
+      </a>
+      {" from higher engagmenet."}
+    </>,
+  "$ From Decreased Employee Absenteeism": (
+    <>
+      {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x 3.2% Avg Absenteeism) x Reduction in absenteeism ("}
+      <a href="https://www.gallup.com/workplace/236366/right-culture-not-employee-satisfaction.aspx#:~:text=Showing%20up%20and%20staying%3A%20Engaged%20employees%20make%20it%20a%20point%20to%20show%20up%20to%20work%20and%20do%20more%20work%20%2D%2D%20highly%20engaged%20business%20units%20realize%20a%2041%25%20reduction%20in%20absenteeism%20and%20a%2017%25%20increase%20in%20productivity."
+         target="_blank" 
+         rel="noopener noreferrer" 
+         className="text-white underline">
+        41%
+      </a>
+      {"%)."}
+    </>
+  )  };
+  return (
+    <>
       <h3>ROI Calculator</h3>
-        <FormFields setStats={setStats} />
-        <div>
-          <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
-            {stats.map((item) => (
-              <div key={item.name} className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
-                <dt className="truncate text-sm font-medium text-gray-500">{item.name}</dt>
-                <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{item.stat}</dd>
+      <FormFields setStats={setStats} />
+      <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3 overflow-visible">
+        {stats.map((item) => (
+          <div key={item.name} className="relative rounded-lg bg-white px-4 py-5 shadow sm:p-6 overflow-visible">
+            <dt className="truncate text-sm font-medium text-gray-500">{item.name}</dt>
+            <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{item.stat}</dd>
+            <div className="absolute bottom-2 right-2 group">
+              <span className="text-xl cursor-pointer">i</span>
+              <div className="opacity-0 group-hover:opacity-100 absolute bottom-full right-0 bg-gray-700 text-white text-xs rounded p-2 max-w-xl whitespace-normal transition ease-in-out duration-200 z-50">
+                {explanations[item.name]}
               </div>
-            ))}
-          </dl>
-        </div>
-      </>
-    );
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
   }
-  
