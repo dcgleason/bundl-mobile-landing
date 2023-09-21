@@ -20,8 +20,8 @@ function FormFields({ setStats }) {
   
       setStats([
         { name: "$ Saved from Increased Employee Retention", stat: `$${Math.round(dollarsSaved).toLocaleString()}` },
-        { name: '$ From Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
-        { name: '$ From Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
+        { name: '$ Gaiedn from Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
+        { name: '$ Gained from Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
       ]);
     };
   
