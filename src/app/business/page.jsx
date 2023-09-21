@@ -186,7 +186,7 @@ export default function Home() {
           Increase Productivity. Lower Spend. Build Culture.
             </h1>
             <p className="mt-6 text-xl text-neutral-600 ">
-              Bundl makes recognizing and rewarding people easier and more effective for everyone. Contact us to see what employee recognition will do for you.
+              Bundl makes recognizing and rewarding people easier and more effective for everyone. Contact us to see what authentic employee recognition will do for you.
             </p>
 
         </FadeIn>
