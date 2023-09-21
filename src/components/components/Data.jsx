@@ -20,9 +20,10 @@ function FormFields({ setStats }) {
   
       setStats([
         { name: "$ Saved from Increased Employee Retention", stat: `$${Math.round(dollarsSaved).toLocaleString()}` },
-        { name: '$ Gaiedn from Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
+        { name: '$ Gained from Increased Employee Productivity', stat: `$${Math.round(productivityBoost).toLocaleString()}` },
         { name: '$ Gained from Decreased Employee Absenteeism', stat: `$${Math.round(reducedAbsenteeism).toLocaleString()}` },
       ]);
+      
     };
   
     return (
@@ -122,7 +123,7 @@ function FormFields({ setStats }) {
               {")."}
             </>
           ),
-    "$ From Increased Employee Productivity": <>
+    "$ Gained from Increased Employee Productivity": <>
       {"Effective recognition can boost productivity up to 17%. This dollar figure is calculated as: Employee Count x "}
       <a href="https://www.cfo.com/news/metric-of-the-month-business-entity-revenue-per-employee/658369/#:~:text=Among%20the%20top,employee%20each%20year."
          target="_blank" 
@@ -139,7 +140,7 @@ function FormFields({ setStats }) {
       </a>
       {" from higher engagement."}
     </>,
-  "$ From Decreased Employee Absenteeism": (
+  "$ Gained from Decreased Employee Absenteeism": (
     <>
       {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x "}
       <a href="https://www.bls.gov/cps/cpsaat47.htm"
@@ -169,11 +170,11 @@ function FormFields({ setStats }) {
             <dt className="truncate text-sm font-medium text-gray-500">{item.name}</dt>
             <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{item.stat}</dd>
             <div className="absolute bottom-2 right-2 group">
-              <span className="text-xl cursor-pointer">i</span>
-              <div className="opacity-0 group-hover:opacity-100 absolute bottom-full right-0 bg-gray-700 text-white text-xs rounded p-2 max-w-xl whitespace-normal transition ease-in-out duration-200 z-50">
-                {explanations[item.name]}
-              </div>
-            </div>
+                <span className="text-xl cursor-pointer">i</span>
+                <div className="opacity-0 group-hover:opacity-100 absolute bottom-full right-0 bg-gray-700 text-white text-xs rounded p-2 max-w-xl whitespace-normal transition ease-in-out duration-200 z-50 min-w-[200px] min-h-[50px]">
+                    {explanations[item.name]}
+                </div>
+                </div>
           </div>
         ))}
       </div>
