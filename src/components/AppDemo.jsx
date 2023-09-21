@@ -168,14 +168,14 @@ export function AppDemo() {
     <AppScreen>
       <AppScreen.Body>
         <div className="p-4">
-          <h1 className="text-2xl font-semibold mb-4">Collect submissions</h1>
+          <h1 className="text-2xl font-semibold mb-4">Recognize Sally Sullivan</h1>
           <form>
             <div className="mb-4">
-              <label htmlFor="fianceeName" className="block text-sm font-medium text-gray-600">What is your significant other&apos;s name?</label>
+              <label htmlFor="fianceeName" className="block text-sm font-medium text-gray-600">How has Sally embodied our core value of integrity?</label>
               <input type="text" id="fianceeName" name="fianceeName" className="mt-1 p-2 w-full border rounded-md" />
             </div>
             <div className="mb-4">
-              <label htmlFor="prompt" className="block text-sm font-medium text-gray-600">What do you want to ask her/his family and friends to write about?</label>
+              <label htmlFor="prompt" className="block text-sm font-medium text-gray-600">What do you especially appreciate about Sally? Why?</label>
               <textarea id="prompt" name="prompt" className="mt-1 p-2 w-full border rounded-md" rows="3"></textarea>
             </div>
             
@@ -183,14 +183,14 @@ export function AppDemo() {
 
               <div className="space-y-6">
 
-            <button className="w-full bg-[#727B84] text-white py-2 rounded-lg flex items-center">
-            <Image src={AppleLogo} alt="Apple" className="h-4 w-7 mr-1" />
-              Select from your iPhone contacts
+              <button className="w-full bg-[#727B84] text-white py-2 rounded-lg flex items-center justify-center">
+              {/* <Image src={AppleLogo} alt="Apple" className="h-4 w-7 mr-1" /> */}
+              Send
             </button>
-            <button className="w-full bg-[#DF9496] text-white py-2 rounded-lg flex items-center">
+            {/* <button className="w-full bg-[#DF9496] text-white py-2 rounded-lg flex items-center">
             <Image src={GoogleLogo} alt="Google" className="h-4 w-4 mr-2 ml-1" />
               Select from your Google contacts
-            </button>
+            </button> */}
             </div>
           </div>
           
