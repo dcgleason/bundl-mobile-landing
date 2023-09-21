@@ -71,12 +71,12 @@ function FormFields({ setStats }) {
           {/* Turnover Rate */}
           <div className="sm:col-span-2">
             <label htmlFor="turnover-rate" className="block text-sm font-medium leading-6 text-white">
-              Your Average Employee Turnover Rate
+             Your Average Employee Turnover Rate
             </label>
             <div className="mt-2">
               <input
                 type="number"
-                placeholder='15 - 20 % is average'
+                placeholder='15 - 20% is the avg for most industries'
                 name="turnover-rate"
                 id="turnover-rate"
                 onChange={(e) => {
@@ -169,12 +169,11 @@ function FormFields({ setStats }) {
             <dt className="truncate text-sm font-medium text-gray-500">{item.name}</dt>
             <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{item.stat}</dd>
             <div className="absolute bottom-2 right-2 group">
-                    <span className="text-xl cursor-pointer">i</span>
-                    <div className={`opacity-0 group-hover:opacity-100 absolute ${item.name === '$ Gained from Decreased Employee Absenteeism' ? 'bottom-0 md:bottom-full' : 'bottom-full'} right-0 bg-gray-700 text-white text-xs rounded p-2 max-w-xl whitespace-normal transition ease-in-out duration-200 z-50 min-w-[200px]`}>
-                        {explanations[item.name]}
-                    </div>
-                    </div>
-
+                <span className="text-xl cursor-pointer">i</span>
+                <div className="opacity-0 group-hover:opacity-100 absolute bottom-full right-0 bg-gray-700 text-white text-xs rounded p-2 max-w-xl whitespace-normal transition ease-in-out duration-200 z-50 min-w-[200px]">
+                    {explanations[item.name]}
+                </div>
+                </div>
           </div>
         ))}
       </div>
