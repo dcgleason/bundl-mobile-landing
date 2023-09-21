@@ -143,7 +143,7 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Skyrocket Productivity">
-              Boost productivity by 14% as per a Deloitte study. More productivity means more growth.
+              Boost productivity by 17% as per a Deloitte study. More productivity means more growth.
             </ListItem>
             <ListItem title="Cultivate Culture">
               85% of employees feel more connected to culture with recognition programs, says Workhuman. Culture is your competitive edge. 

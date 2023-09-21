@@ -123,7 +123,8 @@ function FormFields({ setStats }) {
               {")."}
             </>
           ),
-    "$ You Would Have From Increased Employee Productivity": <>
+    "$ You Would Have From Increased Employee Productivity": (
+    <>
       {"Effective recognition can boost productivity up to 17%. This dollar figure is calculated as: Employee Count x "}
       <a href="https://www.cfo.com/news/metric-of-the-month-business-entity-revenue-per-employee/658369/#:~:text=Among%20the%20top,employee%20each%20year."
          target="_blank" 
@@ -139,7 +140,7 @@ function FormFields({ setStats }) {
         1% minimum boost
       </a>
       {" from higher engagement."}
-    </>,
+    </>),
   "$ You Would Save From Decreased Employee Absenteeism": (
     <>
       {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x "}
