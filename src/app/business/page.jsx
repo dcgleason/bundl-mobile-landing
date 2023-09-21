@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
@@ -22,6 +23,7 @@ import logoPhobiaLight from '../../images/images/clients/phobia/logo-light.svg'
 import logoUnseal from '../../images/images/clients/unseal/logo-light.svg'
 import imageLaptop from '../../images/images/laptop.jpg'
 import { loadCaseStudies } from '../../lib/mdx'
+import { useState } from 'react'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -162,9 +164,19 @@ function Services() {
 }
 
 
-export default async function Home() {
+export default function Home() {
   // let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  const [stats, setStats] = useState([]);
 
+  const calculateTotalAmount = () => {
+    console.log("Current Stats:", stats);
+    return stats.reduce((total, item) => {
+      const amount = parseInt(item.stat.replace(/[^0-9]/g, ''), 10);
+      return total + amount;
+    }, 0);
+  };
+
+  const totalAmount = calculateTotalAmount();
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
@@ -172,23 +184,30 @@ export default async function Home() {
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
           Increase Productivity. Lower Spend. Build Culture.
             </h1>
-          <p className="mt-6 text-xl text-neutral-600">
-          Bundl makes recognizing and rewarding people easier and more effective for everyone.  Contact us to see what employee recognition will do for you.
-          </p>
+            <p className="mt-6 text-xl text-neutral-600 ">
+              Bundl makes recognizing and rewarding people easier and more effective for everyone. Contact us to see what employee recognition will do for you.
+            </p>
+
         </FadeIn>
       </Container>
 
 
       <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Bundl ROI Calculator
-          </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
-        </FadeIn>
-        <Data/>
-      </Container>
+          <FadeIn className="flex items-center gap-x-8">
+            <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+              Bundl ROI Calculator
+            </h2>
+            <div className="h-px flex-auto bg-neutral-800" />
+          </FadeIn>
+          {/* Conditional rendering of the total amount */}
+          {stats.length > 0 && (
+            <div className="text-white text-center mt-10">
+              Recognition with Bundl could generate ${totalAmount.toLocaleString()} annually!
+            </div>
+          )}
+          <Data setStats={setStats} stats={stats}/>
+        </Container>
     </div>
      
       {/* <Clients /> */}

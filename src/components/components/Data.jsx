@@ -93,8 +93,7 @@ function FormFields({ setStats }) {
     );
   }
 
-  export default function Data() {
-    const [stats, setStats] = useState([]);
+  export default function Data({ setStats, stats }) { // Receive setStats and stats as props
   
     const explanations = {
         "$ Saved from Increased Employee Retention": (
@@ -159,7 +158,7 @@ function FormFields({ setStats }) {
       {"%)."}
     </>
   ) };
-  
+
   return (
     <>
       <h3>ROI Calculator</h3>
