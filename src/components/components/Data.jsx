@@ -138,7 +138,7 @@ function FormFields({ setStats }) {
          className="text-white underline">
         1% minimum boost
       </a>
-      {" from higher engagmenet."}
+      {" from higher engagement."}
     </>,
   "$ From Decreased Employee Absenteeism": (
     <>
