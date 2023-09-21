@@ -97,7 +97,7 @@ function FormFields({ setStats }) {
     const [stats, setStats] = useState([]);
   
     const explanations = {
-        "$ You Would Save From Increased Employee Retention": (
+        "$ Saved from Increased Employee Retention": (
             <>
               {"Effective recognition can reduce turnover by 31%. This dollar figure is calculated as: Expected turnover (Employee Count x "}
               <a href="https://www.bls.gov/news.release/jolts.t18.htm"
@@ -123,8 +123,7 @@ function FormFields({ setStats }) {
               {")."}
             </>
           ),
-    "$ You Would Have From Increased Employee Productivity": (
-    <>
+    "$ From Increased Employee Productivity": <>
       {"Effective recognition can boost productivity up to 17%. This dollar figure is calculated as: Employee Count x "}
       <a href="https://www.cfo.com/news/metric-of-the-month-business-entity-revenue-per-employee/658369/#:~:text=Among%20the%20top,employee%20each%20year."
          target="_blank" 
@@ -140,8 +139,8 @@ function FormFields({ setStats }) {
         1% minimum boost
       </a>
       {" from higher engagement."}
-    </>),
-  "$ You Would Save From Decreased Employee Absenteeism": (
+    </>,
+  "$ From Decreased Employee Absenteeism": (
     <>
       {"Effective recognition can reduce absenteeism up to 41%. This dollar figure is calculated as: Employee Count x Absentee costs (Avg Employee Revenue x "}
       <a href="https://www.bls.gov/cps/cpsaat47.htm"
@@ -160,6 +159,7 @@ function FormFields({ setStats }) {
       {"%)."}
     </>
   ) };
+  
   return (
     <>
       <h3>ROI Calculator</h3>
