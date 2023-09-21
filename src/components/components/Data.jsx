@@ -123,7 +123,7 @@ function FormFields({ setStats }) {
               {")."}
             </>
           ),
-    "$ You Would Save From Increased Employee Productivity": <>
+    "$ You Would Have From Increased Employee Productivity": <>
       {"Effective recognition can boost productivity up to 17%. This dollar figure is calculated as: Employee Count x "}
       <a href="https://www.cfo.com/news/metric-of-the-month-business-entity-revenue-per-employee/658369/#:~:text=Among%20the%20top,employee%20each%20year."
          target="_blank" 
