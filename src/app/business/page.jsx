@@ -145,17 +145,17 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Skyrocket Productivity">
-              Boost productivity by 17% as per a Deloitte study. More productivity means more growth.
+              Boost productivity by 17% as per a Gallup study. More productivity means more growth. <a href="https://news.gallup.com/businessjournal/200108/damage-inflicted-poor-managers.aspx#:~:text=17%25%20higher%20productivity" target="_blank" rel="noopener noreferrer">[Source]</a>
             </ListItem>
             <ListItem title="Cultivate Culture">
-              85% of employees feel more connected to culture with recognition programs, says Workhuman. Culture is your competitive edge. 
+             Employees are 5x as likely to feel connected to their work culture with recognition programs, says Workhuman. Culture is your competitive edge.  <a href="https://www.workhuman.com/resources/reports-guides/unleashing-the-human-element-at-work-transforming-workplaces-through-recognition/" target="_blank" rel="noopener noreferrer">[Source]</a>
             </ListItem>
             <ListItem title="Slash Costs">
-              Cut turnover by 31% and save up to 9 months of salary per retained employee, according to the Aberdeen Group. 
+              Cut turnover by 31% and save up to 9 months of salary per retained employee, according to a recent Deliote study. <a href="https://www2.deloitte.com/us/en/insights/deloitte-review/issue-16/employee-engagement-strategies.html" target="_blank" rel="noopener noreferrer">[Source]</a>
             </ListItem>
             <ListItem title="ROI You Can See">
-              Enjoy a 12% higher return on equity with recognition programs, as found by Quantum Workplace. Track these gains in real-time. 
-            </ListItem>
+            Employees who don&apos;t receive fulfilling recognition are 4x more likely to be actively looking for another job. But when recognition hits the mark, 56% of employees are less likely to be looking for job opportunities.<a href="https://www.workhuman.com/blog/effective-employee-retention-strategies/" target="_blank" rel="noopener noreferrer">[Source]</a>           
+             </ListItem>
           </List>
         </div>
       </Container>
