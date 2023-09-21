@@ -151,7 +151,7 @@ function Services() {
              Employees are 5x as likely to feel connected to their work culture with recognition programs, says Workhuman. Culture is your competitive edge.  <a href="https://www.workhuman.com/resources/reports-guides/unleashing-the-human-element-at-work-transforming-workplaces-through-recognition/" target="_blank" rel="noopener noreferrer">[Source]</a>
             </ListItem>
             <ListItem title="Slash Costs">
-              Cut turnover by 31% and save up to 9 months of salary per retained employee, according to a recent Deliote study. <a href="https://www2.deloitte.com/us/en/insights/deloitte-review/issue-16/employee-engagement-strategies.html" target="_blank" rel="noopener noreferrer">[Source]</a>
+            High-recognition companies cut voluntary turnover rates by 31%, and save on the cost to replace talent, according to a recent Deliote study. <a href="https://www2.deloitte.com/us/en/insights/deloitte-review/issue-16/employee-engagement-strategies.html" target="_blank" rel="noopener noreferrer">[Source]</a>
             </ListItem>
             <ListItem title="ROI You Can See">
             Employees who don&apos;t receive fulfilling recognition are 4x more likely to be actively looking for another job. But when recognition hits the mark, 56% of employees are less likely to be looking for job opportunities.<a href="https://www.workhuman.com/blog/effective-employee-retention-strategies/" target="_blank" rel="noopener noreferrer">[Source]</a>           
