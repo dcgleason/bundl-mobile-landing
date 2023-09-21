@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Container } from './Container'
 import { FadeIn } from './FadeIn'
 import { Logo } from './Logo'
+import Image from 'next/image'
+import BundlLogo from "../../images/logos/bundl-logo-transparent.png"
 import { socialMediaProfiles } from './SocialMedia'
 
 const navigation = [
@@ -122,10 +124,10 @@ export function Footer() {
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+            <Image src={BundlLogo} height={50} width={50}/>
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Bundl Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
