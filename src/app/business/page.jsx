@@ -65,7 +65,7 @@ function Clients() {
   )
 }
 
-function CaseStudies({ caseStudies }) {
+function CaseStudies() {
   return (
     <>
       <SectionIntro
@@ -80,7 +80,7 @@ function CaseStudies({ caseStudies }) {
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {caseStudies.map((caseStudy) => (
+          {/* {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                 <h3>
@@ -114,7 +114,7 @@ function CaseStudies({ caseStudies }) {
                 </p>
               </article>
             </FadeIn>
-          ))}
+          ))} */}
         </FadeInStagger>
       </Container>
     </>
@@ -164,6 +164,27 @@ function Services() {
   )
 }
 
+function ProductDescription() {
+  return (
+    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+      <Container>
+        <FadeIn className="flex items-center gap-x-8">
+          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+            What is Bundl?
+          </h2>
+          <div className="h-px flex-auto bg-neutral-800" />
+        </FadeIn>
+        <FadeIn className="mt-10 text-white">
+          <p>
+            Bundl is a mobile platform that revolutionizes the way you recognize and reward your employees. 
+            It allows you to collect and gift digital and/or physical books filled with co-worker praise in the form of audio, pictures, and text to individual employees.
+          </p>
+        </FadeIn>
+      </Container>
+    </div>
+  );
+}
+
 
 export default function Home() {
   // let caseStudies = (await loadCaseStudies()).slice(0, 3)
@@ -186,9 +207,8 @@ export default function Home() {
           Increase Productivity. Lower Spend. Build Culture.
             </h1>
             <p className="mt-6 text-xl text-neutral-600 ">
-              Bundl makes recognizing and rewarding people easier and more effective for everyone. Contact us to see what authentic employee recognition will do for you.
-            </p>
-
+            Bundl is a mobile platform that makes it eaasy to recognize and reward employees. Team members can create digital or physical books that contain praise and positive feedback from co-workers. This feedback can be in the form of text, audio, or pictures, offering a personalized way to appreciate individual employees.
+          </p>
         </FadeIn>
       </Container>
 
@@ -211,9 +231,10 @@ export default function Home() {
         </Container>
     </div>
      
+     {/* <ProductDescription/> */}
       {/* <Clients /> */}
 
-      {/* <CaseStudies caseStudies={caseStudies} /> */}
+      {/* <CaseStudies /> */}
 
       {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
