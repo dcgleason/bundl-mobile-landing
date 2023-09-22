@@ -148,10 +148,10 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-           Built to make them feel special, at no cost to you. 
+           Make them feel special, at no cost to you. 
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Give your friend or family member a <span className='text-[#8b0000]'>FREE</span> <span className='underline'><em>&apos;Bundl&apos;</em></span> (a.k.a send them a daily email, each filled with a heartfelt, prompt-driven written note, audio-clip, and/or memorable picture each collected from friends and family using our mobile app)! Great for leading up to birthdays, babyshowers, retirements, etc.
+            Give your friend or family member a <span className='text-[#8b0000]'>FREE</span> digital<span className='underline'><em>&apos;Bundl&apos;</em></span> (a.k.a a digital book filled with a heartfelt, prompt-driven written notes, audio-clips, and memorable pictures collected from friends and family using our mobile app)! Great for leading up to birthdays, babyshowers, retirements, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
