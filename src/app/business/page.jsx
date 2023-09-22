@@ -284,7 +284,7 @@ export default function Home() {
             <p className="mt-6 text-xl text-neutral-600 ">
               Bundl is a mobile platform that makes it 
               <span className="text-[#DF9496]"> easy </span> 
-              to <span className='underline'>recognize</span> and <span className='underline'>reward</span> employees, which research shows drives business success as a result <a className="italic" href="/GallupRecognitionPaper.pdf" target="_blank" rel="noopener noreferrer">[source]</a>. <br></br><br></br>Allow your team members to easily create digital or physical books that contain praise and positive feedback from co-workers. This feedback can be in the form of text, audio, or pictures, offering a personalized way to appreciate your colleagues.
+              to <span className='underline'>recognize</span> and <span className='underline'>reward</span> employees, which research shows drives business success as a result <a className="italic" href="/GallupRecognitionPaper.pdf" target="_blank" rel="noopener noreferrer">[source]</a>. <br></br><br></br>Bundl allows your team members to easily create digital or physical &apos;positve feedback&apos; books that contain praise and positive feedback from co-workers. This praise can be in the form of text, audio, or pictures, offering a personalized way to appreciate your colleagues.
             </p>
             </FadeIn>
           <div className="relative mt-10 sm:mt-20 lg:mt-0 lg:flex lg:justify-center">
