@@ -279,10 +279,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start">
             <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-          Let a culture of appreciation drive business results.
+          Build a culture of appreciation to drive business results.
             </h1>
             <p className="mt-6 text-xl text-neutral-600 ">
-              Bundl for Business is a slack application that makes it 
+              Bundl for Business is a Slack application that makes it 
               <span className="text-[#DF9496]"> easy </span> 
               to <span className='underline'>recognize</span> and <span className='underline'>reward</span> employees, which research shows drives business success as a result <a className="italic" href="/GallupRecognitionPaper.pdf" target="_blank" rel="noopener noreferrer">[source]</a>. <br></br><br></br>Bundl allows your team members to easily create digital or physical company-branded books that contain praise and positive feedback from co-workers. This praise can be in the form of text, audio, or pictures, offering a personalized way to appreciate your colleagues.
             </p>
