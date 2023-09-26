@@ -228,7 +228,7 @@ export function Pricing() {
           <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
             <div class="mx-auto max-w-xs px-8">
               <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                <span class="text-5xl font-bold tracking-tight text-gray-900 line-through">$25</span>
+                <span class="text-5xl font-bold tracking-tight text-gray-900 line-through">$29.99</span>
                 <span class="text-2xl font-bold text-gray-900">FREE</span>
               </p>
               <a href="#" class="mt-10 block w-full rounded-md bg-[#DF9496] px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600">Download app</a>
