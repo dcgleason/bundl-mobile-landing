@@ -279,7 +279,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start">
             <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-          Build a culture of appreciation to drive business results.
+          Build a culture of appreciation that drive business results.
             </h1>
             <p className="mt-6 text-xl text-neutral-600 ">
               Bundl for Business is a Slack application that makes it 
