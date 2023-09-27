@@ -280,12 +280,11 @@ const tiers = [
     price: { monthly: '$199', annually: '$499' },
     description: 'Includes all Hardcover features, plus a help planning for a event for the reveal of your Bundl book. ',
     features: [
-      'All Hardcover Bundl features',
-      'Linen hardcover Bundl book',
-      'Event planning & coordination for your group celebration call',
-      'Custom digital & physcial invitations sent to Bundl contributors',
-      'Video projector for immersive experience for your call',
-      'Tech support for group virtual call',
+      'Linen Hardcover Bundl book',
+      'Event planning & coordination for your virtual, group reveal call',
+      'Custom digital & physcial invitations for virtual reveal',
+      'Video projector for immersive experience virtual reveal',
+      'Tech support for virtual call',
         ],
   },
 ]
