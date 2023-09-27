@@ -37,11 +37,7 @@ const faqs = [
       answer:
         "No, invite as many contributors as you'd like. Each can submit one note, photo, and optional audio clip.",
     },
-    {
-      question: 'Can I include international contributors?',
-      answer:
-        'Yes, contributors can submit their content online, and the digital Bundl will be emailed to your recipient, regardless of location.',
-    },
+   
   ],
   [
     {
@@ -50,9 +46,9 @@ const faqs = [
         "Absolutely, the submission process is mobile-friendly, and the PDF is designed to be easily readable on any device.",
     },
     {
-      question: 'What if I need help or have specific requests?',
+      question: 'Can I include international contributors?',
       answer:
-        "Need help? Log in to your account for support or contact us directly.",
+        'Yes, contributors can submit their content online, and the digital Bundl will be emailed to your recipient, regardless of location.',
     },
     {
       question: 'Is there a mobile app for the digital Bundl?',
