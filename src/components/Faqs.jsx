@@ -1,71 +1,66 @@
-import Link from 'next/link'
-
-import { Container } from '@/components/Container'
-
 const faqs = [
   [
     {
-      question: 'How does the free Bundl email series work?',
+      question: 'How does the digital Bundl work?',
       answer:
-        "The Bundl email series lets you send a curated collection of notes, photos, and audio clips from friends and family to your loved one. These are sent as stylized emails, spaced out over a series of days for ongoing engagement.",
+        "The digital Bundl compiles notes, photos, and audio clips from friends and family into a single PDF formatted like a book. This PDF is then sent to your chosen recipient via email.",
     },
     {
-      question: 'What features are included in the free email series?',
+      question: 'What features are included in the digital Bundl?',
       answer:
-        'The free email series includes automated content collection, customizable email templates, and the ability to include audio clips through embedded links.',
+        'The digital Bundl includes automated content collection, a beautifully designed PDF, and the option to include audio clips through embedded links.',
     },
     {
       question: 'How do I get started?',
       answer:
-        "Just sign up on our mobile app, pick your recipients and contributors, and we'll take care of the rest. You can also tailor the prompts for the messages.",
+        "Sign up on our mobile app, select your recipients and contributors, and we'll handle the rest. You can also customize the prompts for the messages.",
     },
     {
       question: 'How do contributors submit their content?',
       answer:
-        "We send an introductory email to your chosen contributors with automated reminders. Each email contains a link to a web form where they can upload their notes, pictures, and optional audio clips.",
+        "Contributors receive an introductory email with automated reminders. Each email has a link to a web form where they can upload their notes, pictures, and optional audio clips.",
     },
   ],
   [
     {
-      question: 'How long does the email series last?',
+      question: 'How long does it take to create a digital Bundl?',
       answer:
-        'The length of the email series is determined by the number of contributors. Each submission is sent as a separate email.',
+        'The creation time depends on how quickly contributors submit their content. Once all submissions are in, the digital Bundl is generated and sent.',
     },
     {
-      question: 'Can I modify or cancel the email series?',
+      question: 'Can I modify or cancel the digital Bundl?',
       answer:
-        "You can make changes to the series within 24 hours of initiating it. For cancellations or additional changes, please contact us.",
+        "Changes can be made within 24 hours of initiating the Bundl. For cancellations or additional changes, please contact us.",
     },
     {
       question: 'Is there a limit to the number of contributors?',
       answer:
-        "Nope, invite as many contributors as you want. Each contributor can submit one note, photo, and optional audio clip.",
+        "No, invite as many contributors as you'd like. Each can submit one note, photo, and optional audio clip.",
     },
     {
       question: 'Can I include international contributors?',
       answer:
-        'Absolutely! Contributors can submit their content online, and the emails will be sent to your chosen recipient, no matter where they are.',
+        'Yes, contributors can submit their content online, and the digital Bundl will be emailed to your recipient, regardless of location.',
     },
   ],
   [
     {
-      question: 'Is the email series mobile-friendly?',
+      question: 'Is the digital Bundl mobile-friendly?',
       answer:
-        "Yes, the submission process is mobile-friendly. The emails are designed to be easily readable on any device.",
+        "Absolutely, the submission process is mobile-friendly, and the PDF is designed to be easily readable on any device.",
     },
     {
       question: 'What if I need help or have specific requests?',
       answer:
-        "We've got you covered. Log in to your account for support or reach out to us directly.",
+        "Need help? Log in to your account for support or contact us directly.",
     },
     {
-      question: 'Is there a mobile app for the Bundl email series?',
+      question: 'Is there a mobile app for the digital Bundl?',
       answer:
-        "Yes, the Bundl email series is fully integrated into our mobile app for a smooth user experience.",
+        "Yes, the digital Bundl is fully integrated into our mobile app for a seamless user experience.",
     },
   ],
 ]
-
 export function Faqs() {
   return (
     <section
