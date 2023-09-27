@@ -275,7 +275,7 @@ const tiers = [
     ],
   },
   {
-    name: 'Surprise Vitual Event',
+    name: 'Surprise Vitual Reveal',
     id: 'tier-virtual-event',
     href: '#',
     price: { monthly: '$499', annually: '$499' },
