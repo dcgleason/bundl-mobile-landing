@@ -266,10 +266,10 @@ const tiers = [
     id: 'tier-hardcover',
     href: '#',
     price: { monthly: '$99', annually: '$99' }, 
-    description: 'Everything in Digital, plus a high-quality hardcover book.',
+    description: 'Everything in Digital, plus a linen hardcover book.',
     features: [
       'All Digital Bundl features',
-      'High-quality linen hardcover book',
+      'Luxury linen hardcover book',
       'Free shipping',
       'Priority support',
     ],
