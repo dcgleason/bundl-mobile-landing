@@ -279,11 +279,11 @@ const tiers = [
     id: 'tier-virtual-event',
     href: '#',
     price: { monthly: '$499', annually: '$499' },
-    description: 'Includes all Hardcover features, plus a virtual event for the big reveal. ',
+    description: 'Includes all Hardcover features, plus a help planning for a event for the reveal of your Bundl book. ',
     features: [
       'All Hardcover Bundl features',
       'Event planning & coordination',
-      'Custom digital invitations',
+      'Custom digital & physcial invitations',
       'Video Projector and Laptop sent to you for immersive experience',
       'Tech support for group virtual call',
         ],
