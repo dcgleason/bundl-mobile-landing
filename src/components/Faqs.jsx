@@ -26,12 +26,12 @@ const faqs = [
   ],
   [
     {
-      question: 'How long does it take to create a digital Bundl?',
+      question: 'How long does it take to create a Bundl?',
       answer:
-        'The creation time depends on how quickly contributors submit their content. Once all submissions are in, the digital Bundl is generated and sent.',
+        'The creation time depends on how quickly contributors submit their content. Once all submissions are in, the digital Bundl is generated and sent. It can take anywhere from a few days to two weeks.',
     },
     {
-      question: 'Can I modify or cancel the digital Bundl?',
+      question: 'Can I modify or cancel my Bundl order?',
       answer:
         "Changes can be made within 24 hours of initiating the Bundl. For cancellations or additional changes, please contact us.",
     },
@@ -40,11 +40,21 @@ const faqs = [
       answer:
         "No, invite as many contributors as you'd like. Each can submit one note, photo, and optional audio clip.",
     },
+    {
+      question: 'What is the surprise virtual event?',
+      answer:
+        'The surprise virtual event is an online gathering where the Bundl is revealed to the recipient. It brings together all contributors for a collective celebration.',
+    },
+    {
+      question: 'How do I set up the surprise virtual event?',
+      answer:
+        'When you choose a package that includes the virtual event, we’ll guide you through the setup. Invitations and reminders are sent to all contributors and the recipient.',
+    },
    
   ],
   [
     {
-      question: 'Is the digital Bundl mobile-friendly?',
+      question: 'Is Bundl mobile-friendly?',
       answer:
         "Absolutely, the submission process is mobile-friendly, and the PDF is designed to be easily readable on any device.",
     },
@@ -54,10 +64,16 @@ const faqs = [
         'Yes, contributors can submit their content online, and the digital Bundl will be emailed to your recipient, regardless of location.',
     },
     {
-      question: 'Is there a mobile app for the digital Bundl?',
+      question: 'What is the Bundl book?',
       answer:
-        "Yes, the digital Bundl is fully integrated into our mobile app for a seamless user experience.",
+        'The Bundl book is a physical keepsake that compiles all the notes, photos, and messages from contributors into a beautifully designed hardcover book.',
     },
+    {
+      question: 'How is the Bundl book different from the digital Bundl?',
+      answer:
+        'While the digital Bundl is a PDF sent via email, the Bundl book is a tangible keepsake that you can hold, making it a more lasting memento.',
+    },
+   
   ],
 ]
 
