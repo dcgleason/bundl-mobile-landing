@@ -151,7 +151,7 @@ export function Hero() {
            Your Most Meaningful Gift...Ever.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Give your friend or family member a <span className='text-[#8b0000]'>FREE </span> digital <span className='underline'><em> &apos;Bundl&apos;</em></span> (a.k.a a digital book filled with a heartfelt, prompt-driven written notes, audio-clips, and memorable pictures collected from friends and family using our mobile app)! Great for to birthdays, babyshowers, retirements, etc.
+            Give your friend or family member a <span className='text-[#8b0000]'>FREE </span> <span className='underline'><em> &apos;Bundl&apos;</em></span> (a.k.a a book filled with a heartfelt, prompt-driven written notes, audio-clips, and memorable pictures collected from friends and family using our mobile app)! Great for to birthdays, babyshowers, retirements, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
