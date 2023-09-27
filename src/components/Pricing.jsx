@@ -262,7 +262,7 @@ const tiers = [
     ],
   },
   {
-    name: 'Hardcover Linen Bundl',
+    name: 'Hardcover Bundl book',
     id: 'tier-hardcover',
     href: '#',
     price: { monthly: '$99', annually: '$99' }, 
@@ -275,7 +275,7 @@ const tiers = [
     ],
   },
   {
-    name: 'Surprise Vitual Group Reveal',
+    name: 'Vitual Group (surprise) Reveal',
     id: 'tier-virtual-event',
     href: '#',
     price: { monthly: '$499', annually: '$499' },
