@@ -284,7 +284,7 @@ const tiers = [
       'All Hardcover Bundl features',
       'Event planning & coordination',
       'Custom digital invitations',
-      'Video Projector sent to you for immersive experience',
+      'Video Projector and Laptop sent to you for immersive experience',
       'Tech support for group virtual call',
         ],
   },
