@@ -485,7 +485,7 @@ async function handleSubmit(e) {
               onClick={() => window.location.href='https://www.givebundl.com'}
               className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-400 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500"
             >
-              Order your Bundl book
+              Order your Bundl 
             </button>
           </div>
         </div>
