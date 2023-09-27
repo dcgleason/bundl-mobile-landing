@@ -255,7 +255,7 @@ const tiers = [
     price: { monthly: 'Free', annually: 'Free' },
     description: 'A heartfelt digital book for special occasions.',
     features: [
-      'Digital PDF',
+      'Digital, styled PDF of all submission',
       'Automated submission collection',
       'Scheduled delivery via email',
       'Personalized messaging from you',
