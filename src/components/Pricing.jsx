@@ -265,7 +265,7 @@ const tiers = [
     name: 'Hardcover Linen Bundl',
     id: 'tier-hardcover',
     href: '#',
-    price: { monthly: '$99', annually: '$99' }, 
+    price: { monthly: '$129', annually: '$99' }, 
     description: 'Everything in Digital, plus a linen hardcover book.',
     features: [
       'All Digital Bundl features',
@@ -278,7 +278,7 @@ const tiers = [
     name: 'Surprise Vitual Event',
     id: 'tier-virtual-event',
     href: '#',
-    price: { monthly: '$799', annually: '$799' },
+    price: { monthly: '$499', annually: '$499' },
     description: 'Includes all Hardcover features, plus a virtual event for the big reveal. ',
     features: [
       'All Hardcover Linen Bundl features',
