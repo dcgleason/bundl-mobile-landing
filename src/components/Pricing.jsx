@@ -274,10 +274,10 @@ const tiers = [
     ],
   },
   {
-    name: 'Linen Hardcover Bundl Book',
+    name: 'Linen Bundl Book + Reveal',
     id: 'tier-virtual-event',
     href: '#',
-    price: { monthly: '$199', annually: '$499' },
+    price: { monthly: '$199', annually: '$199' },
     description: 'Includes all Hardcover features, plus a help planning for a event for the reveal of your Bundl book. ',
     features: [
       'Linen Hardcover Bundl book',
