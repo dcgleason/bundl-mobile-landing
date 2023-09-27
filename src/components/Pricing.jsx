@@ -283,9 +283,9 @@ const tiers = [
     features: [
       'All Hardcover Linen Bundl features',
       'Event planning & coordination',
-      'Premium tech support for group virtual call',
-      'Big screen rental sent to you for immersive experience',
       'Custom digital invitations',
+      'Video Projector rental sent to you for immersive experience',
+      'Premium tech support for group virtual call',
         ],
   },
 ]
