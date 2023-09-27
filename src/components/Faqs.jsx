@@ -1,3 +1,6 @@
+import Link from 'next/link'
+
+import { Container } from '@/components/Container'
 const faqs = [
   [
     {
@@ -57,6 +60,7 @@ const faqs = [
     },
   ],
 ]
+
 export function Faqs() {
   return (
     <section

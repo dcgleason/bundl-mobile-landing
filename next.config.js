@@ -29,10 +29,22 @@ const nextConfig = {
         },
       },
     });
+    
+     // Add loader for .node files
+     config.module.rules.push({
+      test: /\.node$/,
+      use: 'node-loader',
+    });
 
     // Stub fs module
     if (!isServer) {
-      config.resolve.fallback.fs = false;
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+        canvas: false
+      };
     }
 
     return config;
