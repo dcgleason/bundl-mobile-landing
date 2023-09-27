@@ -278,7 +278,7 @@ const tiers = [
     id: 'tier-virtual-event',
     href: '#',
     price: { monthly: '$199', annually: '$199' },
-    description: 'Includes all Hardcover features, plus a help planning for a event for the reveal of your Bundl. ',
+    description: 'Includes all Hardcover features, plus a help planning for a virtual event on the reveal of your Bundl. ',
     features: [
       'Linen Hardcover Bundl',
       'Event planning & coordination for your virtual, group reveal call',
