@@ -270,7 +270,6 @@ const tiers = [
     features: [
       'All Digital Bundl features',
       'Designed hardcover book',
-      'Free shipping',
       'Priority support',
     ],
   },
