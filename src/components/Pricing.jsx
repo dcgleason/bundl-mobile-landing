@@ -257,8 +257,8 @@ const tiers = [
     features: [
       'Digital PDF',
       'Automated submission collection',
-      'Scheduled delivery',
-      'Personalized messaging',
+      'Scheduled delivery via email',
+      'Personalized messaging from you',
     ],
   },
   {
