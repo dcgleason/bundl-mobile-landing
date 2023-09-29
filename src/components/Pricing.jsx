@@ -301,7 +301,7 @@ export function Pricing() {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">
-        Select the Bundl package that best fits your needs. Purchase in-app.
+         Purchases happen in the mobile app.
 
         </p>
         <div className="mt-20 flow-root">
