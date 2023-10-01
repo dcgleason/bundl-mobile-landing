@@ -480,10 +480,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-         Create your Bundl in less than 5 minutes by using our mobile app.
+        Our mobile app makes it easy to recognize your employees in 5 minutes or less.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Choose Bundl contributors from your contacts in-app. Our app collects notes, pictures, and audio from loved ones in the first week. Then, daily emails deliver these special messages to your recipient.
+          Choose Bundl contributors from your contacts in-app. Our app collects notes, pictures, and audio from loved ones in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
           </p>
         </div>
       </Container>
