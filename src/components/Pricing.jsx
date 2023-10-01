@@ -174,7 +174,7 @@ function Plan({
 
 
 
-function Price() {
+export function Price() {
   let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (
@@ -187,13 +187,13 @@ function Price() {
       <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Place gift order in-app.</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Caution: it is likely your gift recipient cries tears of joy.</p>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Payment built around you.</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Usage based pricing starting only $10 per month</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
       <div class="p-8 sm:p-10 lg:flex-auto">
-        <h3 class="text-2xl font-bold tracking-tight text-gray-900">Digital Bundl</h3>
-        <p class="mt-6 text-base leading-7 text-gray-600">Automated, stylized, and meant to pull all of the heartstrings.</p>
+        <h3 class="text-2xl font-bold tracking-tight text-gray-900">Bundl book</h3>
+        <p class="mt-6 text-base leading-7 text-gray-600">Automated, stylized, and built to instill a sense of belonging.</p>
         <div class="mt-10 flex items-center gap-x-4">
           <h4 class="flex-none text-sm font-semibold leading-6 text-black">What&apos;s included</h4>
           <div class="h-px flex-auto bg-gray-100"></div>
@@ -209,7 +209,7 @@ function Price() {
             <svg class="h-6 w-5 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
             </svg>
-            Book PDF delivered via email
+            Hardcover book with your company logo
           </li>
           <li class="flex gap-x-3">
             <svg class="h-6 w-5 flex-none text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -229,8 +229,8 @@ function Price() {
           <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
             <div class="mx-auto max-w-xs px-8">
               <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                <span class="text-5xl font-bold tracking-tight text-gray-900 line-through">$29.99</span>
-                <span class="text-2xl font-bold text-gray-900">FREE</span>
+                <span class="text-5xl font-bold tracking-tight text-gray-900 ">$79.99/Bundl</span>
+                {/* <span class="text-2xl font-bold text-gray-900">FREE</span> */}
               </p>
               <a href="#" class="mt-10 block w-full rounded-md bg-[#DF9496] px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600">Download app</a>
               <p class="mt-6 text-xs leading-5 text-gray-600">The world&apos;s most meaningful gift...now free. </p>
@@ -290,7 +290,7 @@ const tiers = [
 ]
 
 
-export function Pricing() {
+ function Pricing() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
