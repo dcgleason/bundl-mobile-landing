@@ -148,10 +148,10 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-           Your Most Meaningful Gift...Ever.
+            Get your employees to want to stick around.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Give your loved one a <span className='text-[#8b0000]'>FREE </span> <span className='underline'><em> &apos;Bundl&apos;</em></span> (a.k.a a book filled with a heartfelt, prompt-driven written notes, audio-clips, and memorable pictures collected from friends and family using our mobile app)! Great for to birthdays, babyshowers, retirements, etc.
+            Retain your employees by giving them a book filled with a meaningful, prompt-driven written notes, audio-clips, and memorable pictures collected from their teammates...made easy with our mobile app. Great for to work milestone, onboarding, culture building, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
