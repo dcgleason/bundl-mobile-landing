@@ -480,7 +480,7 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-        Our mobile app makes it easy to recognize your employees in 5 minutes or less.
+        It&apos;s easy to recognize a star employee in 5 minutes or less.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
           Choose Bundl contributors from your contacts in-app. Our app collects notes, pictures, and audio from loved ones in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
