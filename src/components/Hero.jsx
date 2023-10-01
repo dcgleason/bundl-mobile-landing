@@ -151,7 +151,7 @@ export function Hero() {
             Get your employees to want to stick around.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Retain your employees by giving them meaningful, prompt-driven written notes, audio-clips, and memorable pictures from their teammates...made easy with our mobile app. Great for to work milestone, onboarding, culture building, etc.
+            Retain your employees by giving them meaningful, prompt-driven written notes, audio-clips, and memorable pictures from their teammates...made easy with our mobile app. Great for to work milestones, onboarding, culture building, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
