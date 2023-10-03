@@ -180,7 +180,7 @@ function InviteScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Invite people</AppScreen.Title>
+        <AppScreen.Title>Invite Co-workers</AppScreen.Title>
         <AppScreen.Subtitle >
           <span className='text-[#8b0000]'>Automate the collection <span className="text-white">of notes, audio, and pictures</span></span>
         </AppScreen.Subtitle>
