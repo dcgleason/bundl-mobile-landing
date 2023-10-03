@@ -38,16 +38,16 @@ const features = [
     screen: InviteScreen,
   },
   {
-    name: 'Helpful Prompts',
+    name: 'Guided Prompts for Effective Messaging',
     description:
       "Unsure what to say your contributing employees? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
-    name: 'Simple Bulk Messaging',
+    name: 'Streamlined Group Communication',
     description:
-      "We connect you with everyone but your recipient, keep it secret until the reveal, and make the entire process quick and easy.",
+      "We connect you with everyone but your employee recipient, help you keep it secret until the reveal, and make the entire process quick and easy.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
