@@ -4,76 +4,59 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How does the digital Bundl work?',
+      question: 'How do I get started with Bundl?',
       answer:
-        "The digital Bundl compiles notes, photos, and audio clips from friends and family into a single PDF formatted like a book. This PDF is then sent to your chosen recipient via email.",
-    },
-    {
-      question: 'What features are included in the digital Bundl?',
-      answer:
-        'The digital Bundl includes automated content collection, a beautifully designed PDF, and the option to include audio clips through embedded links.',
-    },
-    {
-      question: 'How do I get started?',
-      answer:
-        "Sign up on our mobile app, select your recipients and contributors, and we'll handle the rest. You can also customize the prompts for the messages.",
+        'Sign up on our mobile app, choose the employees you wish to recognize, and identify the contributors. We take care of the rest, including customizable prompts for messages.',
     },
     {
       question: 'How do contributors submit their content?',
       answer:
-        "Contributors receive an introductory email with automated reminders. Each email has a link to a web form where they can upload their notes, pictures, and optional audio clips.",
+        'Contributors receive an introductory email with automated reminders. Each email contains a link to a web form where they can upload their notes, pictures, and optional audio clips.',
     },
-  ],
-  [
     {
-      question: 'How long does it take to create a Bundl?',
+      question: 'How long does it take to receive a Bundl?',
       answer:
-        'The creation time depends on how quickly contributors submit their content. Once all submissions are in, the digital Bundl is generated and sent. It can take anywhere from a few days to two weeks.',
+        'The time frame depends on how quickly contributors submit their content. Once all submissions are received, the keepsake book is generated and sent, typically within a few days to two weeks.',
     },
     {
       question: 'Can I modify or cancel my Bundl order?',
       answer:
-        "Changes can be made within 24 hours of initiating the Bundl. For cancellations or additional changes, please contact us.",
+        'You can make changes within 24 hours of initiating the Bundl. For cancellations or additional adjustments, please contact us.',
     },
+  ],
+  [
     {
       question: 'Is there a limit to the number of contributors?',
       answer:
-        "No, invite as many contributors as you'd like. Each can submit one note, photo, and optional audio clip.",
+        'No, feel free to invite as many contributors as you wish. Each contributor can submit one note, photo, and optional audio clip.',
     },
     {
-      question: 'What is the surprise virtual event?',
+      question: 'How can Bundl improve employee retention?',
       answer:
-        'The surprise virtual event is an online gathering where the Bundl is revealed to the recipient. It brings together all contributors for a collective celebration.',
+        'Bundl fosters a sense of belonging and appreciation among employees by giving them meaningful keepsakes that include notes, photos, and audio clips from their colleagues.',
     },
     {
-      question: 'How do I set up the surprise virtual event?',
+      question: 'What is included in the keepsake book?',
       answer:
-        'When you choose a package that includes the virtual event, we’ll guide you through the setup. Invitations and reminders are sent to all contributors and the recipient.',
+        'The keepsake book is a hardcover compilation of all the submitted notes, photos, and messages, elegantly designed and featuring your company logo.',
     },
-   
   ],
   [
     {
       question: 'Is Bundl mobile-friendly?',
       answer:
-        "Absolutely, the submission process is mobile-friendly, and the PDF is designed to be easily readable on any device.",
+        'Yes, the submission process is mobile-optimized, making it easy for contributors to participate from any device.',
     },
     {
       question: 'Can I include international contributors?',
       answer:
-        'Yes, contributors can submit their content online, and the digital Bundl will be emailed to your recipient, regardless of location.',
+        'Absolutely, contributors can submit their content online, making it accessible regardless of geographical location.',
     },
     {
-      question: 'What is the Bundl book?',
+      question: 'How do I pay for Bundl?',
       answer:
-        'The Bundl book is a physical keepsake that compiles all the notes, photos, and messages from contributors into a beautifully designed hardcover book.',
+        'We offer flexible payment options starting at $10/month. You pay only for the keepsake books you choose to send.',
     },
-    {
-      question: 'How is the Bundl book different from the digital Bundl?',
-      answer:
-        'While the digital Bundl is a PDF sent via email, the Bundl book is a tangible keepsake that you can hold, making it a more lasting memento.',
-    },
-   
   ],
 ]
 
