@@ -191,11 +191,11 @@ function InviteScreen({ custom, animated = false }) {
             
             <button className="w-full bg-[#727B84] text-white py-2 rounded-lg flex items-center">
             <Image src={AppleLogo} alt="Apple" className="h-4 w-7 mr-1" />
-              Select from your iPhone contacts
+             Add Co-workers
             </button>
             <button className="w-full bg-[#DF9496] text-white py-2 rounded-lg flex items-center">
-            <Image src={GoogleLogo} alt="Google" className="h-4 w-4 mr-2" />
-              Select from your Google contacts
+            {/* <Image src={GoogleLogo} alt="Google" className="h-4 w-4 mr-2" /> */}
+             Select Co-workers
             </button>
             <div className="mt-4">
               <label htmlFor="welcomeMessage" className="text-sm text-gray-500">
