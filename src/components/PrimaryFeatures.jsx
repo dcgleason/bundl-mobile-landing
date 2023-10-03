@@ -33,14 +33,14 @@ const features = [
   {
     name: 'Easy Contact Collection',
     description:
-      "Add contacts from your phone's contact list, Google, or enter them manually yourself.",
+      "Add contacts from your phone's contact list or enter them manually yourself.",
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
     name: 'Helpful Prompts',
     description:
-      "Unsure what to say your family and friends? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
+      "Unsure what to say your contributing employees? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
@@ -205,7 +205,7 @@ function InviteScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hey! So, Eliza is turning 30 and I am making her a special gift called a 'Bundl.' It's compilation of love, i.e. special notes, pictures, and audio clips from all of her loved ones. Please join in and add your own message or photo for Eliza! Think she is going to love it."
+                defaultValue="Hey everyone! Can you believe it's already been a year since Sally joined us at HoldCo? To celebrate her first service anniversary, I'm putting together a 'Bundl.' It's a collection of appreciation and fond memories, including special notes, pictures, and audio clips from all of us, her coworkers. Please take a moment to add your own message or photo for Sally. I'm sure she'll be thrilled!"
               ></textarea>
             </div>
           </div>
@@ -267,7 +267,7 @@ function InvestScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hey! So, Eliza is turning 30 and I am making her a special gift called a 'Bundl.' It's compilation of love, i.e. special notes, pictures, and audio clips from all of her loved ones. Please join in and add your own message or photo for Eliza! Think she is going to love it."
+                defaultValue="Hey everyone! Can you believe it's already been a year since Sally joined us at HoldCo? To celebrate her first service anniversary, I'm putting together a 'Bundl.' It's a collection of appreciation and fond memories, including special notes, pictures, and audio clips from all of us, her coworkers. Please take a moment to add your own message or photo for Sally. I'm sure she'll be thrilled!"
               ></textarea>
             </div>
             <div className="rounded-lg bg-[#727B84] px-3 py-2 text-center text-sm font-semibold text-white">
@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
         Recognize an employee in a special way in 5 minutes or less.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          Choose Bundl contributors from your contacts in-app. Our app collects notes, pictures, and audio from loved ones in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
+           ur app collects notes, pictures, and audio from loved ones in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
           </p>
         </div>
       </Container>
