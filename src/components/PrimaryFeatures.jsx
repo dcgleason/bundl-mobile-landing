@@ -483,7 +483,7 @@ export function PrimaryFeatures() {
         Recognize an employee in a special way in 5 minutes or less.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-           ur app collects notes, pictures, and audio from loved ones in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
+           Our app collects notes, pictures, and audio from co-workers in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
           </p>
         </div>
       </Container>
