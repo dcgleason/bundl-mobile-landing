@@ -232,7 +232,7 @@ function StocksScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Prompts for Family & Friends</AppScreen.Title>
+        <AppScreen.Title>Prompts for Co-workers</AppScreen.Title>
         <AppScreen.Subtitle>Help them share their thoughts</AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
