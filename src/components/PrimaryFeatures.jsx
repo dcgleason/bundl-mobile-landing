@@ -221,12 +221,12 @@ function InviteScreen({ custom, animated = false }) {
 
 function StocksScreen({ custom, animated = false }) {
   const prompts = [
-    "What are your thoughts about our relationship?",
-    "Are you proud of Eliza? If so, why?",
-    "What do you wish for Eliza and me as a couple going forward?",
-    "How has Eliza positively impacted your life?",
-    "What's your favorite memory with Eliza?",
-    "What advice do you have for us as we start this new chapter together?",
+    "How do you think Sally embodies the company's core values?",
+    "Can you share an instance where you felt proud of Sally's accomplishments?",
+    "What are your aspirations for Sally's future projects?",
+    "How has working with Sally positively impacted your professional growth?",
+    "What's your favorite memory from a project you've worked on with Sally?",
+    "Do you have any advice for Sally as she embarks on new challenges?"
   ];
 
   return (
