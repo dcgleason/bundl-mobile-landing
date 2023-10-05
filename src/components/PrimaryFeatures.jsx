@@ -40,14 +40,14 @@ const features = [
   {
     name: 'Guided Prompts for Effective Messaging',
     description:
-      "Unsure what to say your contributing employees? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
+      "Unsure what to say your contributors? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
     name: 'Streamlined Group Communication',
     description:
-      "We connect you with everyone but your employee recipient, help you keep it secret until the reveal, and make the entire process quick and easy.",
+      "We connect you with everyone but your recipient, help you keep it secret until the reveal, and make the entire process quick and easy.",
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
@@ -481,10 +481,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-        Recognize an employee in a special way in 5 minutes or less.
+        Gift a Bundl book in 5 minutes or less.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-           Our app collects notes, pictures, and audio from co-workers in the first week. Then, hardcover keepsake book deliver these special messages to your deserving employee.
+           Our app collects notes, pictures, and audio from your contacts in the first week. Then, hardcover keepsake book deliver these special messages to your lucky recipient.
           </p>
         </div>
       </Container>
