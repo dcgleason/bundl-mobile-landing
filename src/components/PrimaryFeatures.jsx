@@ -222,14 +222,14 @@ function InviteScreen({ custom, animated = false }) {
 
 function StocksScreen({ custom, animated = false }) {
   const prompts = [
-    "How do you think Sally embodies the company's core values?",
-    "Can you share an instance where you felt proud of Sally's accomplishments?",
-    "What are your aspirations for Sally's future projects?",
-    "How has working with Sally positively impacted your professional growth?",
-    "What's your favorite memory from a project you've worked on with Sally?",
-    "Do you have any advice for Sally as she embarks on new challenges?"
+    "What's your most cherished memory with Eliza?",
+    "How has Eliza made a positive impact on your life?",
+    "What's the funniest moment you've shared with Eliza?",
+    "What qualities do you admire most in Eliza?",
+    "If you could give Eliza one piece of advice for her 30s, what would it be?",
+    "What are your wishes for Eliza as she celebrates this milestone birthday?"
   ];
-
+  
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
