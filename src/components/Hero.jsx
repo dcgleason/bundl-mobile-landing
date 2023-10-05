@@ -151,7 +151,7 @@ export function Hero() {
            Your most meaningful gift ... ever. 
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Blow your loved one away by gifting them heartwarmign messages from their loved ones...all at once. With Bundl&apos;s mobile app easily give meaningful, prompt-driven written notes, audio-clips, and memorable pictures from your loved one&apos;s loved ones. Great for to milestone birthdays, baby-showers, retirement parties, etc.
+            Blow your loved one away by gifting them heart-warming messages from their loved ones...all at once. <br></br> <br></br>With Bundl&apos;s mobile app easily give meaningful, prompt-driven written notes, audio-clips, and memorable pictures from your loved one&apos;s loved ones. Great for to milestone birthdays, baby-showers, retirement parties, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
