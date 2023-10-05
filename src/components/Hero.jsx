@@ -148,10 +148,10 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-            Retain your remote employees by giving them a sense of belonging.
+           Your most meaningful gift ... ever. 
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Retain empoloyees by gifting them warm messages from their teammates...all at once. With Bundl&apos;s mobile app easily give meaningful, prompt-driven written notes, audio-clips, and memorable pictures from their teammates. Great for to work milestones, onboarding, culture building, etc.
+            Blow your loved one away by gifting them heartwarmign messages from their loved ones...all at once. With Bundl&apos;s mobile app easily give meaningful, prompt-driven written notes, audio-clips, and memorable pictures from your loved one&apos;s loved ones. Great for to milestone birthdays, baby-showers, retirement parties, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
