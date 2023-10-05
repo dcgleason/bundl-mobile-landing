@@ -213,7 +213,7 @@ const TestimonialEmbed = () => {
   return (
     <iframe
       id="testimonialto-embed-text--NSg7yksxMqZUr0mZsK5"
-      src="https://embed-v2.testimonial.to/t/-NStTepsBaSzuf7FPBOB?design=left-aligned&darkFont=yes&bgColor=ffffff&borderColor=ABB8C3&starColor=FDCC0D&shadowSize=shadow-none&showBorder=no&showPadding=yes&borderRadius=rounded-lg&borderWidth=border" 
+      src="https://embed-v2.testimonial.to/t/-NStTepsBaSzuf7FPBOB?design=left-aligned&darkFont=yes&bgColor=ffffff&borderColor=ABB8C3&starColor=FDCC0D&shadowSize=shadow-none&showBorder=no&showPadding=yes&borderRadius=rounded-lg&borderWidth=border"
      frameBorder="0"
       scrolling="no"
       width="100%"
