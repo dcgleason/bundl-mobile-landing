@@ -239,7 +239,7 @@ export function SecondaryFeatures() {
                 Helping You Craft Gifts That Touch the Heart — That&apos;s Our Commitment
               </h2>
               <p className="mt-2 text-lg text-gray-600">
-                If your Bundl book doesn't bring tears of joy, we&apos;ll refund your purchase.
+                If your Bundl book doesn&apos;t bring tears of joy, we&apos;ll refund your purchase.
               </p>
             </div>
         
