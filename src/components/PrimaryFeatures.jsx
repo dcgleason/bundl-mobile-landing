@@ -206,7 +206,7 @@ function InviteScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hey everyone! Can you believe it's already been a year since Sally joined us at HoldCo? To celebrate her first service anniversary, I'm putting together a 'Bundl.' It's a collection of appreciation and fond memories, including special notes, pictures, and audio clips from all of us, her coworkers. Please take a moment to add your own message or photo for Sally. I'm sure she'll be thrilled!"
+                defaultValue="Hey everyone! Can you believe Eliza is turning 30? To make this milestone extra special, I'm creating a 'Bundl.' This will be a heartfelt collection of love, memories, and well wishes, featuring notes, pictures, and audio clips from all of us who care about her. Please take a moment to add your own personal message or photo for Eliza. I know she'll be incredibly touched by this gesture!"
               ></textarea>
             </div>
           </div>
@@ -268,7 +268,7 @@ function InvestScreen({ custom, animated = false }) {
                 id="welcomeMessage"
                 className="w-full mt-2 p-2 border rounded-lg text-sm text-gray-900"
                 rows="5"
-                defaultValue="Hey everyone! Can you believe it's already been a year since Sally joined us at HoldCo? To celebrate her first service anniversary, I'm putting together a 'Bundl.' It's a collection of appreciation and fond memories, including special notes, pictures, and audio clips from all of us, her coworkers. Please take a moment to add your own message or photo for Sally. I'm sure she'll be thrilled!"
+                defaultValue="Hey everyone! Can you believe Eliza is turning 30? To make this milestone extra special, I'm creating a 'Bundl.' This will be a heartfelt collection of love, memories, and well wishes, featuring notes, pictures, and audio clips from all of us who care about her. Please take a moment to add your own personal message or photo for Eliza. I know she'll be incredibly touched by this gesture!"
               ></textarea>
             </div>
             <div className="rounded-lg bg-[#727B84] px-3 py-2 text-center text-sm font-semibold text-white">
