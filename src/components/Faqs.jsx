@@ -1,22 +1,24 @@
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
+
+
 const faqs = [
   [
     {
       question: 'How do I get started with Bundl?',
       answer:
-        'Sign up on our mobile app, choose the employees you wish to recognize, and identify the contributors. We take care of the rest, including customizable prompts for messages.',
+        'Sign up on our mobile app, select the loved one you wish to celebrate, and invite contributors. We handle the rest, including customizable prompts for heartfelt messages.',
     },
     {
       question: 'How do contributors submit their content?',
       answer:
-        'Contributors receive an introductory email with automated reminders. Each email contains a link to a web form where they can upload their notes, pictures, and optional audio clips.',
+        'Contributors will receive an introductory email with automated reminders. Each email contains a link to a web form where they can upload their notes, pictures, and optional audio clips.',
     },
     {
       question: 'How long does it take to receive a Bundl?',
       answer:
-        'The time frame depends on how quickly contributors submit their content. Once all submissions are received, the keepsake book is generated and sent, typically within a few days to two weeks.',
+        'The time frame depends on how quickly contributors submit their content. Once all submissions are in, the keepsake book is generated and sent, typically within a few days to two weeks.',
     },
     {
       question: 'Can I modify or cancel my Bundl order?',
@@ -28,17 +30,17 @@ const faqs = [
     {
       question: 'Is there a limit to the number of contributors?',
       answer:
-        'No, feel free to invite as many contributors as you wish. Each contributor can submit one note, photo, and optional audio clip.',
+        'No, feel free to invite as many contributors as you like. Each contributor can submit one note, photo, and optional audio clip.',
     },
     {
-      question: 'How can Bundl improve employee retention?',
+      question: 'How does Bundl make gifts more meaningful?',
       answer:
-        'Bundl fosters a sense of belonging and appreciation among employees by giving them meaningful keepsakes that include notes, photos, and audio clips from their colleagues.',
+        'Bundl creates a unique keepsake filled with personal notes, photos, and audio clips from friends and family, making it a deeply touching gift.',
     },
     {
       question: 'What is included in the keepsake book?',
       answer:
-        'The keepsake book is a hardcover compilation of all the submitted notes, photos, and messages, elegantly designed and featuring your company logo.',
+        'The keepsake book is a hardcover compilation of all the submitted notes, photos, and messages, elegantly designed to be a cherished memento.',
     },
   ],
   [
@@ -55,10 +57,11 @@ const faqs = [
     {
       question: 'How do I pay for Bundl?',
       answer:
-        'We offer flexible payment options starting at $10/month. You pay only for the keepsake books you choose to send.',
+        'We offer flexible payment options. You pay only for the keepsake books you choose to send.',
     },
   ],
-]
+];
+
 
 export function Faqs() {
   return (
