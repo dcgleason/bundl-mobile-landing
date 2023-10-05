@@ -234,13 +234,14 @@ export function SecondaryFeatures() {
       className="py-20 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          Ensuring a More Cohesive Team — That&apos;s Our Promise
-                    </h2>
-          <p className="mt-2 text-lg text-gray-600">
-          Should your employees not feel more unified and engaged, we&apos;ll refund your gifts.</p>
-        </div>
+            <div className="mx-auto max-w-2xl sm:text-center">
+              <h2 className="text-3xl font-medium tracking-tight text-gray-900">
+                Helping You Craft Gifts That Touch the Heart — That's Our Commitment
+              </h2>
+              <p className="mt-2 text-lg text-gray-600">
+                If your Bundl book doesn't bring tears of joy, we'll refund your purchase.
+              </p>
+            </div>
         
         <div className="flex justify-center my-5">
           <TestimonialEmbed/>
