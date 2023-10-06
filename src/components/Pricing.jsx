@@ -266,24 +266,26 @@ const tiers = [
     id: 'tier-hardcover',
     href: '#',
     price: { monthly: '$99', annually: '$99' }, 
-    description: 'Everything in Digital, plus a hardcover book.',
+    description: 'Hardcover Bundl book.',
     features: [
-      'All Digital Bundl features',
       'Designed hardcover book',
-      'Priority support',
+      'Automated submission collection',
+      'Scheduled delivery',
+      'Personalized messaging from you',
+    
+  
     ],
   },
   {
-    name: 'Linen Hardcover Bundl + Event Planning (optional)',
+    name: 'Linen Hardcover Bundl',
     id: 'tier-virtual-event',
     href: '#',
     price: { monthly: '$199', annually: '$199' },
-    description: 'Includes all Hardcover features, plus a help planning for a virtual event on the reveal of your Bundl. ',
+    description: 'Includes all Hardcover features, but with a linen hardcover Bundl book. ',
     features: [
+      'All Hardcover features',
       'Linen Hardcover Bundl',
-      'Custom digital & physcial invitations for reveal party',
-      'Event planning & coordination for your virtual, group reveal call',
-      'Tech support for virtual call',
+      'Priority support',
         ],
   },
 ]
