@@ -236,7 +236,7 @@ export function SecondaryFeatures() {
       <Container>
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-                Helping You Craft Gifts That Touch the Heart — That&apos;s Our Commitment
+                Helping You Craft A Gift That Touches the Heart — That&apos;s Our Commitment
               </h2>
               <p className="mt-2 text-lg text-gray-600">
                 If your Bundl book doesn&apos;t bring tears of joy, we&apos;ll refund your purchase.
