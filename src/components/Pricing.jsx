@@ -272,7 +272,7 @@ const tiers = [
       'Automated submission collection',
       'Scheduled delivery',
       'Personalized messaging from you',
-      'Limited to 20 contributors',
+      'Limited to 20 contributors invited',
     
   
     ],
@@ -281,7 +281,7 @@ const tiers = [
     name: 'Linen Hardcover Bundl',
     id: 'tier-virtual-event',
     href: '#',
-    price: { monthly: '$199', annually: '$199' },
+    price: { monthly: '$198', annually: '$198' },
     description: 'Includes all Hardcover features, but with a linen hardcover Bundl book. ',
     features: [
       'All Hardcover features',
