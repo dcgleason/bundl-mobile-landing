@@ -30,8 +30,8 @@ const nextConfig = {
       },
     });
     
-     // Add loader for .node files
-     config.module.rules.push({
+    // Add loader for .node files
+    config.module.rules.push({
       test: /\.node$/,
       use: 'node-loader',
     });
@@ -46,6 +46,9 @@ const nextConfig = {
         canvas: false
       };
     }
+
+    // Your added configuration
+    config.resolve.alias.canvas = false;
 
     return config;
   },

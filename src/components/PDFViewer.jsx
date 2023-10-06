@@ -1,18 +1,28 @@
-import { Worker, Viewer, ScrollMode } from '@react-pdf-viewer/core';
+import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 
-const PDFViewer = ({ fileUrl }) => {
-  return (
-    <div style={{ width: '100%', height: '100vh', overflow: 'auto' }}>
-      <Worker workerUrl={`https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.worker.min.js`}>
-        <Viewer
-          fileUrl={fileUrl}
-          defaultScale={1}
-          scrollMode={ScrollMode.Vertical}
-          defaultPage={0}
-        />
-      </Worker>
-    </div>
-  );
-};
+// Create styles
+const styles = StyleSheet.create({
+  page: {
+    flexDirection: 'row',
+    backgroundColor: '#E4E4E4'
+  },
+  section: {
+    margin: 10,
+    padding: 10,
+    flexGrow: 1
+  }
+});
 
-export default PDFViewer;
+// Create Document Component
+export const PDFViewer = () => (
+  <Document>
+    <Page size="A4" style={styles.page}>
+      <View style={styles.section}>
+        <Text>Section #1</Text>
+      </View>
+      <View style={styles.section}>
+        <Text>Section #2</Text>
+      </View>
+    </Page>
+  </Document>
+);

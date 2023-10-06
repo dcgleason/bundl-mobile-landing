@@ -5,6 +5,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { useEffect, useRef } from 'react'
 import '@react-pdf-viewer/core/lib/styles/index.css';
+import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 
 import { AppDemo } from '@/components/AppDemo'
 import { AppStoreLink } from '@/components/AppStoreLink'
@@ -21,11 +22,20 @@ import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
 import BundlBook from "@/images/bundl-red-book.png"
 import dynamic from 'next/dynamic';
+import PDFViewer from './PDFViewer'
 
-const DynamicPDFViewer = dynamic(
-  () => import('./PDFViewer'),
-  { ssr: false }
-);
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+
+
+// const DynamicPDFViewer = dynamic(
+//   () => import('./PDFViewer'),
+//   { ssr: false }
+// );
+
+
+
+
 
 
 function BackgroundIllustration(props) {
@@ -142,6 +152,10 @@ function PlayIcon(props) {
 }
 
 export function Hero() {
+
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+
+
   return (
     <div className="py-20 sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
@@ -165,12 +179,25 @@ export function Hero() {
               </Button> */}
             </div>
           </div>
-          <div className="relative sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6 "> 
+          {/* <div className="relative sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6 "> 
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
-            <div className="mx-4 px-9 [mask-image:linear-gradient(to_bottom,white_95%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:bottom-auto lg:-top-20 lg:h-auto lg:px-0 xl:bottom-0"> {/* Kept h-full */}
-              <DynamicPDFViewer fileUrl="/mom-bundl-interior-cropped-real.pdf" />
-            </div>
-          </div>
+            <div className="mx-4 px-9 [mask-image:linear-gradient(to_bottom,white_95%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:bottom-auto lg:-top-20 lg:h-auto lg:px-0 xl:bottom-0"> Kept h-full */}
+
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
+              <div
+                  style={{
+                      height: '500px',
+                      width: '800px',
+                      marginLeft: 'auto',
+                      marginRight: 'auto',
+                  }}
+              >
+                  <Viewer fileUrl="/mom-bundl-interior-cropped-real.pdf" />
+              </div>
+          </Worker>         
+            
+          {/* </div>
+          </div> */}
 
           {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
