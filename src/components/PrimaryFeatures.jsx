@@ -38,7 +38,7 @@ const features = [
     screen: InviteScreen,
   },
   {
-    name: 'Guided Prompts for Effective Messaging',
+    name: 'Guided Prompts for Contributors',
     description:
       "Unsure what to say your contributors? We offer you suggestions on how to introduce your gift and invite your selected group to contribute.",
     icon: DeviceNotificationIcon,
