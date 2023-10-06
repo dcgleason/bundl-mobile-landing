@@ -200,7 +200,7 @@ export function Hero() {
 
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
             <div className="container">
-                <Viewer fileUrl="/mom-bundl-interior-cropped-final.pdf" />
+                <Viewer fileUrl="/mom-interior-cropped-final.pdf" />
             </div>
         </Worker>  
             
