@@ -272,6 +272,7 @@ const tiers = [
       'Automated submission collection',
       'Scheduled delivery',
       'Personalized messaging from you',
+      'Limited to 20 contributors',
     
   
     ],
@@ -285,6 +286,8 @@ const tiers = [
     features: [
       'All Hardcover features',
       'Linen Hardcover Bundl',
+      'Audio clips included',
+      'Unlimited contributors', 
       'Priority support',
         ],
   },
