@@ -137,6 +137,19 @@ const Testimonials = () => {
   );
 };
 
+const style = {
+  height: '100vh',
+  width: '100%',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  '@media(min-width: 768px)': {
+      height: '500px',
+      width: '800px',
+  },
+};
 
 function PlayIcon(props) {
   return (
@@ -183,25 +196,12 @@ export function Hero() {
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
             <div className="mx-4 px-9 [mask-image:linear-gradient(to_bottom,white_95%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:bottom-auto lg:-top-20 lg:h-auto lg:px-0 xl:bottom-0"> Kept h-full */}
 
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
-              <div
-                 const style = {
-                  height: '100vh',
-                  width: '100%',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  '@media(min-width: 768px)': {
-                      height: '500px',
-                      width: '800px',
-                  },
-              };
-              >
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
+              {/* Reference the style object within the style attribute of the div tag */}
+              <div style={style}>
                   <Viewer fileUrl="/mom-bundl-interior-cropped-real.pdf" />
               </div>
-          </Worker>         
+          </Worker>      
             
           {/* </div>
           </div> */}
