@@ -484,7 +484,7 @@ export function PrimaryFeatures() {
         Gift a Bundl book in 5 minutes or less.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-           Our app collects notes, pictures, and audio from your contacts in the first week. Then, hardcover keepsake book deliver these special messages to your lucky recipient.
+           Our app collects notes, pictures, and audio from your contacts. Then, a hardcover keepsake book full of these heartfelt messages is delivered directly to you.
           </p>
         </div>
       </Container>
