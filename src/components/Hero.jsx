@@ -148,7 +148,7 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-           Make your loved one cry try tears of joy.
+           Make your loved one cry tears of joy.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
             Blow your loved one away by gifting them heartwarming messages from their family and friends...all at once. <br></br> <br></br>With Bundl&apos;s mobile app, easily gift meaningful, prompt-driven written notes, audio-clips, and memorable pictures in the from of a book. <br></br><br></br> A great gift for milestone birthdays, baby-showers, retirement parties, etc.
