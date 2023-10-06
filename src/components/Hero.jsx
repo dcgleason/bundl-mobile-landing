@@ -185,15 +185,19 @@ export function Hero() {
 
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
               <div
-                    style={{
-                      height: '100vh',  // Adjusts to the full height of the screen
-                      width: '100%',    // Adjusts to the full width of the screen
-                      marginLeft: 'auto',
-                      marginRight: 'auto',
-                      display: 'flex',  // Aligns child elements in the center
-                      justifyContent: 'center',
-                      alignItems: 'center'
-                  }}
+                 const style = {
+                  height: '100vh',
+                  width: '100%',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  '@media(min-width: 768px)': {
+                      height: '500px',
+                      width: '800px',
+                  },
+              };
               >
                   <Viewer fileUrl="/mom-bundl-interior-cropped-real.pdf" />
               </div>
