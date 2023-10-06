@@ -151,7 +151,7 @@ export function Hero() {
            Make your loved one cry try tears of joy.
            </h1>
             <p className="mt-6 text-lg text-gray-600">
-            Blow your loved one away by gifting them heartwarming messages from their family and friends...all at once. <br></br> <br></br>With Bundl&apos;s mobile app, easily gift meaningful, prompt-driven written notes, audio-clips, and memorable pictures in the from of a book. <br></br><br></br> Great for to milestone birthdays, baby-showers, retirement parties, etc.
+            Blow your loved one away by gifting them heartwarming messages from their family and friends...all at once. <br></br> <br></br>With Bundl&apos;s mobile app, easily gift meaningful, prompt-driven written notes, audio-clips, and memorable pictures in the from of a book. <br></br><br></br> A great gift for milestone birthdays, baby-showers, retirement parties, etc.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
