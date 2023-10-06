@@ -248,19 +248,19 @@ function Plan({
 
 
 const tiers = [
-  {
-    name: 'Digital Bundl',
-    id: 'tier-digital',
-    href: '#',
-    price: { monthly: 'Free', annually: 'Free' },
-    description: 'A heartfelt digital book for special occasions.',
-    features: [
-      'Digital, styled PDF of a submissions',
-      'Automated submission collection',
-      'Scheduled delivery via email',
-      'Personalized messaging from you',
-    ],
-  },
+  // {
+  //   name: 'Digital Bundl',
+  //   id: 'tier-digital',
+  //   href: '#',
+  //   price: { monthly: 'Free', annually: 'Free' },
+  //   description: 'A heartfelt digital book for special occasions.',
+  //   features: [
+  //     'Digital, styled PDF of a submissions',
+  //     'Automated submission collection',
+  //     'Scheduled delivery via email',
+  //     'Personalized messaging from you',
+  //   ],
+  // },
   {
     name: 'Hardcover Bundl',
     id: 'tier-hardcover',
