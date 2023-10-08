@@ -208,14 +208,14 @@ export function Hero() {
                     <div className="mb-2"> {/* Container for buttons */}
                       {/* Previous button */}
                       {currentImage > 0 && (
-                          <button className="mr-2 bg-[#DF9496] text-white rounded" onClick={() => setCurrentImage(prev => prev - 1)}>
+                          <button className="mr-2 bg-[#DF9496] text-white rounded px-4 py-2" onClick={() => setCurrentImage(prev => prev - 1)}>
                           Previous
                       </button>
                       )}
                       {/* Next button */}
                       {/* Next button */}
                       {currentImage < images.length - 1 && (
-                          <button className="bg-[#DF9496] text-white rounded" onClick={() => setCurrentImage(prev => prev + 1)}>
+                          <button className="bg-[#DF9496] text-white rounded px-4 py-2" onClick={() => setCurrentImage(prev => prev + 1)}>
                               Next
                           </button>
                       )}
